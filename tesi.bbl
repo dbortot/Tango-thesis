@@ -1,0 +1,54 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nty/global}
+    \entry{womak:lean-thinking}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0f093a78056a9f58d27e063ff17e5a36}{%
+           family={James\bibnamedelimb P.\bibnamedelimi Womack},
+           family_i={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Daniel\bibnamedelimb T.\bibnamedelimi Jones},
+           given_i={D\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Simon \& Schuster, Inc.}%
+      }
+      \strng{namehash}{0f093a78056a9f58d27e063ff17e5a36}
+      \strng{fullhash}{0f093a78056a9f58d27e063ff17e5a36}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lean Thinking, Second Editon}
+      \field{year}{2010}
+    \endentry
+    \entry{site:agile-manifesto}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labeltitlesource}{title}
+      \field{title}{Manifesto Agile}
+      \verb{url}
+      \verb http://agilemanifesto.org/iso/it/
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
