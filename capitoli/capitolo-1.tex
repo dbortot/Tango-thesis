@@ -133,10 +133,37 @@ Il primo problema si presentava utilizzando i metodi forniti dalla libreria \emp
 Per risolvere il problema viene quindi creata, per ogni \emph{Point Cloud}, una \emph{matrice di rototraslazione} che rappresenta lo spostamento e la rotazione del dispositivo rispetto al sistema di riferimento, e viene moltiplicato il vettore delle coordinate di ogni singolo punto per la matrice generata. \\
 In questo modo si sono ridotti i tempi di elaborazione dell'80\%;
 
+\noindent
 Il secondo problema era causato dal sovrapporsi di molti punti quasi identici, ad esempio i punti rappresentanti il pavimento. Partendo dall'osservazione che una certa quantità di punti molto vicini può essere trasformata in un unico punto, valore medio di tutti gli altri, senza una significativa perdita d'informazione, \emph{Samba} risolve il problema attraverso una tecnica di \emph{voxeling}.\\
-Lo spazio viene suddiviso in tanti parallelepipedi (tipicamente cubi) di uguali dimensioni; tutti i punti che ricadono all'interno di un singolo parallelepipedo, o \emph{voxel}, vengono considerati come un unico punto.
+Lo spazio viene suddiviso in tanti piccoli parallelepipedi (tipicamente cubi) di uguali dimensioni; tutti i punti che ricadono all'interno di un singolo parallelepipedo, o \emph{voxel}, vengono considerati come un unico punto. Così facendo si riducono sensibilmente le dimensioni del \emph{Point Cloud} senza alterarne negativamente la precisione.
+Di seguito la differenza visivamente evidente tra lo stesso Point Cloud filtrato prima con voxel cubici di lato 1cm (fig. \ref{fig:low_voxeling}) e poi di lato 3cm (fig. \ref{fig:high_voxeling}), con una differenza di circa 60.000 punti rimossi in più nella seconda elaborazione.
+\begin{figure}[htp] 
+    \centering
+    \subfloat[Voxeling leggero]{%
+        \includegraphics[width=0.47\columnwidth]{varie/low_voxeling.png} 
+    	\label{fig:low_voxeling}
+    }%
+    \hfill%
+    \subfloat[Voxeling elevato]{%
+        \includegraphics[width=0.47\columnwidth]{varie/high_voxeling.png} 
+    	\label{fig:high_voxeling}
+    }%
+    \caption{Effetti del \emph{voxeling}}
+\end{figure}
+\newline
+
+\subsubsection{Visualizzatore di mesh}
+Nel prototipo è stata introdotta la possibilità di caricare e visualizzare le \emph{mesh} risultato dell'elaborazione lato server di un \emph{Point Cloud}.
+Una \emph{mesh} poligonale è una collezione di vertici, spigoli e facce che definiscono la forma di un oggetto poliedrico; in \emph{Samba} è ottenuta a partire dalla nuvola di punti elaborata.
+Tale \emph{mesh} viene salvata dal \emph{server} in formato \emph{OBJ}, comunemente usato nelle applicazioni 3D. Dall'applicazione viene quindi richiesto di caricare e salvare nella memoria locale del tablet le mesh disponibili sul server, per poi poter essere visualizzate ed esaminate.
+
 
 \subsection{L'applicativo attuale: VIC-Tango}
+
+\subsubsection{Firebase}
+\subsubsection{JNI}
+\subsubsection{Camera preview}
+%\subsection{Bug fixing}
 
 %**************************************************************
 \section{Il Prodotto - lato server}
