@@ -83,11 +83,58 @@ Tale rappresentazione, riferita spesso d'ora in poi con il più elegante termine
 \subsection{Primo prototipo: Cloude}
 Il prototipo denominato \emph{Cloude} risponde all'esigenza di catturare più \emph{Point Cloud} da più angolazioni in modo da ricostruire l'oggetto scansionato sovrapponendo i dati acquisiti. \emph{Cloude} è il risultato di più prototipazioni precedenti effettuate dallo stagista che ha iniziato il progetto prima di me e con cui ho strettamente collaborato.\\
 Il prototipo permette quindi di acquisire più \emph{Point Cloud} in successione, ognuno dei quali verrà adeguatamente ruotato e traslato rispetto allo spostamento del \emph{tablet}, in modo che la sovrapposizione degli stessi vada infine a ricostruire tutte le parti dell'oggetto esaminato.\\
-Una sola acquisizione da una certa angolazione non può infatti comprendere un oggetto nella sua interezza, come dimostrato nelle figure //TODO è necessario ricostruire passo per passo un unico \emph{Point Cloud} rappresentante l'oggetto completo.
+Una sola acquisizione da una certa angolazione non può infatti comprendere un oggetto nella sua interezza, come dimostrato nelle figure //TODO
+ è necessario ricostruire passo per passo un unico \emph{Point Cloud} rappresentante l'oggetto completo.
 Sulla base dei risultati di \emph{Cloude} ho iniziato il mio lavoro sulla parte di elaborazione lato \emph{server} dei \emph{Point Cloud} acquisiti; questo è stato inoltre il punto di inizio per lo sviluppo dei prototipi successivi in collaborazione con l'altro stagista.
 
 \subsection{Secondo prototipo: Samba}
+Il secondo prototipo parte dai risultati ottenuti con \emph{Cloude} e ne migliora prestazioni e precisione, aggiungendo alcune funzionalità utili. \\
+\emph{Samba} affronta e risolve alcuni problemi del prototipo precedente, come il \emph{"Drifting"} e alcuni problemi prestazionali dovuta alla mole elevata di dati acquisiti. Introduce inoltre la funzionalità di visualizzazione delle \emph{mesh} elaborate dal \emph{server}.
 
+\subsubsection{Drift correction}
+Il prototipo precedente, seppur funzionale, generava ricostruzioni di scarsa qualità, afflitte soprattutto dal problema del \emph{"drifting"}. Il \emph{drifting} è un problema comune nelle applicazioni di realtà aumentata, che come \emph{Project Tango} usano la tecnica del \emph{Motion Tracking}, cioè aggiornano costantemente la propria posizione relativamente alle coordinate acquisite nella posizione precedente, mantenendo così una storia dei movimenti del \emph{device} rispetto all'ambiente circostante.\\
+Ad ogni aggiornamento della posizione è normale ed inevitabile che la misurazione, per quanto precisa, introduca un piccolo errore; la catena di errori sommati porta quindi col passare del tempo ad un'importante discrepanza tra la posizione stimata del \emph{device} e la sua posizione reale, come evidenziato in figura \ref{fig:drift_correction}
+\begin{figure}[!h] 
+    \centering 
+    \includegraphics[width=0.9\columnwidth]{varie/Drift_Correction.png} 
+    \caption{\emph{Drifting} nel \emph{Motion Tracking}}
+    \label{fig:drift_correction}
+\end{figure}
+Per ovviare in parte a questo problema \emph{Samba} utilizza una tecnica chiamata \emph{Drift Correction} ch si appoggia sulle funzionalità di \emph{Area Learning} dei \emph{device Tango}.\\
+L' \emph{Area Learning} consiste nella capacita del dispositivo di estrarre dallo spazio fisico che sta analizzando una serie di punti significativi (o \emph{key features}), facilmente riconoscibili, e di salvare tali informazioni per confrontarle con le successive acquisizioni. In questo modo il dispositivo è capace di riconoscere un'area precedentemente visitata, e può quindi applicare le necessarie correzioni alla popria stima della traiettoria, di qui il nome \emph{Drift Correction}.\\
+Con l'implementazione di questa funzionalità è necessario, prima di iniziare la ricostruzione di un \emph{Point Cloud}, riprendere l'oggetto e i suoi dintorni per un po' di tempo e da diverse angolazioni, in modo da permettere al \emph{tablet Tango} di costruire una mappa, detta \emph{Area description}, dell'area circostante, e di stabilizzare la traiettoria stimata con le informazioni acquisite.\\
+I risultati si vedono confrontando queste due ricostruzioni di una scatola, vista dall'alto (fig. \ref{fig:no_drift_correction} e fig. \ref{fig:with_drift_correction}), rispettivamente senza e con \emph{Drift correction}.
+\begin{figure}[htp] 
+    \centering
+    \subfloat[Ricostruzione senza \emph{Drift correction}]{%
+        \includegraphics[width=0.47\columnwidth]{varie/no_drift_correction.png} 
+    	%\caption{Ricostruzione senza \emph{Drift correction}}
+    	\label{fig:no_drift_correction}
+    }%
+    \hfill%
+    \subfloat[Ricostruzione con \emph{Drift correction}]{%
+        \includegraphics[width=0.47\columnwidth]{varie/with_drift_correction.png} 
+    	%\caption{Ricostruzione con \emph{Drift correction}}
+    	\label{fig:with_drift_correction}
+    }%
+    \caption{Benefici della \emph{Drift Correction}}
+\end{figure}
+\newline
+Come si nota in figura \ref{fig:with_drift_correction} il risultato non è ancora ottimale, infatti un lato della scatola appare sdoppiato e spostato di qualche centimetro; si tratta di un problema di \emph{ghosting} di cui verrà trattato più avanti.
+
+\subsubsection{Prestazioni}
+Il prototipo precedente presentava due problemi prestazionali principali:
+\begin{itemize}
+\item La ricostruzione passo per passo del \emph{Point Cloud} finale era troppo lenta
+\item La mole dei dati trattati al sovrapporsi di più \emph{Point Cloud} diventava proibitiva
+\end{itemize}
+\noindent
+Il primo problema si presentava utilizzando i metodi forniti dalla libreria \emph{Tango} per trasformare le coordinate relative dei punti in coordinate assolute per permetterne la giusta sovrapposizione. Tale metodo, seppur di facile utilizzo, diventava troppo dispendioso all'aumentare delle dimensioni del \emph{Point Cloud}, che raggiunge facilmente gli 80.000 punti.\\
+Per risolvere il problema viene quindi creata, per ogni \emph{Point Cloud}, una \emph{matrice di rototraslazione} che rappresenta lo spostamento e la rotazione del dispositivo rispetto al sistema di riferimento, e viene moltiplicato il vettore delle coordinate di ogni singolo punto per la matrice generata. \\
+In questo modo si sono ridotti i tempi di elaborazione dell'80\%;
+
+Il secondo problema era causato dal sovrapporsi di molti punti quasi identici, ad esempio i punti rappresentanti il pavimento. Partendo dall'osservazione che una certa quantità di punti molto vicini può essere trasformata in un unico punto, valore medio di tutti gli altri, senza una significativa perdita d'informazione, \emph{Samba} risolve il problema attraverso una tecnica di \emph{voxeling}.\\
+Lo spazio viene suddiviso in tanti parallelepipedi (tipicamente cubi) di uguali dimensioni; tutti i punti che ricadono all'interno di un singolo parallelepipedo, o \emph{voxel}, vengono considerati come un unico punto.
 
 \subsection{L'applicativo attuale: VIC-Tango}
 
