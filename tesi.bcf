@@ -2051,6 +2051,10 @@
     <bcf:datasource type="file" datatype="bibtex">bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">http://pointclouds.org/documentation/tutorials/statistical_outlier.php/statistical-outlier-removal</bcf:citekey>
+    <bcf:citekey order="2">http://pointclouds.org/documentation/tutorials/passthrough.php/passthrough</bcf:citekey>
+    <bcf:citekey order="3">http://pointclouds.org/documentation/tutorials/planar_segmentation.php</bcf:citekey>
+    <bcf:citekey order="4">http://pointclouds.org/documentation/tutorials/voxel_grid.php</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>

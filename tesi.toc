@@ -34,70 +34,88 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.5}Il Prodotto - lato server}{10}{section.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Organizzazione del testo}{10}{section.1.6}
+\contentsline {subsection}{\numberline {1.5.1}Point Cloud Library}{10}{subsection.1.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Processi, tecnologie e strumenti}{11}{chapter.2}
+\contentsline {subsection}{\numberline {1.5.2}Elaborazione di un Point Cloud}{10}{subsection.1.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Processo sviluppo prodotto}{11}{section.2.1}
+\contentsline {subsubsection}{Sparse filtering}{11}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Kick-Off}{11}{subsection.2.1.1}
+\contentsline {subsubsection}{Radius filtering}{11}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Concept Preview}{11}{subsection.2.1.2}
+\contentsline {subsubsection}{Ground filtering}{11}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Product Prototype}{11}{subsection.2.1.3}
+\contentsline {subsubsection}{Voxel filtering}{12}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}Fasi successive}{12}{subsection.2.1.4}
+\contentsline {subsubsection}{Cluster extraction}{13}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Tecnologie e Strumenti}{12}{section.2.2}
+\contentsline {subsubsection}{Meshing}{13}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Codice}{12}{subsection.2.2.1}
+\contentsline {section}{\numberline {1.6}Calcolo del volume}{13}{section.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}IDE ed editor}{13}{subsection.2.2.2}
+\contentsline {section}{\numberline {1.7}Organizzazione del testo}{13}{section.1.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Framework}{13}{subsection.2.2.3}
+\contentsline {chapter}{\numberline {2}Processi, tecnologie e strumenti}{15}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Studio di fattibilit\IeC {\`a} ed analisi dei rischi}{15}{chapter.3}
+\contentsline {section}{\numberline {2.1}Processo sviluppo prodotto}{15}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduzione al progetto}{15}{section.3.1}
+\contentsline {subsection}{\numberline {2.1.1}Kick-Off}{15}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{15}{section.3.2}
+\contentsline {subsection}{\numberline {2.1.2}Concept Preview}{15}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Requisiti e obiettivi}{15}{section.3.3}
+\contentsline {subsection}{\numberline {2.1.3}Product Prototype}{15}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Pianificazione}{15}{section.3.4}
+\contentsline {subsection}{\numberline {2.1.4}Fasi successive}{16}{subsection.2.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Analisi dei requisiti}{17}{chapter.4}
+\contentsline {section}{\numberline {2.2}Tecnologie e Strumenti}{16}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Casi d'uso}{17}{section.4.1}
+\contentsline {subsection}{\numberline {2.2.1}Codice}{16}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Tracciamento dei requisiti}{18}{section.4.2}
+\contentsline {subsection}{\numberline {2.2.2}IDE ed editor}{17}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Progettazione e codifica}{21}{chapter.5}
+\contentsline {subsection}{\numberline {2.2.3}Framework}{17}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Tecnologie e strumenti}{21}{section.5.1}
+\contentsline {chapter}{\numberline {3}Studio di fattibilit\IeC {\`a} ed analisi dei rischi}{19}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Ciclo di vita del software}{21}{section.5.2}
+\contentsline {section}{\numberline {3.1}Introduzione al progetto}{19}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Progettazione}{21}{section.5.3}
+\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{19}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Namespace 1}{21}{section*.32}
+\contentsline {section}{\numberline {3.3}Requisiti e obiettivi}{19}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Design Pattern utilizzati}{21}{section.5.4}
+\contentsline {section}{\numberline {3.4}Pianificazione}{19}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Codifica}{21}{section.5.5}
+\contentsline {chapter}{\numberline {4}Analisi dei requisiti}{21}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Verifica e validazione}{23}{chapter.6}
+\contentsline {section}{\numberline {4.1}Casi d'uso}{21}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{25}{chapter.7}
+\contentsline {section}{\numberline {4.2}Tracciamento dei requisiti}{22}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Consuntivo finale}{25}{section.7.1}
+\contentsline {chapter}{\numberline {5}Progettazione e codifica}{25}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{25}{section.7.2}
+\contentsline {section}{\numberline {5.1}Tecnologie e strumenti}{25}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{25}{section.7.3}
+\contentsline {section}{\numberline {5.2}Ciclo di vita del software}{25}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Valutazione personale}{25}{section.7.4}
+\contentsline {section}{\numberline {5.3}Progettazione}{25}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{27}{appendix.Alph1}
+\contentsline {subsubsection}{Namespace 1}{25}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{31}{appendix*.33}
+\contentsline {section}{\numberline {5.4}Design Pattern utilizzati}{25}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Codifica}{25}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Verifica e validazione}{27}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Conclusioni}{29}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{29}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{29}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{29}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Valutazione personale}{29}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendice A}{31}{appendix.Alph1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{35}{appendix*.42}

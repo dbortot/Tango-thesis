@@ -230,7 +230,78 @@ Tali correzioni trattano problemi non triviali, che l'esiguo tempo di tirocinio 
 
 %**************************************************************
 \section{Il Prodotto - lato server}
-Il lato server dell'applicazione si occupa di ricevere dai \emph{Tango device} i Point Cloud acquisiti, elaborarli utilizzando la libreria PCL per estrarre i punti rappresentanti il solo oggetto scansionato, produrre una mesh dell'oggetto così ottenuto e calcolarne il volume. Invia poi quando necessario i risultati ottenuti ai dispositivi che li richiedono.
+Il lato server dell'applicazione si occupa di ricevere dai \emph{Tango device} i Point Cloud acquisiti, elaborarli utilizzando la libreria PCL per estrarre i punti rappresentanti il solo oggetto scansionato, produrre una mesh dell'oggetto così ottenuto e calcolarne il volume. Invia poi quando necessario i risultati elaborati ai dispositivi che li richiedono.\\
+Quando un Point Cloud viene ricevuto dal server tramite una richiesta HTTP POST, inserito in un oggetto JSON, viene salvato in un file PCD. Il formato PCD (Point Cloud Data) usato nella libreria PCL è molto semplice: è formato da un header contenente alcune informazioni utili come il numero totale di punti e il tipo e numero di valori associati ad ogni punto; segue poi l'effettivo Point Cloud codificato riga per riga, dove ogni riga contiene una successione di valori che rappresenta un punto.\\
+Il file salvato viene poi elaborato sfruttando la libreria PCL.
+
+\subsection{Point Cloud Library}
+\emph{PCL} o \emph{Point Cloud Library} è una libreria \emph{Open Source}, scritta in C++, di algoritmi per l'elaborazione di \emph{Point Cloud} tridimensionali. Contiene algoritmi per il filtraggio, la segmentazione, la \emph{registration} e il \emph{meshing} di Point Cloud, per citarne alcuni. \\
+La libreria è ampiamente utilizzata da qualsiasi applicativo debba trattare nuvole di punti, ed oltre ad essere utile ed efficiente è anche ben documentata, con molti esempi d'utilizzo reperibili online.\\
+Le notevoli potenzialità della libreria sono state utilizzate intensivamente nell'applicativo con lo scopo di isolare i punti appartenenti all'oggetto scansionato dal resto del Point Cloud, ed effettuarne quindi il meshing.
+
+\subsection{Elaborazione di un Point Cloud}
+
+La nuvola di punti salvata in un file PCD viene elaborata da un applicativo scritto in C++ che sfrutta le numerose funzionalità della PCL.
+L'elaborazione di un Point Cloud è composta di più passi sequenziali:
+\begin{enumerate}
+\item Viene caricato il nuovo Point Cloud da file PCD salvato localmente
+\item Vengono rimossi i punti isolati della nuvola attraverso la libreria Sparse Filtering
+\item Vengono rimossi i punti troppo esterni della nuvola attraverso la libreria Radius Filtering 
+\item Vengono rimossi i punti che corrispondono al piano del pavimento attraverso la libreria Ground Filtering
+\item Viene effettuato il \emph{downsample} del \emph{dataset} attraverso la libreria Voxel Filtering
+\item Viene estratto il cluster maggiore dai punti rimanenti attraverso la libreria Cluster Extraction
+\item Viene effettuato il meshing del cluster estratto, e la mesh viene salvata in due file OBJ e VTK
+\item Viene calcolato e salvato il volume della mesh prodotta
+\end{enumerate}
+Per ogni passo di filtraggio la nuvola di punti viene salvata su un distinto file PCD, per poter analizzare visivamente la bontà dell'elaborazione.
+Di seguito vengono descritti in dettaglio filtri applicati e il processo di meshing.
+
+\subsubsection{Sparse filtering}
+Questo primo passo di filtraggio si occupa di rimuovere dal Point Cloud i punti isolati. Per ogni punto viene effettuata una analisi statistica della distanza media dai suoi vicini. I punti la cui distanza dai vicini supera un certo valore sono quindi isolati e possono essere eliminati dalla nuvola.
+Un esempio di tale tecnica, sul quale si basa l'implementazione di questo filtro, è lo "Statistical Outlier Removal\footcite{http://pointclouds.org/documentation/tutorials/statistical_outlier.php/statistical-outlier-removal}" di PCL.\\
+In figura \ref{fig:sparse} vediamo i risultati di tale filtro, con una rimozione di circa 10.000 punti.
+\begin{figure}[!h] 
+    \centering 
+    \includegraphics[width=1.0\columnwidth]{varie/sparse.png} 
+    \caption{\emph{Sparse filtering}}
+    \label{fig:sparse}
+\end{figure}
+\subsubsection{Radius filtering}
+Questo passo di filtraggio si occupa di eliminare i punti troppo distanti dal centro, che solitamente appartengono alle pareti circostanti o comunque ad oggetti diversi da quello scansionato, che sarà sempre verso il centro della nuvola.\\
+Partendo da questo presupposto, il filtro calcola il punto centrale del Point Cloud, media del valore di tutti i punti, e procede con l'eliminare i punti che superano una certa distanza (\emph{radius}), attraverso l'algoritmo PCL "PassThrough Filter\footcite{http://pointclouds.org/documentation/tutorials/passthrough.php/passthrough}", fino a che non è stata eliminata una definita percentuale del point set iniziale.\\
+In figura \ref{fig:radius} vediamo i risultati di tale filtro, con una rimozione di circa 24.000 punti.
+\begin{figure}[!h] 
+    \centering 
+    \includegraphics[width=1.0\columnwidth]{varie/radius.png} 
+    \caption{\emph{Radius filtering}}
+    \label{fig:radius}
+\end{figure}
+\subsubsection{Ground filtering}
+Questo passo di filtraggio si occupa di eliminare i punti planari appartenenti al pavimento, problema che si è rilevato essere uno dei più difficili da trattare. 
+In primo luogo non sempre c'è un unico componente planare che rappresenta il pavimento, ma solitamente ve n'è più d'uno, a causa delle imprecisioni nell'acquisizione dei Point Cloud lato client. Per l'implementazione del filtro si è fatto uso degli algoritmi di \emph{segmentation} di PCL (ad es. "Planar segmentation\footcite{http://pointclouds.org/documentation/tutorials/planar_segmentation.php}"), che consentono di estrarre i punti della nuvola che giacciono sullo stesso piano. Senza ulteriori aggiustamenti però l'algoritmo elimina anche piani utili, come il lato superiore di una scatola o di un tavolo.
+Si è reso quindi necessario applicare i seguenti passi:
+\begin{enumerate}
+\item Calcolare l'altezza del Point Cloud e dividere la parte superiore da quella inferiore, che deve contenere il pavimento
+\item Applicare l'algoritmo di \emph{planar segmentation} alla sotto-nuvola estratta fino a che non è stato eliminato un numero adeguato di punti
+\item Ricongiungere la parte inferiore filtrata alla parte superiore del Point Cloud
+\end{enumerate}
+Il filtro così impostato ottiene ottimi risultati nella maggior parte dei casi. Tuttavia se il Point Cloud originale presenta troppo  \emph{drifting}, e i piani del pavimento sono molto distanti tra loro, diventa impossibile eliminarli senza togliere anche punti importanti dell'oggetto scansionato.\\
+In figura \ref{fig:ground} vediamo i risultati di tale filtro, applicato ad un Point Cloud già sottoposto ai filtri precedenti, con una rimozione di circa 50.000 punti.
+\begin{figure}[!h] 
+    \centering 
+    \includegraphics[width=1.0\columnwidth]{varie/ground.png} 
+    \caption{\emph{Ground filtering}}
+    \label{fig:ground}
+\end{figure}
+
+\subsubsection{Voxel filtering}
+Questo passo di filtraggio si occupa di eliminare i punti doppi e ridurre le dimensioni del Point Cloud per il futuro meshing. Il filtro utilizza la stessa tecnica già implementata nel lato client, cioè suddividere lo spazio in tanti \emph{voxel} cubici e  calcolare il punto medio di ogni voxel come approssimazione dei punti che ricadono al suo interno. L'implemetazione prende spunto dall'esempio di PCL "VoxelGrid Filter\footcite{http://pointclouds.org/documentation/tutorials/voxel_grid.php}".
+Per i risultati del \emph{voxel filtering} si rimanda alle figure \ref{fig:low_voxeling} e \ref{fig:high_voxeling}.
+\subsubsection{Cluster extraction}
+
+\subsubsection{Meshing}
+
+\section{Calcolo del volume}
 
 
 %**************************************************************
