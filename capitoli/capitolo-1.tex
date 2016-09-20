@@ -132,6 +132,7 @@ Il prototipo precedente presentava due problemi prestazionali principali:
 Il primo problema si presentava utilizzando i metodi forniti dalla libreria \emph{Tango} per trasformare le coordinate relative dei punti in coordinate assolute per permetterne la giusta sovrapposizione. Tale metodo, seppur di facile utilizzo, diventava troppo dispendioso all'aumentare delle dimensioni del \emph{Point Cloud}, che raggiunge facilmente gli 80.000 punti.\\
 Per risolvere il problema viene quindi creata, per ogni \emph{Point Cloud}, una \emph{matrice di rototraslazione} che rappresenta lo spostamento e la rotazione del dispositivo rispetto al sistema di riferimento, e viene moltiplicato il vettore delle coordinate di ogni singolo punto per la matrice generata. \\
 In questo modo si sono ridotti i tempi di elaborazione dell'80\%;
+\newline
 
 \noindent
 Il secondo problema era causato dal sovrapporsi di molti punti quasi identici, ad esempio i punti rappresentanti il pavimento. Partendo dall'osservazione che una certa quantità di punti molto vicini può essere trasformata in un unico punto, valore medio di tutti gli altri, senza una significativa perdita d'informazione, \emph{Samba} risolve il problema attraverso una tecnica di \emph{voxeling}.\\
@@ -159,15 +160,77 @@ Tale \emph{mesh} viene salvata dal \emph{server} in formato \emph{OBJ}, comuneme
 
 
 \subsection{L'applicativo attuale: VIC-Tango}
+L'ultimo prototipo si avvicina già ad uno stato più stabile e funzionale e si pone come base su cui sviluppare l'applicazione in futuro. VIC-Tango è una versione rifinita e migliorata di \emph{Samba}, della quale sono stati risolti svariati bug, immancabili allo stadio prototipale. Introduce inoltre alcune nuove funzionalità che migliorano la User experience e lasciano la porta aperta a sviluppi futuri.
 
 \subsubsection{Firebase}
-\subsubsection{JNI}
+\emph{Firebase} è un \emph{framework} associato all'omonimo \emph{web service} offerto da \emph{Google} per lo scambio di messaggi tra applicazioni \emph{Android} e un \emph{server}. In particolare è stato utlizzato il servizio \emph{Firebase} di cloud messaging per la gestione e invio affidabile di messaggi a più dispositivi differenti.\\ Il suo utilizzo in VIC-Tango ha permesso di implementare un servizio di notifica da parte del server, che può così inviare messaggi asincroni al device Tango, il quale li riceverà come notifica di sistema Android, informandolo ad esempio che il Point Cloud inviato è stato elaborato e una nuova mesh è stata generata. L'utente può così continuare l'ispezione e acquisire nuovi Point Cloud e, alla ricezione della notifica, caricare e visualizzare automaticamente le mesh quando disponibili.
+
 \subsubsection{Camera preview}
-%\subsection{Bug fixing}
+Fin dal prototipo precedente era stata introdotta una piccola preview di quanto ripreso dalla fotocamera RGB-IR. Tuttavia la funzionalità era stata implementata utilizzando una soluzione general-purpose applicabile a più dispositivi Android, che causava però problemi prestazionali e crash occasionali dell'applicativo. \\
+La preview è stata quindi reimplementata utilizzando le funzionalità esposte dalle Tango API, soluzione inizialmente scartata perchè quest'ultime erano mal documentate, ottenendo un miglioramento delle prestazioni e la correzione dei bug rilevati.
+
+\subsubsection{JNI e Point Cloud Registration}
+La Java Native Interface o JNI è un framework del linguaggio Java che consente al codice Java di richiamare codice cosiddetto "nativo", ovvero specifico di un determinato sistema operativo scritto in altri linguaggi di programmazione, in particolare C/C++.\\
+L'integrazione della JNI con lo sviluppo Android, in particolare il suo utilizzo nell'IDE Android Studio, è un compito tutt'altro che semplice, dato il supporto ancora scarso all'integrazione del framework con l'IDE e il build-tool Gradle.\\
+Dopo svariati tentativi iniziati già i primi giorni di stage, quindi già dai prototipi precedenti, è stato infine possibile usufruire della JNI utilizzando versioni sperimentali di Android Studio e Gradle. \\
+Attraverso la JNI si è provato ad importare la libreria PCL, così da poterne utilizzare le potenti funzionalità direttamente dal tablet. Purtroppo l'integrazione con il build-tool Gradle richiede un makefile apposito, compito improponibile per una libreria notevolmente complessa come PCL, le cui potenzialità sono quindi rimaste nel lato server.\\
+Si è riuscito invece ad importare, date le ridotte dimensioni, una libreria per la \emph{Registration} di Point Cloud. Col termine \emph{Registration} s'indica il processo che trasforma in coordinate assolute e allinea due set di Point Cloud in un unico set che minimizza le distanze tra punti corrispondenti (ad es. fig. \ref{fig:reg_example}).
+\begin{figure}[!h] 
+    \centering 
+    \includegraphics[width=1.0\columnwidth]{varie/registration_example.png} 
+    \caption{\emph{Point Cloud Registration} tramite l'algoritmo \emph{ICP}}
+    \label{fig:reg_example}
+\end{figure}
+\newline
+La libreria in questione, GOICP, implementa una versione ottimizzata dell'algoritmo ICP (Iterative Closest Point), spesso utilizzato in applicazioni nelle quali sia necessario ricostruire una superficie tridimensionale a partire da più scansioni, che punta a minimizzare la distanza tra i punti delle due Point Cloud.\\
+L'algoritmo ICP tenta di minimizzare l'errore quadratico medio (in inglese Mean Squared Error, MSE) cioè la discrepanza quadratica media fra i valori dei punti della coppia di Point Cloud, definita come:
+$$
+	MSE = \displaystyle\frac{\sum_{i=1}^{n} (x_i - x'_i)^2}{ n }
+$$
+Si è testato GOICP sulle coppie di Point Cloud acquisite con VIC-Tango, per ovviare al problemi già presentati del \emph{drifting} (fig. \ref{fig:no_drift_correction}) e del \emph{ghosting} (fig. \ref{fig:with_drift_correction}); si sono ottenuti però risultati insoddisfacenti. Sono sorti infatti i seguenti problemi:
+\begin{itemize}
+\item Il processo è eccessivamente dispendioso da effettuare su tablet, con tempi di elaborazione tra i 10 e i 60 secondi.
+\item L'algoritmo ICP, basandosi sul MSE come valore di bontà, converge spesso lentamente e  a soluzioni errate, per colpa della grande quantità di punti planari sul pavimento, che rendono l'errore quadratico medio un valore non attendibile su cui basare il successo di una \emph{Registration} 
+\end{itemize}
+Come si vede in figura \ref{fig:goicp} l'algoritmo, pur ottenendo un basso valore di MSE, non effettua la \emph{Registration} desiderata, dato che vengono allineati perlopiù i punti planari.
+\begin{figure}[htp] 
+    \centering
+    \subfloat[Prima scansione]{%
+        \includegraphics[width=0.5\columnwidth]{varie/to_align_left.png} 
+    	\label{fig:goicp_left}
+    }%
+    \hfill%
+    \subfloat[Seconda scansione]{%
+        \includegraphics[height=0.42\columnwidth]{varie/to_align_right.png} 
+    	\label{fig:goicp_right}
+    }%
+    \hfill%
+    \subfloat[Risultato di GOIPC]{%
+        \includegraphics[width=0.6\columnwidth]{varie/goicp.png} 
+    	\label{fig:goicp}
+    }%
+    \caption{Errore nella \emph{Registration} con \emph{GOICP}}
+\end{figure}
+\newline
+
+\noindent
+Per questi motivi GOICP non potrà essere utilizzata nei futuri prototipi, se non si effettuerà alemeno una delle seguenti correzioni:
+\begin{itemize}
+\item Trovare una misura più adatta del MSE per valutare la convergenza dell'algoritmo ICP
+\item Alternativamente, eliminare dal Point Cloud i punti planari appartenenti al pavimento così da poter utilizzare l'errore quadratico medio come affidabile valore di convergenza
+\item Ottimizzare GOICP o implementare in algoritmo ICP ad hoc per ridurre drasticamente i tempi di elaborazione
+\end{itemize}
+\noindent
+Tali correzioni trattano problemi non triviali, che l'esiguo tempo di tirocinio rimasto non mi ha permesso di affrontare adeguatamente. La Point Cloud Registration rimane quindi una funzionalità necessaria ad assicurare un'affidabile e corretta ricostruzione degli oggetti scansionati, che dovrà essere implementata nei futuri prototipi.
+
+
+
+
+\newpage
 
 %**************************************************************
 \section{Il Prodotto - lato server}
-
+Il lato server dell'applicazione si occupa di ricevere dai \emph{Tango device} i Point Cloud acquisiti, elaborarli utilizzando la libreria PCL per estrarre i punti rappresentanti il solo oggetto scansionato, produrre una mesh dell'oggetto così ottenuto e calcolarne il volume. Invia poi quando necessario i risultati ottenuti ai dispositivi che li richiedono.
 
 
 %**************************************************************
