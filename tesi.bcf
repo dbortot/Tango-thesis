@@ -2055,6 +2055,26 @@
     <bcf:citekey order="2">http://pointclouds.org/documentation/tutorials/passthrough.php/passthrough</bcf:citekey>
     <bcf:citekey order="3">http://pointclouds.org/documentation/tutorials/planar_segmentation.php</bcf:citekey>
     <bcf:citekey order="4">http://pointclouds.org/documentation/tutorials/voxel_grid.php</bcf:citekey>
+    <bcf:citekey order="5">http://www.pointclouds.org/documentation/tutorials/cluster_extraction.php</bcf:citekey>
+    <bcf:citekey order="6">http://www.pointclouds.org/documentation/tutorials/greedy_projection.php</bcf:citekey>
+    <bcf:citekey order="7">http://research.microsoft.com/en-us/um/people/chazhang/publications/icip01_ChaZhang.pdf</bcf:citekey>
+    <bcf:citekey order="8">http://pointclouds.org/documentation/tutorials/pcd_file_format.php/pcd-file-format</bcf:citekey>
+    <bcf:citekey order="9">http://pointclouds.org/documentation/tutorials/reading_pcd.php/reading-pcd</bcf:citekey>
+    <bcf:citekey order="10">http://pointclouds.org/documentation/tutorials/writing_pcd.php/writing-pcd</bcf:citekey>
+    <bcf:citekey order="11">http://pointclouds.org/documentation/tutorials/passthrough.php/passthrough</bcf:citekey>
+    <bcf:citekey order="12">http://pointclouds.org/documentation/tutorials/voxel_grid.php/voxelgrid</bcf:citekey>
+    <bcf:citekey order="13">http://pointclouds.org/documentation/tutorials/statistical_outlier.php/statistical-outlier-removal</bcf:citekey>
+    <bcf:citekey order="14">http://pointclouds.org/documentation/tutorials/planar_segmentation.php/planar-segmentation</bcf:citekey>
+    <bcf:citekey order="15">http://pointclouds.org/documentation/tutorials/cluster_extraction.php/cluster-extraction</bcf:citekey>
+    <bcf:citekey order="16">http://pointclouds.org/documentation/tutorials/greedy_projection.php/greedy-triangulation</bcf:citekey>
+    <bcf:citekey order="17">http://pointclouds.org/documentation/tutorials/bspline_fitting.php/bspline-fitting</bcf:citekey>
+    <bcf:citekey order="18">http://research.microsoft.com/en-us/um/people/chazhang/publications/icip01_ChaZhang.pdf</bcf:citekey>
+    <bcf:citekey order="19">https://play.google.com/store/apps/details?id=com.pcvirt.Viewer3D&amp;hl=it</bcf:citekey>
+    <bcf:citekey order="20">https://play.google.com/store/apps/details?id=org.andresoviedo.dddmodel&amp;hl=it</bcf:citekey>
+    <bcf:citekey order="21">https://github.com/andresoviedo/android-3D-model-viewer</bcf:citekey>
+    <bcf:citekey order="22">https://developer.android.com/reference/org/apache/http/package-summary.html</bcf:citekey>
+    <bcf:citekey order="23">https://developers.google.com/tango/hardware/tablet</bcf:citekey>
+    <bcf:citekey order="24">https://developers.google.com/tango/overview/depth-perception</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>

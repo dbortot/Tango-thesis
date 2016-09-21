@@ -6,27 +6,27 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces L' \emph {hardware} di \emph {Project Tango}\relax }}{2}{figure.caption.13}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces L' \emph {hardware} di \emph {Project Tango}\relax }}{2}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Esempio di \emph {Point Cloud}: un cestino cilindrico\relax }}{3}{figure.caption.14}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Esempio di \emph {Point Cloud}: un cestino cilindrico\relax }}{3}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.3}{\ignorespaces \emph {Drifting} nel \emph {Motion Tracking}\relax }}{4}{figure.caption.16}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces \emph {Drifting} nel \emph {Motion Tracking}\relax }}{4}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Benefici della \emph {Drift Correction}\relax }}{5}{figure.caption.17}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Benefici della \emph {Drift Correction}\relax }}{5}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ricostruzione senza \emph {Drift correction}}}}{5}{subfigure.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ricostruzione con \emph {Drift correction}}}}{5}{subfigure.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Effetti del \emph {voxeling}\relax }}{6}{figure.caption.19}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Effetti del \emph {voxeling}\relax }}{6}{figure.caption.18}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Voxeling leggero}}}{6}{subfigure.5.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Voxeling elevato}}}{6}{subfigure.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.6}{\ignorespaces \emph {Point Cloud Registration} tramite l'algoritmo \emph {ICP}\relax }}{8}{figure.caption.24}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces \emph {Point Cloud Registration} tramite l'algoritmo \emph {ICP}\relax }}{8}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Errore nella \emph {Registration} con \emph {GOICP}\relax }}{9}{figure.caption.25}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Errore nella \emph {Registration} con \emph {GOICP}\relax }}{9}{figure.caption.24}
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Prima scansione}}}{9}{subfigure.7.1}
 \defcounter {refsection}{0}\relax 
@@ -34,19 +34,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Risultato di GOIPC}}}{9}{subfigure.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.8}{\ignorespaces \emph {Sparse filtering}\relax }}{11}{figure.caption.27}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces \emph {Sparse filtering}\relax }}{11}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.9}{\ignorespaces \emph {Radius filtering}\relax }}{12}{figure.caption.29}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces \emph {Radius filtering}\relax }}{12}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.10}{\ignorespaces \emph {Ground filtering}\relax }}{12}{figure.caption.31}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces \emph {Ground filtering}\relax }}{12}{figure.caption.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.11}{\ignorespaces \emph {Cluster extraction}\relax }}{13}{figure.caption.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.12}{\ignorespaces \emph {Meshing} di un \emph {Point Cloud}\relax }}{14}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Use Case - UC0: Scenario principale\relax }}{21}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

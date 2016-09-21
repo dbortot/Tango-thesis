@@ -68,7 +68,7 @@ Le funzionalità del \emph{tablet} sono accessibili attraverso le \emph{Tango AP
 %**************************************************************
 \section{Il Prodotto - lato client}
 
-L'applicazione su \emph{tablet} prodotta realizza, seppur non in maniera completa, le esigenze citate al punto precedente. \\
+L'applicazione su \emph{tablet} prodotta realizza, seppur non ancora in maniera completa, le esigenze richieste. \\
 La sua realizzazione ha incontrato molte problematiche talvolta critiche e difficili da prevedere. Per questo durante lo sviluppo sono stati implementati più prototipi, al fine di esplorare le potenzialità e soprattutto i limiti del \emph{tablet} e delle \emph{Tango API}. \\
 Lo scopo principale dell'applicazione lato \emph{tablet} è quello di rilevare una corretta 'Nuvola di Punti' dell'oggetto che si vuole esaminare.\\
 Una 'Nuvola di Punti' è una descrizione matematica di un oggetto tridimensionale ottenuta tramite un insieme, il più possibile fitto, di punti che lo compongono, definiti dalle loro coordinate (\textbf{x},\textbf{y},\textbf{z}) rispetto ad un fissato sistema di riferimento. \\
@@ -83,7 +83,7 @@ Tale rappresentazione, riferita spesso d'ora in poi con il più elegante termine
 \subsection{Primo prototipo: Cloude}
 Il prototipo denominato \emph{Cloude} risponde all'esigenza di catturare più \emph{Point Cloud} da più angolazioni in modo da ricostruire l'oggetto scansionato sovrapponendo i dati acquisiti. \emph{Cloude} è il risultato di più prototipazioni precedenti effettuate dallo stagista che ha iniziato il progetto prima di me e con cui ho strettamente collaborato.\\
 Il prototipo permette quindi di acquisire più \emph{Point Cloud} in successione, ognuno dei quali verrà adeguatamente ruotato e traslato rispetto allo spostamento del \emph{tablet}, in modo che la sovrapposizione degli stessi vada infine a ricostruire tutte le parti dell'oggetto esaminato.\\
-Una sola acquisizione da una certa angolazione non può infatti comprendere un oggetto nella sua interezza, come dimostrato nelle figure //TODO
+Una sola acquisizione da una certa angolazione non può infatti comprendere un oggetto nella sua interezza, come dimostrato nelle figure \ref{}
  è necessario ricostruire passo per passo un unico \emph{Point Cloud} rappresentante l'oggetto completo.
 Sulla base dei risultati di \emph{Cloude} ho iniziato il mio lavoro sulla parte di elaborazione lato \emph{server} dei \emph{Point Cloud} acquisiti; questo è stato inoltre il punto di inizio per lo sviluppo dei prototipi successivi in collaborazione con l'altro stagista.
 
@@ -100,6 +100,7 @@ Ad ogni aggiornamento della posizione è normale ed inevitabile che la misurazio
     \caption{\emph{Drifting} nel \emph{Motion Tracking}}
     \label{fig:drift_correction}
 \end{figure}
+\newline
 Per ovviare in parte a questo problema \emph{Samba} utilizza una tecnica chiamata \emph{Drift Correction} ch si appoggia sulle funzionalità di \emph{Area Learning} dei \emph{device Tango}.\\
 L' \emph{Area Learning} consiste nella capacita del dispositivo di estrarre dallo spazio fisico che sta analizzando una serie di punti significativi (o \emph{key features}), facilmente riconoscibili, e di salvare tali informazioni per confrontarle con le successive acquisizioni. In questo modo il dispositivo è capace di riconoscere un'area precedentemente visitata, e può quindi applicare le necessarie correzioni alla popria stima della traiettoria, di qui il nome \emph{Drift Correction}.\\
 Con l'implementazione di questa funzionalità è necessario, prima di iniziare la ricostruzione di un \emph{Point Cloud}, riprendere l'oggetto e i suoi dintorni per un po' di tempo e da diverse angolazioni, in modo da permettere al \emph{tablet Tango} di costruire una mappa, detta \emph{Area description}, dell'area circostante, e di stabilizzare la traiettoria stimata con le informazioni acquisite.\\
@@ -250,7 +251,7 @@ L'elaborazione di un Point Cloud è composta di più passi sequenziali:
 \item Vengono rimossi i punti che corrispondono al piano del pavimento attraverso la libreria Ground Filtering
 \item Viene effettuato il \emph{downsample} del \emph{dataset} attraverso la libreria Voxel Filtering
 \item Viene estratto il cluster maggiore dai punti rimanenti attraverso la libreria Cluster Extraction
-\item Viene effettuato il meshing del cluster estratto, e la mesh viene salvata in due file OBJ e VTK
+\item Viene effettuato il meshing del cluster estratto, e la mesh viene salvata in due file OBJ (per la visualizzazione lato client) e VTK (per il calcolo del volume)
 \item Viene calcolato e salvato il volume della mesh prodotta
 \end{enumerate}
 Per ogni passo di filtraggio la nuvola di punti viene salvata su un distinto file PCD, per poter analizzare visivamente la bontà dell'elaborazione.
@@ -298,10 +299,43 @@ In figura \ref{fig:ground} vediamo i risultati di tale filtro, applicato ad un P
 Questo passo di filtraggio si occupa di eliminare i punti doppi e ridurre le dimensioni del Point Cloud per il futuro meshing. Il filtro utilizza la stessa tecnica già implementata nel lato client, cioè suddividere lo spazio in tanti \emph{voxel} cubici e  calcolare il punto medio di ogni voxel come approssimazione dei punti che ricadono al suo interno. L'implemetazione prende spunto dall'esempio di PCL "VoxelGrid Filter\footcite{http://pointclouds.org/documentation/tutorials/voxel_grid.php}".
 Per i risultati del \emph{voxel filtering} si rimanda alle figure \ref{fig:low_voxeling} e \ref{fig:high_voxeling}.
 \subsubsection{Cluster extraction}
+L'ultimo passaggio prima del meshing è il \emph{Cluster extraction}, cioè il completo isolamento della nuvola di punti rappresentante oggetto in ispezione.
+L'algoritmo PCL "\emph{Euclidean Cluster Extraction\footcite{http://www.pointclouds.org/documentation/tutorials/cluster_extraction.php}}" su cui si base quest'ultimo step di filtraggio suddivide lo spazio del Point Cloud in più parti ed analizzandone statisticamente la densità per ogni parte, riesce a determinare quali sono  gli aggregati di punti nella nuvola, distinguibili gli uni dagli altri.
+L'algoritmo suddivide quindi la nuvola in più cluster, e ne estrae quello di maggiori dimensioni. Questo filtraggio finale indispensabile al passo successivo di meshing, perchè elimina dal Point Cloud tutti gli elementi estranei all'oggetto.\\
+In figura \ref{fig:cluster} vediamo i risultati di tale filtro, applicato ad un Point Cloud già sottoposto ai filtri precedenti, con una rimozione di circa 4.000 punti. Sono evidenziati in figura alcuni piccoli gruppi di punti che è necessario eliminare, che rappresentano degli artefatti inesistenti nel mondo reale, ma che sono immancabilmente presenti nelle scansioni di un oggetto. L'origine di tali anomalie non è ancora chiara, probabilmente sono causate da riflessi del pavimento.
+\begin{figure}[!h] 
+    \centering 
+    \includegraphics[width=1.0\columnwidth]{varie/cluster.png} 
+    \caption{\emph{Cluster extraction}}
+    \label{fig:cluster}
+\end{figure}
 
 \subsubsection{Meshing}
+Una volta ottenuti i punti della nuvola rappresentanti il solo oggetto scansionato, si può procedere col generarne una mesh tridimensionale.
+Il processo sfrutta un algoritmo greedy di PCL, la "\emph{Greedy Projection Triangulation\footcite{http://www.pointclouds.org/documentation/tutorials/greedy_projection.php}}", che, connettendo ogni punto ai propri vicini, genera un mesh composta da migliaia di triangoli che approssima la superficie reale dell'oggetto.
+In figura \ref{fig:mesh} vediamo i risultati del processo di meshing applicato ad un Point Cloud già sottoposto ai filtri precedenti.
+\begin{figure}[!h] 
+    \centering 
+    \includegraphics[width=1.0\columnwidth]{varie/mesh.png} 
+    \caption{\emph{Meshing} di un \emph{Point Cloud}}
+    \label{fig:mesh}
+\end{figure}
+\newline
+La mesh così ottenuta non è una superficie chiusa, spesso infatti le scansioni non riescono a catturare tutti i punti di un oggetto, e manca completamente il piano di base dell'oggetto scansionato, che non è possibile rilevare. Ciò non influisce particolarmente sul successivo calcolo del volume.
 
-\section{Calcolo del volume}
+\subsection{Calcolo del volume}
+Una volta generata la mesh è possibile calcolarne il volume sfruttando il risultato pubblicato da Cha Zhang e Tsuhan Chen nel loro paper "EFFICIENT FEATURE EXTRACTION FOR 2D/3D OBJECTS IN MESH REPRESENTATION \footcite{http://research.microsoft.com/en-us/um/people/chazhang/publications/icip01_ChaZhang.pdf}". Viene calcolato, per ogni triangolo che compone la \emph{mesh}, il volume con segno del tetraedro che ha il triangolo stesso come base e il quarto vertice in un punto fissato, scelto internamente alla \emph{mesh}, per evitare eventuali problemi di instabilità numerica. Il segno del volume è dato dalla direzione della normale al piano del triangolo. Questi volumi, sommati tra loro, restituiscono il volume convesso della \emph{mesh}.\\
+Il calcolo del volume, nella sua semplicità e velocità d'elaborazione, pone però delle condizioni sulla qualità della mesh:
+\begin{itemize}
+\item La superficie non necessita di essere chiusa, ma il calcolo ne beneficierebbe
+\item Il punto scelto come quarto vertice del tetraedro deve appartenere alla mesh
+\item La mesh non deve contenere triangoli che si sovrappongono o si intersecano
+\end{itemize}
+La bontà del calcolo dipende quindi molto dalla qualità del Point Cloud prima del meshing, che dev'essere quanto più assente da fenomeni di \emph{ghosting}, \emph{drifting} e in generale da artefatti e punti sparsi che non riflettono la vera forma dell'oggetto ispezionato.
+
+%**************************************************************
+\section{Lavoro svolto}
+Al tirocinante è stato richiesto di focalizzarsi sullo sviluppo del lato server dell'applicazione, in modo che fosse possibile ricevere ed elaborare Point Cloud, ed ottenere i risultati elaborati, lavorando nel mentre in stretta collaborazione con un altro stagista che si occupava dell'applicazione lato client. Nell'ultimo periodo di stage la parte server era già a buon punto, quindi il focus del tirocinio si è spostato sul miglioramento dell'applicativo lato client.
 
 
 %**************************************************************

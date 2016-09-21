@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.22)  20 SEP 2016 18:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.22)  21 SEP 2016 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1443,14 +1443,11 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
 )
-(./inizio-fine/dedica.tex [2
+(./inizio-fine/sommario.tex [2
 
-]) (./inizio-fine/sommario.tex [3
+]) (./inizio-fine/ringraziamenti.tex [3
 
 ] [4
-
-])
-(./inizio-fine/ringraziamenti.tex [5] [6
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 30--31
@@ -1467,15 +1464,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-) (./inizio-fine/indici.tex [7] [8
+) (./inizio-fine/indici.tex [5] [6
 
-] (./tesi.toc [9
+] (./tesi.toc [7
 
 ])
 \tf@toc=\write7
 \openout7 = `tesi.toc'.
 
- [10] (./tesi.lof)
+ [8] (./tesi.lof)
 \tf@lof=\write8
 \openout8 = `tesi.lof'.
 
@@ -1484,9 +1481,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 \tf@lot=\write9
 \openout9 = `tesi.lot'.
 
- [11
+ [9
 
-] [12
+] [10
 
 ]) (./capitoli/capitolo-1.tex
 Capitolo 1.
@@ -1514,7 +1511,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-<immagini/varie/tango-hardware.png, id=214, 954.56625pt x 693.34032pt>
+<immagini/varie/tango-hardware.png, id=223, 954.56625pt x 693.34032pt>
 File: immagini/varie/tango-hardware.png Graphic file (type png)
 
 <use immagini/varie/tango-hardware.png>
@@ -1522,16 +1519,19 @@ Package pdftex.def Info: immagini/varie/tango-hardware.png used on input line 5
 8.
 (pdftex.def)             Requested size: 334.79773pt x 243.16998pt.
 
-<immagini/varie/point_cloud_example.png, id=216, 1573.88pt x 966.61125pt>
+<immagini/varie/point_cloud_example.png, id=225, 1573.88pt x 966.61125pt>
 File: immagini/varie/point_cloud_example.png Graphic file (type png)
 
 <use immagini/varie/point_cloud_example.png>
 Package pdftex.def Info: immagini/varie/point_cloud_example.png used on input l
 ine 78.
 (pdftex.def)             Requested size: 372.0pt x 228.46635pt.
- [2 <./immagini/varie/tango-hardware.png>] [3 <./immagini/varie/point_cloud_exa
-mple.png>]
-<immagini/varie/Drift_Correction.png, id=231, 1003.75pt x 501.875pt>
+ [2 <./immagini/varie/tango-hardware.png>]
+
+LaTeX Warning: Reference `' on page 3 undefined on input line 86.
+
+[3 <./immagini/varie/point_cloud_example.png>]
+<immagini/varie/Drift_Correction.png, id=241, 1003.75pt x 501.875pt>
 File: immagini/varie/Drift_Correction.png Graphic file (type png)
 
 <use immagini/varie/Drift_Correction.png>
@@ -1539,84 +1539,84 @@ Package pdftex.def Info: immagini/varie/Drift_Correction.png used on input line
  99.
 (pdftex.def)             Requested size: 334.79773pt x 167.40356pt.
 
-<immagini/varie/no_drift_correction.png, id=234, 897.3525pt x 753.81625pt>
+<immagini/varie/no_drift_correction.png, id=244, 897.3525pt x 753.81625pt>
 File: immagini/varie/no_drift_correction.png Graphic file (type png)
 
 <use immagini/varie/no_drift_correction.png>
 Package pdftex.def Info: immagini/varie/no_drift_correction.png used on input l
-ine 113.
+ine 114.
 (pdftex.def)             Requested size: 174.84045pt x 146.8728pt.
 
-<immagini/varie/with_drift_correction.png, id=235, 809.0225pt x 666.49pt>
+<immagini/varie/with_drift_correction.png, id=245, 809.0225pt x 666.49pt>
 File: immagini/varie/with_drift_correction.png Graphic file (type png)
 
 <use immagini/varie/with_drift_correction.png>
 Package pdftex.def Info: immagini/varie/with_drift_correction.png used on input
- line 119.
+ line 120.
 (pdftex.def)             Requested size: 174.84045pt x 144.03494pt.
  [4 <./immagini/varie/Drift_Correction.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 131--136
+Underfull \hbox (badness 10000) in paragraph at lines 132--137
 
  []
 
-<immagini/varie/low_voxeling.png, id=244, 930.47626pt x 766.865pt>
+<immagini/varie/low_voxeling.png, id=254, 930.47626pt x 766.865pt>
 File: immagini/varie/low_voxeling.png Graphic file (type png)
 
 <use immagini/varie/low_voxeling.png>
-Package pdftex.def Info: immagini/varie/low_voxeling.png used on input line 146
+Package pdftex.def Info: immagini/varie/low_voxeling.png used on input line 147
 .
 (pdftex.def)             Requested size: 174.84045pt x 144.09106pt.
 
-<immagini/varie/high_voxeling.png, id=245, 929.4725pt x 766.865pt>
+<immagini/varie/high_voxeling.png, id=255, 929.4725pt x 766.865pt>
 File: immagini/varie/high_voxeling.png Graphic file (type png)
 
 <use immagini/varie/high_voxeling.png>
 Package pdftex.def Info: immagini/varie/high_voxeling.png used on input line 15
-1.
+2.
 (pdftex.def)             Requested size: 174.84045pt x 144.24318pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--155
+Underfull \hbox (badness 10000) in paragraph at lines 138--156
 
  []
 
 [5 <./immagini/varie/no_drift_correction.png (PNG copy)> <./immagini/varie/with
 _drift_correction.png (PNG copy)>] [6 <./immagini/varie/low_voxeling.png (PNG c
 opy)> <./immagini/varie/high_voxeling.png (PNG copy)>]
-<immagini/varie/registration_example.png, id=265, 2569.6pt x 835.12pt>
+<immagini/varie/registration_example.png, id=275, 2569.6pt x 835.12pt>
 File: immagini/varie/registration_example.png Graphic file (type png)
 
 <use immagini/varie/registration_example.png>
 Package pdftex.def Info: immagini/varie/registration_example.png used on input 
-line 180.
+line 181.
 (pdftex.def)             Requested size: 372.0pt x 120.89177pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7] <immagini/varie/to_align_left.png, id=282, 703.62875pt x 587.19376pt>
+[7] <immagini/varie/to_align_left.png, id=291, 703.62875pt x 587.19376pt>
 File: immagini/varie/to_align_left.png Graphic file (type png)
 
 <use immagini/varie/to_align_left.png>
 Package pdftex.def Info: immagini/varie/to_align_left.png used on input line 20
-1.
+2.
 (pdftex.def)             Requested size: 186.0pt x 155.22032pt.
 
-<immagini/varie/to_align_right.png, id=283, 702.625pt x 647.41875pt>
+<immagini/varie/to_align_right.png, id=292, 702.625pt x 647.41875pt>
 File: immagini/varie/to_align_right.png Graphic file (type png)
 
 <use immagini/varie/to_align_right.png>
 Package pdftex.def Info: immagini/varie/to_align_right.png used on input line 2
-06.
+07.
 (pdftex.def)             Requested size: 169.55547pt x 156.23932pt.
 
-<immagini/varie/goicp.png, id=284, 960.58875pt x 818.05624pt>
+<immagini/varie/goicp.png, id=293, 960.58875pt x 818.05624pt>
 File: immagini/varie/goicp.png Graphic file (type png)
 
 <use immagini/varie/goicp.png>
-Package pdftex.def Info: immagini/varie/goicp.png used on input line 211.
+Package pdftex.def Info: immagini/varie/goicp.png used on input line 212.
 (pdftex.def)             Requested size: 223.20227pt x 190.08377pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--215
+Underfull \hbox (badness 10000) in paragraph at lines 196--216
 
  []
 
@@ -1626,29 +1626,29 @@ i/varie/goicp.png (PNG copy)>]
 
 LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/statist
 ical_outlier.php/statistical-outlier-removal' on page 10 undefined on input lin
-e 261.
+e 262.
 
 
-Overfull \hbox (66.64732pt too wide) in paragraph at lines 261--261
+Overfull \hbox (66.64732pt too wide) in paragraph at lines 262--262
 [][][][]\T1/cmr/m/n/8 (-20) .| 
  []
 
-<immagini/varie/sparse.png, id=299, 1660.2025pt x 547.04375pt>
+<immagini/varie/sparse.png, id=309, 1660.2025pt x 547.04375pt>
 File: immagini/varie/sparse.png Graphic file (type png)
 
 <use immagini/varie/sparse.png>
-Package pdftex.def Info: immagini/varie/sparse.png used on input line 265.
+Package pdftex.def Info: immagini/varie/sparse.png used on input line 266.
 (pdftex.def)             Requested size: 372.0pt x 122.57034pt.
  [10]
 
 LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/passthr
-ough.php/passthrough' on page 11 undefined on input line 271.
+ough.php/passthrough' on page 11 undefined on input line 272.
 
-<immagini/varie/radius.png, id=314, 1667.22874pt x 776.9025pt>
+<immagini/varie/radius.png, id=324, 1667.22874pt x 776.9025pt>
 File: immagini/varie/radius.png Graphic file (type png)
 
 <use immagini/varie/radius.png>
-Package pdftex.def Info: immagini/varie/radius.png used on input line 275.
+Package pdftex.def Info: immagini/varie/radius.png used on input line 276.
 (pdftex.def)             Requested size: 372.0pt x 173.3374pt.
 
 
@@ -1656,22 +1656,59 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/planar_
-segmentation.php' on page 11 undefined on input line 281.
+segmentation.php' on page 11 undefined on input line 282.
 
 [11 <./immagini/varie/sparse.png (PNG copy)>]
-<immagini/varie/ground.png, id=331, 1618.045pt x 653.44125pt>
+<immagini/varie/ground.png, id=341, 1618.045pt x 653.44125pt>
 File: immagini/varie/ground.png Graphic file (type png)
 
 <use immagini/varie/ground.png>
-Package pdftex.def Info: immagini/varie/ground.png used on input line 292.
+Package pdftex.def Info: immagini/varie/ground.png used on input line 293.
 (pdftex.def)             Requested size: 372.0pt x 150.2285pt.
 
 
 LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/voxel_g
-rid.php' on page 12 undefined on input line 298.
+rid.php' on page 12 undefined on input line 299.
 
 [12 <./immagini/varie/radius.png (PNG copy)> <./immagini/varie/ground.png (PNG 
-copy)>]) (./capitoli/capitolo-2.tex [13] [14
+copy)>]
+
+LaTeX Warning: Citation 'http://www.pointclouds.org/documentation/tutorials/clu
+ster_extraction.php' on page 13 undefined on input line 303.
+
+<immagini/varie/cluster.png, id=354, 1527.7075pt x 616.3025pt>
+File: immagini/varie/cluster.png Graphic file (type png)
+
+<use immagini/varie/cluster.png>
+Package pdftex.def Info: immagini/varie/cluster.png used on input line 308.
+(pdftex.def)             Requested size: 372.0pt x 150.06914pt.
+
+
+LaTeX Warning: Citation 'http://www.pointclouds.org/documentation/tutorials/gre
+edy_projection.php' on page 13 undefined on input line 315.
+
+<immagini/varie/mesh.png, id=357, 1675.25874pt x 736.7525pt>
+File: immagini/varie/mesh.png Graphic file (type png)
+
+<use immagini/varie/mesh.png>
+Package pdftex.def Info: immagini/varie/mesh.png used on input line 319.
+(pdftex.def)             Requested size: 372.0pt x 163.59247pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 <./immagini/varie/cluster.png (PNG copy)>]
+
+LaTeX Warning: Citation 'http://research.microsoft.com/en-us/um/people/chazhang
+/publications/icip01_ChaZhang.pdf' on page 14 undefined on input line 327.
+
+
+Overfull \hbox (51.63377pt too wide) in paragraph at lines 327--327
+[][][][]\T1/cmr/m/n/8 (-20) .| 
+ []
+
+[14 <./immagini/varie/mesh.png (PNG copy)>]) (./capitoli/capitolo-2.tex
+[15] [16
 
 ]
 Capitolo 2.
@@ -1698,7 +1735,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--27
 
  []
 
-[15] [16]) (./capitoli/capitolo-3.tex [17] [18
+
+Underfull \vbox (badness 3354) has occurred while \output is active []
+
+ [17]
+[18]) (./capitoli/capitolo-3.tex [19] [20
 
 ]
 Capitolo 3.
@@ -1708,11 +1749,117 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
+LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/pcd_fil
+e_format.php/pcd-file-format' on page 21 undefined on input line 28.
+
+
+Overfull \hbox (15.84474pt too wide) in paragraph at lines 28--28
+[][][][]\T1/cmr/m/n/8 (-20) .| 
+ []
+
+
+LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/reading
+_pcd.php/reading-pcd' on page 21 undefined on input line 30.
+
+[21]
+
+LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/writing
+_pcd.php/writing-pcd' on page 22 undefined on input line 32.
+
+
+LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/passthr
+ough.php/passthrough' on page 22 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/voxel_g
+rid.php/voxelgrid' on page 22 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/statist
+ical_outlier.php/statistical-outlier-removal' on page 22 undefined on input lin
+e 43.
+
+
+Overfull \hbox (66.64732pt too wide) in paragraph at lines 43--43
+[][][][]\T1/cmr/m/n/8 (-20) .| 
+ []
+
+
+LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/planar_
+segmentation.php/planar-segmentation' on page 22 undefined on input line 45.
+
+
+Overfull \hbox (58.6765pt too wide) in paragraph at lines 45--45
+[][][][]\T1/cmr/m/n/8 (-20) .| 
+ []
+
+
+LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/cluster
+_extraction.php/cluster-extraction' on page 22 undefined on input line 47.
+
+
+Overfull \hbox (35.74876pt too wide) in paragraph at lines 47--47
+[][][][]\T1/cmr/m/n/8 (-20) .| 
+ []
+
+
+LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/greedy_
+projection.php/greedy-triangulation' on page 22 undefined on input line 54.
+
+
+Overfull \hbox (47.4759pt too wide) in paragraph at lines 54--54
+[][][][]\T1/cmr/m/n/8 (-20) .| 
+ []
+
+
+LaTeX Warning: Citation 'http://pointclouds.org/documentation/tutorials/bspline
+_fitting.php/bspline-fitting' on page 22 undefined on input line 56.
+
+
+Overfull \hbox (3.77324pt too wide) in paragraph at lines 56--56
+[][][][]\T1/cmr/m/n/8 (-20) .| 
+ []
+
+[22]
+
+LaTeX Warning: Citation 'http://research.microsoft.com/en-us/um/people/chazhang
+/publications/icip01_ChaZhang.pdf' on page 23 undefined on input line 62.
+
+
+Overfull \hbox (51.63377pt too wide) in paragraph at lines 62--62
+[][][][]\T1/cmr/m/n/8 (-20) .| 
+ []
+
+
+LaTeX Warning: Citation 'https://play.google.com/store/apps/details?id=com.pcvi
+rt.Viewer3D&hl=it' on page 23 undefined on input line 67.
+
+
+LaTeX Warning: Citation 'https://play.google.com/store/apps/details?id=org.andr
+esoviedo.dddmodel&hl=it' on page 23 undefined on input line 69.
+
+
+LaTeX Warning: Citation 'https://github.com/andresoviedo/android-3D-model-viewe
+r' on page 23 undefined on input line 70.
+
+
+LaTeX Warning: Citation 'https://developer.android.com/reference/org/apache/htt
+p/package-summary.html' on page 23 undefined on input line 74.
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
 
-) (./capitoli/capitolo-4.tex [19] [20
+
+LaTeX Warning: Citation 'https://developers.google.com/tango/hardware/tablet' o
+n page 24 undefined on input line 93.
+
+
+LaTeX Warning: Citation 'https://developers.google.com/tango/overview/depth-per
+ception' on page 24 undefined on input line 93.
+
+[24]) (./capitoli/capitolo-4.tex [25] [26
 
 ]
 Capitolo 4.
@@ -1721,41 +1868,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-<immagini/usecase/scenario-principale.png, id=415, 463.13025pt x 236.082pt>
-File: immagini/usecase/scenario-principale.png Graphic file (type png)
-
-<use immagini/usecase/scenario-principale.png>
-Package pdftex.def Info: immagini/usecase/scenario-principale.png used on input
- line 21.
-(pdftex.def)             Requested size: 334.79773pt x 170.66333pt.
- [21 <./immagini/usecase/scenario-principale.png>] [22]) (./capitoli/capitolo-5
-.tex [23] [24
-
-]
+[27]) (./capitoli/capitolo-5.tex [28]
 Capitolo 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-) (./capitoli/capitolo-6.tex [25] [26
+) (./capitoli/capitolo-6.tex [29
+
+] [30
 
 ]
 Capitolo 6.
-) (./capitoli/capitolo-7.tex [27] [28
+) (./capitoli/capitolo-7.tex [31] [32
 
 ]
 Capitolo 7.
-) (./capitoli/capitolo-A.tex [29] [30
+) (./capitoli/capitolo-A.tex [33] [34
 
 ]
 Appendice A.
-) [31] [32
+) [35] [36
 
 ]
 No file tesi.gls.
 No file tesi.acr.
-(./inizio-fine/bibliografia.tex [33] [34
+(./inizio-fine/bibliografia.tex [37] [38
 
 ]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 16.
@@ -1767,7 +1906,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) [35
+) [39
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
@@ -1789,13 +1928,13 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23853 strings out of 494326
- 380824 string characters out of 6163608
- 953821 words of memory out of 5000000
- 26277 multiletter control sequences out of 15000+600000
- 36145 words of font info for 145 fonts, out of 8000000 for 9000
+ 23921 strings out of 494326
+ 381583 string characters out of 6163608
+ 955486 words of memory out of 5000000
+ 26300 multiletter control sequences out of 15000+600000
+ 36943 words of font info for 152 fonts, out of 8000000 for 9000
  374 hyphenation exceptions out of 8191
- 61i,11n,122p,1917b,1442s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,11n,122p,1917b,1424s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:uml} has been referenced but does not exist, 
 replaced by a fixed one
 
@@ -1825,10 +1964,10 @@ blic/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl12
 exmf/fonts/type1/public/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type1/pub
 lic/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti120
 0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (47 pages, 1256012 bytes).
+Output written on tesi.pdf (49 pages, 1490063 bytes).
 PDF statistics:
- 793 PDF objects out of 1000 (max. 8388607)
- 685 compressed objects within 7 object streams
- 185 named destinations out of 1000 (max. 500000)
- 42985 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 900 PDF objects out of 1000 (max. 8388607)
+ 789 compressed objects within 8 object streams
+ 220 named destinations out of 1000 (max. 500000)
+ 43054 words of extra memory for PDF output out of 51595 (max. 10000000)
 
