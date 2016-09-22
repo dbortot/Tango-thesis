@@ -12,128 +12,142 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}Cos'\IeC {\`e} Project Tango}{2}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Il Prodotto - lato client}{3}{section.1.4}
+\contentsline {section}{\numberline {1.4}Lavoro svolto}{3}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.1}Primo prototipo: Cloude}{3}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.5}Il Prodotto - lato client}{3}{section.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.2}Secondo prototipo: Samba}{4}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.5.1}Il prototipo ad inizio stage: Samba}{4}{subsection.1.5.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Drift correction}{4}{section*.14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Prestazioni}{5}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Visualizzatore di mesh}{6}{section*.19}
+\contentsline {section}{\numberline {1.6}Organizzazione del testo}{6}{section.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4.3}L'applicativo attuale: VIC-Tango}{6}{subsection.1.4.3}
+\contentsline {chapter}{\numberline {2}Processi, tecnologie e strumenti}{7}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Firebase}{6}{section*.20}
+\contentsline {section}{\numberline {2.1}Processo sviluppo prodotto}{7}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Camera preview}{7}{section*.21}
+\contentsline {subsection}{\numberline {2.1.1}Kick-Off}{7}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{JNI e Point Cloud Registration}{7}{section*.22}
+\contentsline {subsection}{\numberline {2.1.2}Concept Preview}{7}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Il Prodotto - lato server}{10}{section.1.5}
+\contentsline {subsection}{\numberline {2.1.3}Product Prototype}{8}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.1}Point Cloud Library}{10}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {2.1.4}Fasi successive}{8}{subsection.2.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.2}Elaborazione di un Point Cloud}{10}{subsection.1.5.2}
+\contentsline {section}{\numberline {2.2}Tecnologie e Strumenti}{8}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sparse filtering}{11}{section*.25}
+\contentsline {subsection}{\numberline {2.2.1}Codice}{8}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Radius filtering}{11}{section*.27}
+\contentsline {subsection}{\numberline {2.2.2}IDE ed editor}{9}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ground filtering}{11}{section*.29}
+\contentsline {subsection}{\numberline {2.2.3}Framework}{9}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Voxel filtering}{12}{section*.31}
+\contentsline {chapter}{\numberline {3}Studio di fattibilit\IeC {\`a} ed analisi dei rischi}{11}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Cluster extraction}{13}{section*.32}
+\contentsline {section}{\numberline {3.1}Introduzione al progetto}{11}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Meshing}{13}{section*.34}
+\contentsline {section}{\numberline {3.2}Studio di fattibilit\IeC {\`a}}{11}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.3}Calcolo del volume}{14}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {3.2.1}Funzionalit\IeC {\`a} per il trattamento di Point Cloud}{11}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Lavoro svolto}{14}{section.1.6}
+\contentsline {subsection}{\numberline {3.2.2}Funzionalit\IeC {\`a} per il filtraggio di Point Cloud}{12}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}Organizzazione del testo}{15}{section.1.7}
+\contentsline {subsection}{\numberline {3.2.3}Funzionalit\IeC {\`a} per il meshing}{12}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Processi, tecnologie e strumenti}{17}{chapter.2}
+\contentsline {subsection}{\numberline {3.2.4}Metodologie per il calcolo del volume}{13}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Processo sviluppo prodotto}{17}{section.2.1}
+\contentsline {subsection}{\numberline {3.2.5}Visualizzazione di file in formato OBJ}{13}{subsection.3.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Kick-Off}{17}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {3.2.6}Comunicazione client-server}{13}{subsection.3.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Concept Preview}{17}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {3.2.7}Conclusioni}{13}{subsection.3.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Product Prototype}{18}{subsection.2.1.3}
+\contentsline {section}{\numberline {3.3}Analisi preventiva dei rischi}{14}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}Fasi successive}{18}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {3.3.1}Rischi generali}{14}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Tecnologie e Strumenti}{18}{section.2.2}
+\contentsline {subsection}{\numberline {3.3.2}Rischi specifici}{14}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Codice}{18}{subsection.2.2.1}
+\contentsline {chapter}{\numberline {4}Analisi dei requisiti}{17}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}IDE ed editor}{19}{subsection.2.2.2}
+\contentsline {section}{\numberline {4.1}Casi d'uso - lato client}{17}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Framework}{19}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {4.1.1}UC1.1: Visualizzazione lista delle mesh salvate}{18}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Studio di fattibilit\IeC {\`a} ed analisi dei rischi}{21}{chapter.3}
+\contentsline {subsection}{\numberline {4.1.2}UC1.2: Refresh delle mesh da server}{18}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduzione al progetto}{21}{section.3.1}
+\contentsline {subsection}{\numberline {4.1.3}UC1.3: Visualizzazione di una mesh}{18}{subsection.4.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Studio di fattibilit\IeC {\`a}}{21}{section.3.2}
+\contentsline {subsubsection}{UC1.3.1: Ruota mesh}{19}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Funzionalit\IeC {\`a} per il trattamento di Point Cloud}{21}{subsection.3.2.1}
+\contentsline {subsubsection}{UC1.3.2: Zoom mesh}{19}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Funzionalit\IeC {\`a} per il filtraggio di Point Cloud}{22}{subsection.3.2.2}
+\contentsline {subsubsection}{UC1.3.3: Visualizza volume}{19}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Funzionalit\IeC {\`a} per il meshing}{22}{subsection.3.2.3}
+\contentsline {subsubsection}{UC1.3.4: Visualizza wireframe}{19}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Metodologie per il calcolo del volume}{23}{subsection.3.2.4}
+\contentsline {subsubsection}{UC1.3.5: Visualizza textures}{19}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Visualizzazione di file in formato OBJ}{23}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {4.1.4}UC1.4: Eliminazione di una mesh}{20}{subsection.4.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.6}Comunicazione client-server}{23}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {4.1.5}UC1.5: Ritorno all'activity principale}{20}{subsection.4.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.7}Conclusioni}{23}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {4.1.6}UC1.6: Errore nessuna mesh da caricare}{20}{subsection.4.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Analisi preventiva dei rischi}{24}{section.3.3}
+\contentsline {subsection}{\numberline {4.1.7}UC1.7: Errore di connessione}{20}{subsection.4.1.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Rischi generali}{24}{subsection.3.3.1}
+\contentsline {section}{\numberline {4.2}Casi d'uso - lato server}{21}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Rischi specifici}{24}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {4.2.1}UC2 Elaborazione di un Point Cloud}{21}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Analisi dei requisiti}{27}{chapter.4}
+\contentsline {subsection}{\numberline {4.2.2}UC2.1 Salvataggio dei dati ricevuti su file PCD}{22}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Casi d'uso}{27}{section.4.1}
+\contentsline {subsection}{\numberline {4.2.3}UC2.2 Filtraggio del Point Cloud}{22}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Tracciamento dei requisiti}{27}{section.4.2}
+\contentsline {subsubsection}{UC2.2.1 Rimozione punti isolati}{22}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Progettazione e codifica}{29}{chapter.5}
+\contentsline {subsubsection}{UC2.2.2 Rimozione punti esterni}{23}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Tecnologie e strumenti}{29}{section.5.1}
+\contentsline {subsubsection}{UC2.2.3 Rimozione pavimento}{23}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Ciclo di vita del software}{29}{section.5.2}
+\contentsline {subsubsection}{UC2.2.4 Rimozione punti troppo vicini}{23}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Progettazione}{29}{section.5.3}
+\contentsline {subsection}{\numberline {4.2.4}UC2.3 Estrazione dell'oggetto}{23}{subsection.4.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Namespace 1}{29}{section*.41}
+\contentsline {subsection}{\numberline {4.2.5}UC2.4 Generazione mesh}{23}{subsection.4.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Design Pattern utilizzati}{29}{section.5.4}
+\contentsline {subsection}{\numberline {4.2.6}UC2.5 Calcolo del volume}{24}{subsection.4.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Codifica}{29}{section.5.5}
+\contentsline {section}{\numberline {4.3}Tracciamento dei requisiti}{24}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Verifica e validazione}{31}{chapter.6}
+\contentsline {chapter}{\numberline {5}Progettazione e codifica}{27}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{33}{chapter.7}
+\contentsline {section}{\numberline {5.1}Tecnologie e strumenti}{27}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Consuntivo finale}{33}{section.7.1}
+\contentsline {section}{\numberline {5.2}Ciclo di vita del software}{27}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{33}{section.7.2}
+\contentsline {section}{\numberline {5.3}Progettazione}{27}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{33}{section.7.3}
+\contentsline {subsubsection}{Namespace 1}{27}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Valutazione personale}{33}{section.7.4}
+\contentsline {section}{\numberline {5.4}Design Pattern utilizzati}{27}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{35}{appendix.Alph1}
+\contentsline {section}{\numberline {5.5}Codifica}{27}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{39}{appendix*.42}
+\contentsline {chapter}{\numberline {6}Verifica e validazione}{29}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Conclusioni}{31}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{31}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{31}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{31}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Valutazione personale}{31}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendice A}{33}{appendix.Alph1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{37}{appendix*.37}
