@@ -52,13 +52,14 @@
     <requires type="static">
       <file>blx-dm.def</file>
       <file>blx-compat.def</file>
-      <file>biblatex.def</file>
+      <file>biblatex_.def</file>
       <file>verbose-ibid.bbx</file>
       <file>authortitle.bbx</file>
       <file>standard.bbx</file>
       <file>verbose-ibid.cbx</file>
       <file>biblatex.cfg</file>
       <file>italian.lbx</file>
+      <file>english.lbx</file>
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="1">

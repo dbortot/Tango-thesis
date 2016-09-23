@@ -36,12 +36,20 @@ disco su cui può effettuare diverse azioni}
 \\\\ \textbf{Precondizioni}: L'utente ha aperto l'applicazione ed ha premuto sul pulsante per visualizzare la lista delle \emph{mesh} salvate localmente.
 \\\\ \textbf{Descrizione}:  L'utente consulta la lista delle \emph{mesh} salvate localmente.
 \\\\ \textbf{Postcondizioni}: Viene visualizzata la lista delle mesh salvate localmente.
+\\\\ \textbf{Extension Points}:
+\begin{itemize}
+\item \textbf{Non ci sono mesh salvate localmente}: Non c'è nessuna mesh salvata da caricare in lista, viene visualizzato un messaggio informativo (UC 1.6).
+\end{itemize}
 
 \subsection{UC1.2: Refresh delle mesh da server}
 \textbf{Attori Principali}: Utente.
 \\\\ \textbf{Precondizioni}: L'utente ha aperto l'applicazione, ha premuto sul pulsante per visualizzare la lista delle \emph{mesh} salvate su disco ed ha intenzione di aggiornare la lista di \emph{mesh} aggiungendo le altre presenti sul \emph{Server}.
 \\\\ \textbf{Descrizione}: L'utente preme sul simbolo di \emph{refresh} in alto a destra e ricarica la lista di \emph{mesh} eventualmente scaricando quelle sul \emph{Server} ma non sul dispositivo. L'utente viene informato dell'avvenuto refreshing.
 \\\\ \textbf{Postcondizioni}: L'utente ha a disposizione una lista aggiornata di \emph{mesh}.
+\\\\ \textbf{Extension Points}:
+\begin{itemize}
+\item \textbf{Il server non è raggiungibile}: c'è stato un errore nel tentativo di connettersi al server. Viene visualizzato un messaggio d'errore (UC 1.7).
+\end{itemize}
 
 \subsection{UC1.3: Visualizzazione di una mesh}
 \textbf{Attori Principali}: Utente.
@@ -189,8 +197,71 @@ disco su cui può effettuare diverse azioni}
 \\\\ \textbf{Descrizione}: Viene calcolato il volume della mesh generata a partire dal Point Cloud.
 \\\\ \textbf{Postcondizioni}: Il volume dell'oggetto è stato calcolato.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{UC3 Caricamento di una mesh}
+\begin{figure}[!h] 
+    \centering 
+    \includegraphics[width=0.9\columnwidth]{usecase/caricamento} 
+    \caption{Use Case - UC3: Caricamento di una mesh}
+\end{figure}
 
+\begin{usecase}{3}{Caricamento di una mesh}
+\usecaseactors{Client}
+\\ \usecasepre{Il client richiede al server l'invio di una specifica mesh}
+\\ \usecasedesc{Il server elabora la richiesta ricevuta ed invia la mesh desiderata al Client}
+\\ \usecasepost{Il client riceve la mesh richiesta dal server}
+\label{uc:caricamento}
+\end{usecase}
+
+\subsection{UC3.1 Richiesta caricamento Mesh}
+\textbf{Attori Principali}: Client.
+\\\\ \textbf{Precondizioni}: Il Client richiede il caricamento di una mesh inviando tramite protocollo HTTP il nome della mesh richiesta.
+\\\\ \textbf{Descrizione}: Il server elabora la richiesta e si appresta ad inviare il file richiesto.
+\\\\ \textbf{Postcondizioni}: Il server ha ricevuto la richiesta e si appresta ad inviare il file richiesto.
+\\\\ \textbf{Extension Points}:
+\begin{itemize}
+\item \textbf{Il server non è raggiungibile}: c'è stato un errore nel tentativo di connettersi al server. Viene visualizzato un messaggio d'errore (UC 1.7).
+\end{itemize}
+
+\subsection{UC3.2 Caricamento Mesh}
+\textbf{Attori Principali}: Client.
+\\\\ \textbf{Precondizioni}: Il Client ha inviato il nome della mesh da caricare .
+\\\\ \textbf{Descrizione}: Il server legge il file OBJ della mesh e lo invia al Client.
+\\\\ \textbf{Postcondizioni}: Il client riceve la mesh richiesta.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{UC4 Caricamento informazioni delle mesh salvate}
+\begin{figure}[!h] 
+    \centering 
+    \includegraphics[width=0.9\columnwidth]{usecase/informazioni} 
+    \caption{Use Case - UC4: Caricamento informazioni delle mesh salvate}
+\end{figure}
+
+\begin{usecase}{4}{Caricamento informazioni delle mesh salvate}
+\usecaseactors{Client}
+\\ \usecasepre{Il client richiede una lista di informazioni quali nome, data di creazione e volume delle mesh salvate su server}
+\\ \usecasedesc{Il server elabora la richiesta ricevuta ed invia le informazioni al Client}
+\\ \usecasepost{Il client riceve le informazioni richieste dal server}
+\label{uc:informazioni}
+\end{usecase}
+
+\subsection{UC4.1 Richiesta caricamento informazioni}
+\textbf{Attori Principali}: Client.
+\\\\ \textbf{Precondizioni}: Il Client richiede informazioni sulle mesh salvate nel server inviando una richiesta tramite protocollo HTTP.
+\\\\ \textbf{Descrizione}: Il server elabora la richiesta e si appresta ad inviare le informazioni richieste.
+\\\\ \textbf{Postcondizioni}: Il server ha ricevuto la richiesta e si appresta a recuperare ed inviare le informazioni.
+\\\\ \textbf{Extension Points}:
+\begin{itemize}
+\item \textbf{Il server non è raggiungibile}: c'è stato un errore nel tentativo di connettersi al server. Viene visualizzato un messaggio d'errore (UC 1.7).
+\end{itemize}
+
+\subsection{UC4.2 Caricamento informazioni}
+\textbf{Attori Principali}: Client.
+\\\\ \textbf{Precondizioni}: Il Client ha richiesto l'invio di informazioni sulle mesh salvate nel server.
+\\\\ \textbf{Descrizione}: Il server recupera le informazioni richieste dalle mesh disponibili e le invia al Client.
+\\\\ \textbf{Postcondizioni}: Il client riceve le informazioni richieste.
 
 
 \section{Tracciamento dei requisiti}

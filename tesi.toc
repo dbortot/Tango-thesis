@@ -88,7 +88,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{UC1.3.4: Visualizza wireframe}{19}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{UC1.3.5: Visualizza textures}{19}{section*.24}
+\contentsline {subsubsection}{UC1.3.5: Visualizza textures}{20}{section*.24}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.4}UC1.4: Eliminazione di una mesh}{20}{subsection.4.1.4}
 \defcounter {refsection}{0}\relax 
@@ -96,7 +96,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.6}UC1.6: Errore nessuna mesh da caricare}{20}{subsection.4.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.7}UC1.7: Errore di connessione}{20}{subsection.4.1.7}
+\contentsline {subsection}{\numberline {4.1.7}UC1.7: Errore di connessione}{21}{subsection.4.1.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Casi d'uso - lato server}{21}{section.4.2}
 \defcounter {refsection}{0}\relax 
@@ -106,7 +106,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.3}UC2.2 Filtraggio del Point Cloud}{22}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{UC2.2.1 Rimozione punti isolati}{22}{section*.27}
+\contentsline {subsubsection}{UC2.2.1 Rimozione punti isolati}{23}{section*.27}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{UC2.2.2 Rimozione punti esterni}{23}{section*.28}
 \defcounter {refsection}{0}\relax 
@@ -116,38 +116,50 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.4}UC2.3 Estrazione dell'oggetto}{23}{subsection.4.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.5}UC2.4 Generazione mesh}{23}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.5}UC2.4 Generazione mesh}{24}{subsection.4.2.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.6}UC2.5 Calcolo del volume}{24}{subsection.4.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Tracciamento dei requisiti}{24}{section.4.3}
+\contentsline {subsection}{\numberline {4.2.7}UC3 Caricamento di una mesh}{24}{subsection.4.2.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Progettazione e codifica}{27}{chapter.5}
+\contentsline {subsection}{\numberline {4.2.8}UC3.1 Richiesta caricamento Mesh}{25}{subsection.4.2.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Tecnologie e strumenti}{27}{section.5.1}
+\contentsline {subsection}{\numberline {4.2.9}UC3.2 Caricamento Mesh}{25}{subsection.4.2.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Ciclo di vita del software}{27}{section.5.2}
+\contentsline {subsection}{\numberline {4.2.10}UC4 Caricamento informazioni delle mesh salvate}{25}{subsection.4.2.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Progettazione}{27}{section.5.3}
+\contentsline {subsection}{\numberline {4.2.11}UC4.1 Richiesta caricamento informazioni}{26}{subsection.4.2.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Namespace 1}{27}{section*.36}
+\contentsline {subsection}{\numberline {4.2.12}UC4.2 Caricamento informazioni}{26}{subsection.4.2.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Design Pattern utilizzati}{27}{section.5.4}
+\contentsline {section}{\numberline {4.3}Tracciamento dei requisiti}{27}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Codifica}{27}{section.5.5}
+\contentsline {chapter}{\numberline {5}Progettazione e codifica}{29}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Verifica e validazione}{29}{chapter.6}
+\contentsline {section}{\numberline {5.1}Tecnologie e strumenti}{29}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusioni}{31}{chapter.7}
+\contentsline {section}{\numberline {5.2}Ciclo di vita del software}{29}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Consuntivo finale}{31}{section.7.1}
+\contentsline {section}{\numberline {5.3}Progettazione}{29}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{31}{section.7.2}
+\contentsline {subsubsection}{Namespace 1}{29}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{31}{section.7.3}
+\contentsline {section}{\numberline {5.4}Design Pattern utilizzati}{29}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Valutazione personale}{31}{section.7.4}
+\contentsline {section}{\numberline {5.5}Codifica}{29}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendice A}{33}{appendix.Alph1}
+\contentsline {chapter}{\numberline {6}Verifica e validazione}{31}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{37}{appendix*.37}
+\contentsline {chapter}{\numberline {7}Conclusioni}{33}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{33}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{33}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{33}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Valutazione personale}{33}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendice A}{35}{appendix.Alph1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{39}{appendix*.39}
