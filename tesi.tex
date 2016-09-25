@@ -96,7 +96,7 @@
                                         % 3. eseguire: makeindex -s tesi.ist -t tesi.alg -o tesi.acr tesi.acn
                                         % 4. compilare due volte tesi.tex.
 
-\usepackage[backend=biber,style=verbose-ibid,hyperref,backref]{biblatex}
+\usepackage[backend=biber,style=numeric-comp,hyperref,backref]{biblatex}
                                         % eccellente pacchetto per la bibliografia; 
                                         % produce uno stile di citazione autore-anno; 
                                         % lo stile "numeric-comp" produce riferimenti numerici
@@ -108,6 +108,7 @@
 \input{tesi-config}                     % file con le impostazioni personali
 
 \begin{document}
+
 %**************************************************************
 % Materiale iniziale
 %**************************************************************
@@ -131,13 +132,15 @@
 \input{capitoli/capitolo-5}             % Product Prototype
 \input{capitoli/capitolo-6}             % Product Design Freeze e SOP
 \input{capitoli/capitolo-7}             % Conclusioni
-\appendix                               
-\input{capitoli/capitolo-A}             % Appendice A
+%\appendix                               
+%\input{capitoli/capitolo-A}             % Appendice A
 
 %**************************************************************
 % Materiale finale
 %**************************************************************
 \backmatter
 \printglossaries
-\input{inizio-fine/bibliografia}
+%added later
+\printbibliography
+%\input{inizio-fine/bibliografia}
 \end{document}

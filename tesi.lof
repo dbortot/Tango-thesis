@@ -30,76 +30,72 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Use Case - UC1: Operazioni sulla lista di mesh salvate\relax }}{15}{figure.caption.19}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Use Case - UC1: Operazioni sulla lista di mesh salvate\relax }}{13}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Use Case - UC0: Scenario Principale\relax }}{19}{figure.caption.26}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Use Case - UC0: Scenario Principale\relax }}{17}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Use Case - UC2: Elaborazione di un Point Cloud\relax }}{20}{figure.caption.27}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Use Case - UC2: Elaborazione di un Point Cloud\relax }}{18}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Use Case - UC3: Caricamento di una mesh\relax }}{23}{figure.caption.32}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Use Case - UC3: Caricamento di una mesh\relax }}{21}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Use Case - UC4: Caricamento informazioni delle mesh salvate\relax }}{24}{figure.caption.33}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagramma UML del package \texttt {rendering}\relax }}{33}{figure.caption.35}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagramma UML del package \texttt {receivers}\relax }}{33}{figure.caption.36}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagramma UML del package \texttt {tasks}\relax }}{34}{figure.caption.37}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Diagramma UML del package \texttt {services}\relax }}{34}{figure.caption.38}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagramma UML del package \texttt {camera}\relax }}{35}{figure.caption.40}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagramma UML del package \texttt {Reconstruction}\relax }}{36}{figure.caption.42}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Diagramma UML del package \texttt {server}\relax }}{36}{figure.caption.43}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Diagramma UML del package \texttt {Services}\relax }}{37}{figure.caption.45}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagramma UML del package \texttt {PointCloudElaboration}\relax }}{38}{figure.caption.47}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Diagramma UML del package \texttt {Filters}\relax }}{38}{figure.caption.48}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Diagramma UML del package \texttt {IOUtils}\relax }}{39}{figure.caption.49}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Diagramma UML del Design Pattern \texttt {Strategy}\relax }}{40}{figure.caption.51}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Diagramma UML del Design Pattern \texttt {MVP}\relax }}{40}{figure.caption.53}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Diagramma UML del Design Pattern \texttt {Singleton}\relax }}{41}{figure.caption.55}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces La lista di \emph {mesh} visualizzata su \emph {tablet}\relax }}{42}{figure.caption.59}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Rendering su \emph {tablet} di una \emph {mesh} di un cestino\relax }}{42}{figure.caption.60}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces \emph {Point Cloud Registration} tramite l'algoritmo \emph {ICP}\relax }}{43}{figure.caption.62}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Errore nella \emph {Registration} con \emph {GOICP}\relax }}{44}{figure.caption.63}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Prima scansione}}}{44}{subfigure.18.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Seconda scansione}}}{44}{subfigure.18.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Risultato di GOIPC}}}{44}{subfigure.18.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces \emph {Sparse filtering}\relax }}{46}{figure.caption.65}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.20}{\ignorespaces \emph {Radius filtering}\relax }}{47}{figure.caption.67}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.21}{\ignorespaces \emph {Ground filtering}\relax }}{47}{figure.caption.69}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.22}{\ignorespaces \emph {Cluster extraction}\relax }}{48}{figure.caption.72}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.23}{\ignorespaces \emph {Meshing} di un \emph {Point Cloud}\relax }}{49}{figure.caption.74}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Use Case - UC4: Caricamento informazioni delle mesh salvate\relax }}{22}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagramma UML del package \texttt {rendering}\relax }}{31}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Esempio di artefatti in un Point Cloud\relax }}{55}{figure.caption.76}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagramma UML del package \texttt {receivers}\relax }}{31}{figure.caption.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagramma UML del package \texttt {tasks}\relax }}{32}{figure.caption.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Diagramma UML del package \texttt {services}\relax }}{32}{figure.caption.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagramma UML del package \texttt {camera}\relax }}{33}{figure.caption.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagramma UML del package \texttt {Reconstruction}\relax }}{34}{figure.caption.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Diagramma UML del package \texttt {server}\relax }}{34}{figure.caption.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Diagramma UML del package \texttt {Services}\relax }}{35}{figure.caption.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagramma UML del package \texttt {PointCloudElaboration}\relax }}{36}{figure.caption.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Diagramma UML del package \texttt {Filters}\relax }}{36}{figure.caption.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Diagramma UML del package \texttt {IOUtils}\relax }}{37}{figure.caption.49}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Diagramma UML del Design Pattern \texttt {Strategy}\relax }}{38}{figure.caption.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Diagramma UML del Design Pattern \texttt {MVP}\relax }}{38}{figure.caption.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Diagramma UML del Design Pattern \texttt {Singleton}\relax }}{39}{figure.caption.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.15}{\ignorespaces La lista di \emph {mesh} visualizzata su \emph {tablet}\relax }}{40}{figure.caption.59}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Rendering su \emph {tablet} di una \emph {mesh} di un cestino\relax }}{40}{figure.caption.60}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.17}{\ignorespaces \emph {Point Cloud Registration} tramite l'algoritmo \emph {ICP}\relax }}{41}{figure.caption.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Errore nella \emph {Registration} con \emph {GOICP}\relax }}{42}{figure.caption.63}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Prima scansione}}}{42}{subfigure.18.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Seconda scansione}}}{42}{subfigure.18.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Risultato di GOIPC}}}{42}{subfigure.18.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.19}{\ignorespaces \emph {Sparse filtering}\relax }}{44}{figure.caption.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.20}{\ignorespaces \emph {Radius filtering}\relax }}{45}{figure.caption.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.21}{\ignorespaces \emph {Ground filtering}\relax }}{45}{figure.caption.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.22}{\ignorespaces \emph {Cluster extraction}\relax }}{46}{figure.caption.72}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.23}{\ignorespaces \emph {Meshing} di un \emph {Point Cloud}\relax }}{47}{figure.caption.74}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Esempio di artefatti in un Point Cloud\relax }}{53}{figure.caption.76}

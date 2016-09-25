@@ -246,7 +246,6 @@
     <bcf:option datatype="string">citereset</bcf:option>
     <bcf:option datatype="string">backrefstyle</bcf:option>
     <bcf:option datatype="string">arxiv</bcf:option>
-    <bcf:option datatype="string">citepages</bcf:option>
     <bcf:option datatype="boolean">useafterword</bcf:option>
     <bcf:option datatype="boolean">useannotator</bcf:option>
     <bcf:option datatype="boolean">useauthor</bcf:option>
@@ -311,8 +310,7 @@
     <bcf:option datatype="boolean">doi</bcf:option>
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
-    <bcf:option datatype="boolean">dashed</bcf:option>
-    <bcf:option datatype="boolean">ibidpage</bcf:option>
+    <bcf:option datatype="boolean">subentry</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">maxnames</bcf:option>
     <bcf:option datatype="integer">minnames</bcf:option>
@@ -2051,21 +2049,20 @@
     <bcf:datasource type="file" datatype="bibtex">bibliografia.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">http://pointclouds.org/documentation/tutorials/pcd_file_format.php/pcd-file-format</bcf:citekey>
-    <bcf:citekey order="2">http://pointclouds.org/documentation/tutorials/reading_pcd.php/reading-pcd</bcf:citekey>
-    <bcf:citekey order="3">http://pointclouds.org/documentation/tutorials/writing_pcd.php/writing-pcd</bcf:citekey>
-    <bcf:citekey order="4">http://pointclouds.org/documentation/tutorials/passthrough.php/passthrough</bcf:citekey>
-    <bcf:citekey order="5">http://pointclouds.org/documentation/tutorials/voxel_grid.php/voxelgrid</bcf:citekey>
-    <bcf:citekey order="6">http://pointclouds.org/documentation/tutorials/statistical_outlier.php/statistical-outlier-removal</bcf:citekey>
-    <bcf:citekey order="7">http://pointclouds.org/documentation/tutorials/planar_segmentation.php/planar-segmentation</bcf:citekey>
-    <bcf:citekey order="8">http://pointclouds.org/documentation/tutorials/cluster_extraction.php/cluster-extraction</bcf:citekey>
-    <bcf:citekey order="9">http://pointclouds.org/documentation/tutorials/greedy_projection.php/greedy-triangulation</bcf:citekey>
-    <bcf:citekey order="10">http://pointclouds.org/documentation/tutorials/bspline_fitting.php/bspline-fitting</bcf:citekey>
-    <bcf:citekey order="11">http://research.microsoft.com/en-us/um/people/chazhang/publications/icip01_ChaZhang.pdf</bcf:citekey>
-    <bcf:citekey order="12">https://play.google.com/store/apps/details?id=com.pcvirt.Viewer3D&amp;hl=it</bcf:citekey>
-    <bcf:citekey order="13">https://play.google.com/store/apps/details?id=org.andresoviedo.dddmodel&amp;hl=it</bcf:citekey>
+    <bcf:citekey order="1">site:PCD</bcf:citekey>
+    <bcf:citekey order="2">site:PCD-read</bcf:citekey>
+    <bcf:citekey order="3">site:PCD-write</bcf:citekey>
+    <bcf:citekey order="4">site:passthrough</bcf:citekey>
+    <bcf:citekey order="5">site:voxel</bcf:citekey>
+    <bcf:citekey order="6">site:outliers</bcf:citekey>
+    <bcf:citekey order="7">site:segmentation</bcf:citekey>
+    <bcf:citekey order="8">site:cluster</bcf:citekey>
+    <bcf:citekey order="9">site:meshing</bcf:citekey>
+    <bcf:citekey order="10">site:bsplines</bcf:citekey>
+    <bcf:citekey order="12">site:3d-viewer</bcf:citekey>
+    <bcf:citekey order="13">site:3d-viewer-os</bcf:citekey>
     <bcf:citekey order="14">https://github.com/andresoviedo/android-3D-model-viewer</bcf:citekey>
-    <bcf:citekey order="15">https://developer.android.com/reference/org/apache/http/package-summary.html</bcf:citekey>
+    <bcf:citekey order="15">site:apache</bcf:citekey>
     <bcf:citekey order="16">https://developers.google.com/tango/hardware/tablet</bcf:citekey>
     <bcf:citekey order="17">https://developers.google.com/tango/overview/depth-perception</bcf:citekey>
     <bcf:citekey order="18">https://httpd.apache.org/</bcf:citekey>
@@ -2077,6 +2074,35 @@
     <bcf:citekey order="24">http://www.pointclouds.org/documentation/tutorials/cluster_extraction.php</bcf:citekey>
     <bcf:citekey order="25">http://www.pointclouds.org/documentation/tutorials/greedy_projection.php</bcf:citekey>
     <bcf:citekey order="26">http://research.microsoft.com/en-us/um/people/chazhang/publications/icip01_ChaZhang.pdf</bcf:citekey>
-    <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
+  <bcf:sortlist section="0" name="nty/global" type="entry" sortscheme="nty" sortnamekeyscheme="global">
+  <bcf:sorting>
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">translator</bcf:sortitem>
+      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="6">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1" pad_side="left" pad_width="4" pad_char="0">volume</bcf:sortitem>
+      <bcf:sortitem order="2">0000</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sorting>
+  </bcf:sortlist>
 </bcf:controlfile>

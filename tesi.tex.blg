@@ -1,0 +1,5 @@
+[0] Config.pm:340> INFO - This is Biber 2.4
+[1] Config.pm:343> INFO - Logfile is 'tesi.tex.blg'
+[74] biber:287> INFO - === dom set 25, 2016, 23:08:52
+[124] Utils.pm:163> ERROR - Cannot find control file 'tesi.tex.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[124] Biber.pm:113> INFO - ERRORS: 1

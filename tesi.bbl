@@ -19,36 +19,136 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global}
-    \entry{womak:lean-thinking}{book}{}
-      \name{author}{1}{}{%
-        {{hash=0f093a78056a9f58d27e063ff17e5a36}{%
-           family={James\bibnamedelimb P.\bibnamedelimi Womack},
-           family_i={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim W\bibinitperiod},
-           given={Daniel\bibnamedelimb T.\bibnamedelimi Jones},
-           given_i={D\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Simon \& Schuster, Inc.}%
-      }
-      \strng{namehash}{0f093a78056a9f58d27e063ff17e5a36}
-      \strng{fullhash}{0f093a78056a9f58d27e063ff17e5a36}
-      \field{sortinit}{J}
-      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
-      \field{labelnamesource}{author}
+    \entry{site:3d-viewer-os}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{7e21a31d9ef6ddc352701d4fa590bfbc}
       \field{labeltitlesource}{title}
-      \field{title}{Lean Thinking, Second Editon}
-      \field{year}{2010}
-    \endentry
-    \entry{site:agile-manifesto}{online}{}
-      \field{sortinit}{M}
-      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
-      \field{labeltitlesource}{title}
-      \field{title}{Manifesto Agile}
+      \field{title}{3D Model Viewer Open Source}
       \verb{url}
-      \verb http://agilemanifesto.org/iso/it/
+      \verb https://play.google.com/store/apps/details?id=org.andresoviedo.dddmodel%5C&hl=it
+      \endverb
+    \endentry
+    \entry{site:3d-viewer}{online}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{7e21a31d9ef6ddc352701d4fa590bfbc}
+      \field{labeltitlesource}{title}
+      \field{title}{3D viewer}
+      \verb{url}
+      \verb https://play.google.com/store/apps/details?id=com.pcvirt.Viewer3D%5C&hl=it
+      \endverb
+    \endentry
+    \entry{site:apache}{online}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{b685c7856330eaee22789815b49de9bb}
+      \field{labeltitlesource}{title}
+      \field{title}{Apache HTTP}
+      \verb{url}
+      \verb https://developer.android.com/reference/org/apache/http/package-summary.html
+      \endverb
+    \endentry
+    \entry{site:voxel}{online}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labeltitlesource}{title}
+      \field{title}{Downsampling a PointCloud using a VoxelGrid filter}
+      \verb{url}
+      \verb http://pointclouds.org/documentation/tutorials/voxel%5C_grid.php/voxelgrid
+      \endverb
+    \endentry
+    \entry{site:cluster}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labeltitlesource}{title}
+      \field{title}{Euclidean Cluster Extraction}
+      \verb{url}
+      \verb http://pointclouds.org/documentation/tutorials/cluster%5C_extraction.php/cluster-extraction
+      \endverb
+    \endentry
+    \entry{site:meshing}{online}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labeltitlesource}{title}
+      \field{title}{Fast triangulation of unordered point clouds}
+      \verb{url}
+      \verb http://pointclouds.org/documentation/tutorials/greedy%5C_projection.php/greedy-triangulation
+      \endverb
+    \endentry
+    \entry{site:passthrough}{online}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labeltitlesource}{title}
+      \field{title}{Filtering a PointCloud using a PassThrough filter}
+      \verb{url}
+      \verb http://pointclouds.org/documentation/tutorials/passthrough.php/passthrough
+      \endverb
+    \endentry
+    \entry{site:bsplines}{online}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labeltitlesource}{title}
+      \field{title}{Fitting trimmed B-splines to unordered point clouds}
+      \verb{url}
+      \verb http://pointclouds.org/documentation/tutorials/bspline%5C_fitting.php/bspline-fitting
+      \endverb
+    \endentry
+    \entry{site:segmentation}{online}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labeltitlesource}{title}
+      \field{title}{Plane model segmentation}
+      \verb{url}
+      \verb http://pointclouds.org/documentation/tutorials/planar%5C_segmentation.php/planar-segmentation
+      \endverb
+    \endentry
+    \entry{site:PCD-read}{online}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labeltitlesource}{title}
+      \field{title}{Reading Point Cloud data from PCD files}
+      \verb{url}
+      \verb http://pointclouds.org/documentation/tutorials/reading%5C_pcd.php/reading-pcd
+      \endverb
+    \endentry
+    \entry{site:outliers}{online}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labeltitlesource}{title}
+      \field{title}{Removing outliers using a StatisticalOutlierRemoval filter}
+      \verb{url}
+      \verb http://pointclouds.org/documentation/tutorials/statistical%5C_outlier.php/statistical-outlier-removal
+      \endverb
+    \endentry
+    \entry{site:PCD}{online}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labeltitlesource}{title}
+      \field{title}{The PCD file format}
+      \verb{url}
+      \verb http://pointclouds.org/documentation/tutorials/pcd%5C_file%5C_format.php/pcd-file-format
+      \endverb
+    \endentry
+    \entry{site:PCD-write}{online}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labeltitlesource}{title}
+      \field{title}{Writing Point Cloud data to PCD files}
+      \verb{url}
+      \verb http://pointclouds.org/documentation/tutorials/writing%5C_pcd.php/writing-pcd
       \endverb
     \endentry
   \endsortlist
+  \missing{http://pointclouds.org/documentation/tutorials/voxel_grid.php}
+  \missing{https://play.google.com/store/apps/details?id=org.andresoviedo.dddmodel&hl=it}
+  \missing{http://pointclouds.org/documentation/tutorials/passthrough.php/passthrough}
+  \missing{http://pointclouds.org/documentation/tutorials/statistical_outlier.php/statistical-outlier-removal}
+  \missing{https://httpd.apache.org/}
+  \missing{http://www.pointclouds.org/documentation/tutorials/greedy_projection.php}
+  \missing{https://developers.google.com/tango/hardware/tablet}
+  \missing{http://www.pointclouds.org/documentation/tutorials/cluster_extraction.php}
+  \missing{https://github.com/andresoviedo/android-3D-model-viewer}
+  \missing{http://pointclouds.org/documentation/tutorials/planar_segmentation.php}
+  \missing{http://research.microsoft.com/en-us/um/people/chazhang/publications/icip01_ChaZhang.pdf}
+  \missing{https://developers.google.com/tango/overview/depth-perception}
 \endrefsection
 \endinput
 

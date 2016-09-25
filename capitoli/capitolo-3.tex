@@ -5,8 +5,6 @@
 
 %**************************************************************
 \chapter{Studio di fattibilità ed Analisi dei rischi}
-\label{cap:descrizione-stage}
-%**************************************************************
 
 \intro{Il progetto si è subito presentato come sperimentale, impegnativo e facilmente soggetto a fallimento. Per questo si è reso necessario studiarne attentamente la fattibilità e valutarne i rischi}\\
 
@@ -22,62 +20,40 @@ Seguendo quest'approccio è stato possibile valutare le potenzialità e i limiti
 Prima di iniziare il progetto è stato effettuato un accurato studio di fattibilità basato sullo studio della libreria PCL e della vasta quantità di esempi d'utilizzo della stessa reperibili online. Si sono cercate poi soluzioni per il calcolo del volume di una mesh.\\
 Per il lato client si sono esplorate soluzioni per la visualizzazione di mesh salvate in formato OBJ e per la comunicazione client-server.
 
-\subsection{Funzionalità per il trattamento di Point Cloud}
-\'E parso subito evidente che l'applicativo necessita di un formato standard, trasferibile via Web, per il trattamento di Point Cloud, e delle funzionalità di I/O associate. A tal riguardo è risultata particolarmente utile la documentazione della PCL:
+\subsection{Filtraggio e mehsing di Point Cloud}
+\'E parso subito evidente che l'applicativo necessita di un formato standard, trasferibile via Web, per il trattamento di Point Cloud, e delle funzionalità di I/O associate. Inoltre è stato necessario esplorare le funzionalità disponibli per l'elaborazione ed il meshing dei Point Cloud. A tal riguardo è stata studiata estensivamente la documentazione PCL:
 \begin{itemize}
-\item\textbf{The PCD (Point Cloud Data) file format\footcite{http://pointclouds.org/documentation/tutorials/pcd_file_format.php/pcd-file-format}}:
-un formato facilmente comprensibile e portabile per definire nuvole di punti
-\item\textbf{Reading Point Cloud data from PCD files\footcite{http://pointclouds.org/documentation/tutorials/reading_pcd.php/reading-pcd}}:
-tutorial che espone le funzionalità di lettura e caricamento di un file PCD
-\item\textbf{Writing Point Cloud data to PCD files\footcite{http://pointclouds.org/documentation/tutorials/writing_pcd.php/writing-pcd}}:
-tutorial che espone le funzionalità di salvataggio di un file PCD
+\item\textbf{The PCD (Point Cloud Data) file format} \cite{site:PCD}
+\item\textbf{Reading Point Cloud data from PCD files} \cite{site:PCD-read}
+\item\textbf{Writing Point Cloud data to PCD files} \cite{site:PCD-write}
+\item\textbf{Filtering a PointCloud using a PassThrough filter} \cite{site:passthrough}
+\item\textbf{Downsampling a PointCloud using a VoxelGrid filter} \cite{site:voxel}
+\item\textbf{Removing outliers using a StatisticalOutlierRemoval filter} \cite{site:outliers}
+\item\textbf{Plane model segmentation}\cite{site:segmentation}
+\item\textbf{Euclidean Cluster Extraction}\cite{site:cluster}
+\item \textbf{Fast triangulation of unordered point clouds}\cite{site:meshing}
+\item \textbf{Fitting trimmed B-splines to unordered point clouds}\cite{site:bsplines}
 \end{itemize}
 
-\subsection{Funzionalità per il filtraggio di Point Cloud}
-Sono disponibili sul sito di PCL svariati esempi open-source che utilizzano le potenzialità della libreria per filtrare un Point Cloud, ad esempio:
-\begin{itemize}
-\item\textbf{Filtering a PointCloud using a PassThrough filter\footcite{http://pointclouds.org/documentation/tutorials/passthrough.php/passthrough}}:
-tutorial per la creazione di un filtro capace di eliminare i punti che non rientrano in un certo range definito dall'utente.
-\item\textbf{Downsampling a PointCloud using a VoxelGrid filter\footcite{http://pointclouds.org/documentation/tutorials/voxel_grid.php/voxelgrid}}:
-tutorial per la creazione di un filtro capace di effettuare il downsampling di un PointCLoud
-\item\textbf{Removing outliers using a StatisticalOutlierRemoval filter\footcite{http://pointclouds.org/documentation/tutorials/statistical_outlier.php/statistical-outlier-removal}}:
-tutorial per la creazione di un filtro capace di eliminare i punti isolati, quindi non interessanti, di un Point Cloud
-\item\textbf{Plane model segmentation\footcite{http://pointclouds.org/documentation/tutorials/planar_segmentation.php/planar-segmentation}}:
-tutorial per la creazione di un filtro capace di eliminare le componenti planari di un Point Cloud.
-\item\textbf{Euclidean Cluster Extraction\footcite{http://pointclouds.org/documentation/tutorials/cluster_extraction.php/cluster-extraction}}:
-tutorial per la creazione di un filtro capace di isolare ed estrarre gruppi consistenti e distinguibili di punti da un Point Cloud.
-\end{itemize}
-
-\subsection{Funzionalità per il meshing}
-Sono disponibili sul sito di PCL alcuni esempi open-source che utilizzano le potenzialità della libreria per generare una mesh tridimensionale a partire da un Point Cloud, ad esempio:
-\begin{itemize}
-\item \textbf{Fast triangulation of unordered point clouds\footcite{http://pointclouds.org/documentation/tutorials/greedy_projection.php/greedy-triangulation}}:
-tutorial per la creazione di una mesh triangolare a partire da una nuvola di punti
-\item \textbf{Fitting trimmed B-splines to unordered point clouds\footcite{http://pointclouds.org/documentation/tutorials/bspline_fitting.php/bspline-fitting}}:
-tutorial per la creazione di una mesh regolare adattata iterativamente alla nuvola di punti
-\end{itemize}
-
-\newpage
 \subsection{Metodologie per il calcolo del volume}
-Durante la ricerca di un affidabile metodo matematico per il calcolo del volume di una mesh è risultato che il più adatto, validato ormai da anni di utilizzo, è il calcolo del volume con segno di una mesh triangolare come descritto ad esempio nel paper "EFFICIENT FEATURE EXTRACTION FOR 2D/3D OBJECTS IN MESH REPRESENTATION \footcite{http://research.microsoft.com/en-us/um/people/chazhang/publications/icip01_ChaZhang.pdf}" da Cha Zhang e Tsuhan Chen.
+Durante la ricerca di un affidabile metodo matematico per il calcolo del volume di una mesh è risultato che il più adatto, validato ormai da anni di utilizzo, è il calcolo del volume con segno di una mesh triangolare come descritto ad esempio in \cite{}
 
 \subsection{Visualizzazione di file in formato OBJ}
-Per visualizzare le mesh prodotte dal server su tablet è stato necessario ricercare esempi di applicativi che permettessero di trattare oggetti tridimensionali in formato OBJ. A tal riguardo si sono studiate due applicazioni:
+Per visualizzare le mesh prodotte dal server su tablet è stato necessario ricercare esempi di applicativi che permettessero di trattare oggetti tridimensionali in formato OBJ.\\
+A tal riguardo si sono studiate due applicazioni:
 \begin{itemize}
-\item\textbf{3D viewer\footcite{https://play.google.com/store/apps/details?id=com.pcvirt.Viewer3D&hl=it}}: 
-applicazione android per la visualizzazione di file OBJ e 3DS
-\item\textbf{3D Model Viewer Open Source\footcite{https://play.google.com/store/apps/details?id=org.andresoviedo.dddmodel&hl=it}}:
+\item\textbf{3D viewer}\cite{site:3d-viewer}
+\item\textbf{3D Model Viewer Open Source}\cite{site:3d-viewer-os}
 applicazione open-source android per la visualizzazione di file OBJ realizzata da Andres Oviedo, il cui codice è liberamente reperibile dalla repository\footcite{https://github.com/andresoviedo/android-3D-model-viewer} GitHub
 \end{itemize}
 
 \subsection{Comunicazione client-server}
-Per implementare la comunicazione client-server la scelta più logica è stata di seguire esplorare la documentazione ufficiale Android, che mette a disposizione il package "\textbf{Apache HTTP\footcite{https://developer.android.com/reference/org/apache/http/package-summary.html}}" che risponde alle necessità richieste.
+Per implementare la comunicazione client-server la scelta più logica è stata di seguire esplorare la documentazione ufficiale Android, che mette a disposizione il package \textbf{Apache HTTP}\cite{site:apache} che risponde alle necessità richieste.
 
 \subsection{Conclusioni}
 Alla luce della disponibilità e qualità degli esempi sopracitati il progetto è apparso fattibile e quindi è stato possibile dare il via al ciclo di vita del progetto software.
 
 
-\newpage
 %**************************************************************
 \section{Analisi preventiva dei rischi}
 

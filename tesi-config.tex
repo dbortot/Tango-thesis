@@ -30,7 +30,8 @@
 %**************************************************************
 % Impostazioni di biblatex
 %**************************************************************
-\bibliography{bibliografia} % database di biblatex 
+\renewcommand*{\newunitpunct}{\newline}	% a capo per ogni campo dell'oggetto in .bib
+\addbibresource{bibliografia.bib} % database di biblatex 
 
 \defbibheading{bibliography}
 {
@@ -42,15 +43,14 @@
 
 \setlength\bibitemsep{1.5\itemsep} % spazio tra entry
 
-\DeclareBibliographyCategory{opere}
-\DeclareBibliographyCategory{web}
-
-\addtocategory{opere}{womak:lean-thinking}
-\addtocategory{web}{site:agile-manifesto}
-
-\defbibheading{opere}{\section*{Riferimenti bibliografici}}
-\defbibheading{web}{\section*{Siti Web consultati}}
-
+%\DeclareBibliographyCategory{opere}
+%\DeclareBibliographyCategory{web}
+%
+%\addtocategory{opere}{womak:lean-thinking}
+%\addtocategory{web}{site:agile-manifesto}
+%
+%\defbibheading{opere}{\section*{Riferimenti bibliografici}}
+%\defbibheading{web}{\section*{Siti Web consultati}}
 
 %**************************************************************
 % Impostazioni di caption
