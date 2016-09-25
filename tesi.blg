@@ -1,15 +1,15 @@
 [0] Config.pm:340> INFO - This is Biber 2.4
 [1] Config.pm:343> INFO - Logfile is 'tesi.blg'
-[71] biber:287> INFO - === lun set 19, 2016, 15:50:48
-[171] Biber.pm:348> INFO - Reading 'tesi.bcf'
-[333] Biber.pm:739> INFO - Using all citekeys in bib section 0
-[438] Biber.pm:3151> INFO - Processing section 0
-[619] Biber.pm:3308> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
-[623] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[627] bibtex.pm:974> INFO - Found BibTeX data source 'bibliografia.bib'
-[730] UCollate.pm:65> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[730] UCollate.pm:65> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[730] Biber.pm:3028> INFO - Sorting list 'nty/global' of type 'entry' with scheme 'nty' and locale 'it-IT'
-[731] Biber.pm:3032> INFO - No sort tailoring available for locale 'it-IT'
-[734] bbl.pm:519> INFO - Writing 'tesi.bbl' with encoding 'UTF-8'
-[743] bbl.pm:615> INFO - Output to tesi.bbl
+[63] biber:287> INFO - === sab set 24, 2016, 21:50:19
+[272] Biber.pm:348> INFO - Reading 'tesi.bcf'
+[443] Biber.pm:739> INFO - Using all citekeys in bib section 0
+[507] Biber.pm:3151> INFO - Processing section 0
+[733] Biber.pm:3308> INFO - Looking for bibtex format file 'bibliografia.bib' for section 0
+[737] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[742] bibtex.pm:974> INFO - Found BibTeX data source 'bibliografia.bib'
+[894] UCollate.pm:65> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[895] UCollate.pm:65> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[895] Biber.pm:3028> INFO - Sorting list 'nty/global' of type 'entry' with scheme 'nty' and locale 'it-IT'
+[895] Biber.pm:3032> INFO - No sort tailoring available for locale 'it-IT'
+[900] bbl.pm:519> INFO - Writing 'tesi.bbl' with encoding 'UTF-8'
+[911] bbl.pm:615> INFO - Output to tesi.bbl

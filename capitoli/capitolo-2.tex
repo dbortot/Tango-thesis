@@ -4,11 +4,11 @@
 % !TEX spellcheck = it-IT
 
 %**************************************************************
-\chapter{Processi, tecnologie e strumenti}
+\chapter{Processi di sviluppo}
 \label{cap:processi-metodologie}
 %**************************************************************
 
-\intro{Una buona definizione dei processi produttivi ed un'adeguata scelta delle teconologie e strumenti da utilizzare è fondamentale per il successo del progetto}\\
+\intro{Una buona definizione dei processi produttivi è fondamentale per il successo del progetto}\\
 
 %**************************************************************
 \section{Processo sviluppo prodotto}
@@ -32,38 +32,3 @@ Questa fase coincide con il termine della fase di progettazione e l'inizio della
 
 \subsection{Fasi successive}
 Le fasi successive, ovvero \emph{Product Design Freeze} e \emph{Start Of Production}, possono essere avviate nel futuro a partire dal \emph{Product Prototype} se ciò verrà ritenuto opportuno dall'azienda.
-
-\section{Tecnologie e Strumenti}
-L'azienda ha lasciato grande libertà riguardo agli strumenti da utilizzare per questo progetto, quindi essi sono stati fissati inizialmente e successivamente incrementati al crescere delle necessità.
-
-\subsection{Codice}
-Segue la lista dei linguaggi utilizzati per la codifica.
-\begin{itemize}
-	\item \textbf{Java\footnote{https://www.java.com}}: Il linguaggio preferito per l'applicazione lato \emph{tablet}. È stato scelto seguendo le \emph{Best Practice} dello sviluppo \emph{Android}.
-	\item \textbf{C++\footnote{www.cplusplus.com}}: Il linguaggio preferito per l'applicazione lato \emph{Server}. È stato scelto perché tutti le più diffuse librerie per l'elaborazione dei \emph{Point Cloud}, ed in particolare \emph{PCL} sono disponibili in questo linguaggio.
-	\item \textbf{PCL, Point Cloud Library\footnote{http://pointclouds.org}}: Una delle librerie di maggior rilievo nel campo della \emph{Computer Vision}, mette a disposizione notevoli funzionalità per l'elaborazione, il filtraggio e l'ottimizzazione dei \emph{Point Cloud}.
-	\item \textbf{Tango API\footnote{https://developers.google.com/tango/apis/overview}}: Le \emph{API} ufficiali, disponibili in linguaggio Java, C++ e C\#, per lo sviluppo di applicazioni \emph{Tango}.
-	\item \textbf{PHP\footnote{https://secure.php.net}}: Il linguaggio usato per ricevere ed inviare le richieste \emph{HTTP} necessarie alla comunicazione tra \emph{Server} e dispositivo.
-	\item \textbf{Python\footnote{https://www.python.org}}: Il linguaggio usato in combinazione con \emph{PHP} per elaborare le richieste ed implementare la logica del lato \emph{Server}.
-\end{itemize}
-
-\newpage
-\subsection{IDE ed editor}
-Segue la lista degli ambienti per la codifica utilizzati durante il progetto.
-\begin{itemize}
-	\item \textbf{Android Studio\footnote{https://developer.android.com/studio/index.html}}: L'\emph{IDE} ufficiale per le applicazioni \emph{Android}.
-	\item \textbf{QT\footnote{https://www.qt.io/ide}}: L'\emph{IDE} scelto per lo sviluppo del codice \emph{C++}.
-	\item \textbf{Geany\footnote{https://www.geany.org}}: L'\emph{editor} di testo usato per scrivere gli \emph{script} \emph{php} e \emph{Python}.
-\end{itemize}
-
-\subsection{Framework}
-Segue la lista dei \emph{Framework} usati per il tirocinio.
-\begin{itemize}
-	\item \textbf{Gradle\footnote{https://gradle.org}}: È stato usato come \emph{tool} di \emph{build} per tutta l'applicazione \emph{Android}.
-	\item \textbf{Rajawali3D\footnote{https://github.com/Rajawali/Rajawali}}: È stato usato come \emph{framework} grafico per la realizzazione del \emph{render}.
-	\item \textbf{OkHttp\footnote{http://square.github.io/okhttp}}: È stata usato come \emph{framework} di riferimento per le richieste \emph{http}, come indicato nella \emph{Android Best Practices}.
-	\item \textbf{TangoUx\footnote{https://developers.google.com/tango/ux/ux-framework}}: \emph{Famework} messo a disposizione dalla \emph{Google} assieme alle \emph{API Tango}. È stato usato per gestire le notifiche all'utente relative ai comportamenti che deve tenere per permettere il buon funzionamento del dispositivo e dei sensori.
-	\item \textbf{Jni\footnote{http://docs.oracle.com/javase/7/docs/technotes/guides/jni}}: Questo \emph{framework} permette di richiamare metodi 'nativi' (scritti in \emph{C/C++}) dal codice \emph{Java}.
-	\item \textbf{Firebase\footnote{https://firebase.google.com}}: \emph{Framework} associato all'omonimo \emph{web service} offerto da \emph{Google} per lo scambio di messaggi tra applicazioni \emph{Android} e un \emph{server}.
-	\item \textbf{GOICP\footnote{http://iitlab.bit.edu.cn/mcislab/~yangjiaolong/go-icp/}}: libreria che implementa una variante dell'algoritmo ICP per la \emph{Registration} di set di \emph{Point Cloud}.
-\end{itemize}

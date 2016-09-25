@@ -87,6 +87,12 @@ disco su cui può effettuare diverse azioni}
 \\\\ \textbf{Descrizione}: L'utente, cliccando un apposito bottone in alto a destra, visualizza la mesh alla quale vengono applicate delle semplici textures di default.
 \\\\ \textbf{Postcondizioni}: Viene visualizzata la mesh dell'oggetto, alla quale sono state applicate textures di default.
 
+\subsubsection{UC1.3.6: Ritorno alla lista di mesh}
+\textbf{Attori Principali}: Utente.
+\\\\ \textbf{Precondizioni}: L'utente sta visualizzando una mesh e desidera ritornare alla lista di mesh.
+\\\\ \textbf{Descrizione}: L'utente preme sul tasto "Back" e ritorna alla lista di mesh.
+\\\\ \textbf{Postcondizioni}: L'utente è uscito dalla visualizzazione di una mesh ed è ritornato alla lista delle mesh.
+
 \subsection{UC1.4: Eliminazione di una mesh}
 \textbf{Attori Principali}: Utente.
 \\\\ \textbf{Precondizioni}: L'utente ha aperto l'applicazione, ha premuto sul pulsante per visualizzare la lista delle \emph{mesh} salvate localmente.
@@ -231,7 +237,7 @@ disco su cui può effettuare diverse azioni}
 \\\\ \textbf{Postcondizioni}: Il client riceve la mesh richiesta.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
 \subsection{UC4 Caricamento informazioni delle mesh salvate}
 \begin{figure}[!h] 
     \centering 
@@ -242,7 +248,7 @@ disco su cui può effettuare diverse azioni}
 \begin{usecase}{4}{Caricamento informazioni delle mesh salvate}
 \usecaseactors{Client}
 \\ \usecasepre{Il client richiede una lista di informazioni quali nome, data di creazione e volume delle mesh salvate su server}
-\\ \usecasedesc{Il server elabora la richiesta ricevuta ed invia le informazioni al Client}
+\\ \usecasedesc{Il server elabora la richiesta ricevuta ed invia le informazioni al client}
 \\ \usecasepost{Il client riceve le informazioni richieste dal server}
 \label{uc:informazioni}
 \end{usecase}
@@ -264,7 +270,7 @@ disco su cui può effettuare diverse azioni}
 \\\\ \textbf{Postcondizioni}: Il client riceve le informazioni richieste.
 
 
-\section{Tracciamento dei requisiti}
+\section{Requisiti}
 
 Da un'attenta analisi dei requisiti e degli use case effettuata sul progetto è stata stilata la tabella che traccia i requisiti in rapporto agli use case.\\
 Sono stati individuati diversi tipi di requisiti e si è quindi fatto utilizzo di un codice identificativo per distinguerli.\\
@@ -274,46 +280,20 @@ Il codice dei requisiti è così strutturato R(F/Q/V)(N/D/O) dove:
     \item[F =] funzionale
     \item[Q =] qualitativo
     \item[V =] di vincolo
-    \item[N =] obbligatorio (necessario)
+    \item[O =] obbligatorio
     \item[D =] desiderabile
     \item[Z =] opzionale
 \end{enumerate}
 Nelle tabelle \ref{tab:requisiti-funzionali}, \ref{tab:requisiti-qualitativi} e \ref{tab:requisiti-vincolo} sono riassunti i requisiti e il loro tracciamento con gli use case delineati in fase di analisi.
 
-\newpage
+\subsection{Requisiti Funzionali}
+\LTXtable{\textwidth}{tabelle/funzionali.tex}
 
-\begin{table}%
-\caption{Tabella del tracciamento dei requisti funzionali}
-\label{tab:requisiti-funzionali}
-\begin{tabularx}{\textwidth}{lXl}
-\hline\hline
-\textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
-\hline
-RFN-1     &  & UC1 \\
-\hline
-\end{tabularx}
-\end{table}%
+\subsection{Requisiti Qualitativi}
+\LTXtable{\textwidth}{tabelle/qualitativi.tex}
 
-\begin{table}%
-\caption{Tabella del tracciamento dei requisiti qualitativi}
-\label{tab:requisiti-qualitativi}
-\begin{tabularx}{\textwidth}{lXl}
-\hline\hline
-\textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
-\hline
-RQD-1    &  & - \\
-\hline
-\end{tabularx}
-\end{table}%
+\subsection{Requisiti di Vincolo}
+\LTXtable{\textwidth}{tabelle/vincolo.tex}
 
-\begin{table}%
-\caption{Tabella del tracciamento dei requisiti di vincolo}
-\label{tab:requisiti-vincolo}
-\begin{tabularx}{\textwidth}{lXl}
-\hline\hline
-\textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
-\hline
-RVO-1    &  & - \\
-\hline
-\end{tabularx}
-\end{table}%
+\subsection{Requisiti Prestazionali}
+\LTXtable{\textwidth}{tabelle/prestazionali.tex}

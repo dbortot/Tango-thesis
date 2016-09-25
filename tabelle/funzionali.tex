@@ -1,0 +1,94 @@
+\newcolumntype{s}{>{\hsize=.37\hsize}X}
+\newcolumntype{f}{>{\hsize=.42\hsize}X}
+\newcolumntype{m}{>{\hsize=.25\hsize}X}
+
+
+
+\begin{longtable}{s X m}  
+\endhead
+\hline\hline
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
+\hline
+RFO-1  & Il sistema deve permettere di interagire con le mesh salvate su tablet & UC1 \\
+\hline
+RFO-1.1    & L'utente può visualizzare una lista delle mesh salvate localmente & UC1.1 \\
+\hline
+RFO-1.2    & Il sistema permette di caricare una mesh dal server & UC1.2 \\
+\hline
+RFO-1.2.1   & L'utente può aggiornare la lista di mesh con le mesh presenti sul server & UC1.2 \\
+\hline
+RFO-1.3     & L'utente può visualizzare una singola mesh come oggetto tridimensionale & UC1.3 \\
+\hline
+RFO-1.3.1   & L'utente può ruotare la mesh visualizzata & UC1.3.1 \\
+\hline
+RFO-1.3.2   & L'utente può ingrandire/rimpicciolire la mesh visualizzata & UC1.3.2 \\
+\hline
+RFO-1.3.3   & L'utente può visualizzare il volume calcolato della mesh caricata & UC1.3.3 \\
+\hline
+RFD-1.3.4   & L'utente può visualizzare il solo wireframe della mesh & UC1.3.4 \\
+\hline
+RFD-1.3.5   & L'utente può visualizzare la mesh alla quale sono state applicate delle textures di default & UC1.3.5 \\
+\hline
+RFO-1.3.6   & L'utente può abbandonare la visualizzazione di una mesh e tornare alla lista di mesh  & UC1.3.6 \\
+\hline
+RFZ-1.3.7   & L'utente può scegliere e applicare delle textures alla mesh visualizzata & UC1.3.5 \\
+\hline
+RFO-1.4     & L'utente può eliminare una mesh dalla lista delle mesh  & UC1.4 \\
+\hline
+RFO-1.4.1   & L'utente può eliminare una mesh salvata localmente  & UC1.4 \\
+\hline
+RFO-1.5     & L'utente può tornare all'Activity precedente  & UC1.5 \\
+\hline
+RFD-1.6    & Se non vi sono mesh salvate localmente, l'utente viene informato con un messaggio & UC1.6 \\
+\hline
+RFD-1.7    & Se la connessione con il server fallisce, l'utente viene informato con un messaggio d'errore
+& UC1.7 \\
+\hline
+
+RFO-2      & Il sistema permette l'elaborazione di un Point Cloud & UC2 \\
+\hline
+RFO-2.1    & Il sistema permette di ricevere Point Cloud dal client & UC2.1 \\
+\hline
+RFO-2.1.1  & Il sistema permette di salvare i Point Cloud ricevuti su file PCD & UC2.1 \\
+\hline
+RFO-2.2    & Il sistema permette di filtrare un Point Cloud & UC2.2 \\
+\hline
+RFO-2.2.1  & Il sistema permette di rimuovere i punti isolati di un Point Cloud & UC2.2, UC2.2.1 \\
+\hline
+RFD-2.2.2  & Il sistema permette di rimuovere i punti esterni di un Point Cloud & UC2.2, UC2.2.2 \\
+\hline
+RFO-2.2.3  & Il sistema permette di rimuovere i punti del pavimento di un Point Cloud & UC2.2, UC2.2.3\\
+\hline
+RFO-2.2.4  & Il sistema permette di rimuovere i punti troppo vicini di un Point Cloud & UC2.2, UC2.2.4\\
+\hline
+RFO-2.3    & Il sistema permette di estrarre da un Point Cloud i punti del solo oggetto scansionato & UC2.3 \\
+\hline 
+RFO-2.4    & Il sistema permette di generare una mesh tridimensionale a partire dal Point Cloud filtrato & UC2.4 \\
+\hline
+RFO-2.4.1  & La mesh tridimensionale generata viene salvata in formato OBJ & UC2.4 \\
+\hline
+RFD-2.4.2  & La mesh tridimensionale generata viene salvata in formato VTK & UC2.4 \\
+\hline
+RFO-2.5    & Il sistema permette di calcolare il volume di una mesh tridimensionale & UC2.5 \\
+\hline
+RFO-2.5.1  & Il volume calcolato viene salvato su un file di testo nella stessa cartella della mesh & UC2.5 \\
+RFZ-2.5.2  & Il volume calcolato viene salvato direttamente nel file della mesh & UC2.5 \\
+\hline
+
+RFO-3      & Il sistema permette di inviare al client una mesh & UC3 \\
+\hline
+RFO-3.1    & Il client può richiedere al server l'invio di una specifica mesh & UC3.1 \\
+\hline
+RFO-3.2    & Il sistema permette di leggere da file ed inviare al client una mesh & UC3.2 \\
+\hline
+
+RFD-4      & Il sistema permette di inviare al client informazioni riguardo le mesh generate & UC4 \\
+\hline
+RFD-4.1    & Il client può richiedere al server informazioni sulle mesh prodotte & UC4.1 \\
+\hline
+RFD-4.2    & Il sistema permette di recuperare una serie di informazioni delle mesh salvate su server ed inviare al client i dati richiesti & UC4.2 \\
+\hline
+\caption{Tabella del tracciamento dei requisti funzionali}
+\label{tab:requisiti-funzionali}
+\end{longtable}
+

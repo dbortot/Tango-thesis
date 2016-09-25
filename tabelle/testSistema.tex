@@ -1,0 +1,139 @@
+\newcolumntype{s}{>{\hsize=.37\hsize}X}
+\newcolumntype{f}{>{\hsize=.42\hsize}X}
+\newcolumntype{m}{>{\hsize=.25\hsize}X}
+
+\begin{longtable}{s X m}  
+\endhead
+\hline\hline
+\textbf{Test} & \textbf{Descrizione} & \textbf{Esito}\\
+\hline
+
+\hline
+	TS1.0 &
+	L'app deve permettere di visualizzare una lista di mesh &
+	Success.\\
+\hline
+	TS1.1 &
+	L'app deve caricare correttamente le mesh salvate localmente in una lista &
+	Success.\\
+\hline
+	TS1.2 &
+	Selezionando una mesh dalla lista dev'essere possibile visualizzarne il rendering &
+	Success.\\
+\hline
+	TS1.3 &
+	Una mesh deve poter essere ruotata ed ingrandita a piacere &
+	Success.\\
+\hline
+	TS1.4 &
+	Dev'essere possibile cancellare correttamente una mesh salvata localmente &
+	Success.\\	
+
+\hline
+	TS2.0 &
+	L'app deve poter visualizzare messaggi di notifica provenienti da un web-server Firebase &
+	Success.\\
+\hline
+	TS2.1 &
+	L'app deve poter ricevere notifiche dal server riguardo l'esito della computazione di una mesh &
+	Success.\\
+\hline
+	TS2.2 &
+	L'apertura di una notifica sull'esito di una mesh deve automaticamente caricare localmente la nuova mesh e reindirizzare l'utente alla lista di mesh &
+	Fallito\\		
+
+\hline
+	TS3.0 &
+	La \emph{preview} della fotocamera deve mostrare correttamente quello che inquadra. &
+	Success.\\
+\hline
+	TS3.1 &
+	La preview della fotocamera non deve cessare di funzionare in caso di riavvio dell'activity principale &
+	Success.\\
+	
+\hline
+	TS4.0 &
+	L'applicativo server deve poter ricevere Point Cloud dal client &
+	Success.\\
+	
+\hline
+	TS4.1 &
+	L'applicativo server deve poter salvare i Point Cloud ricevuti su file PCD &
+	Success.\\	
+	
+\hline
+	TS4.2 &
+	L'applicativo server deve poter leggere un file PCD &
+	Success.\\		
+	
+\hline
+	TS5.0 &
+    L'applicativo server deve poter elaborare un Point Cloud &
+	Success.\\
+\hline
+	TS5.1 &
+	L'applicativo server deve poter filtrare i punti isolati di un Point Cloud &
+	Success.\\
+\hline
+	TS5.2 &
+	L'applicativo server deve poter filtrare i punti esterni di un Point Cloud &
+	Success.\\
+\hline
+	TS5.3 &
+	L'applicativo server deve poter filtrare i punti del pavimento di un Point Cloud &
+	Success.\\
+\hline
+	TS5.4 &
+	L'applicativo server deve poter filtrare i punti doppi o ravvicinati di un Point Cloud &
+	Success.\\
+\hline
+	TS5.5 &
+	L'applicativo server deve poter estrarre dal Point Cloud una nuvola di punti rappresentante il solo oggetto scansionato &
+	Success.\\				
+
+
+\hline
+	TS6.0 &
+	L'applicativo server deve poter effettuare il meshing di un Point Cloud &
+	Success.\\
+\hline
+	TS6.1 &
+	L'applicativo server deve poter salvare una mesh generata in formato OBJ &
+	Success.\\
+\hline
+	TS6.2 &
+	L'applicativo server deve poter salvare una mesh generata in formato VTK &
+	Success.\\
+
+\hline
+	TS7.0 &
+	L'applicativo server deve poter calcolare il volume di una mesh &
+	Success.\\
+\hline
+	TS7.1 &
+	Il volume calcolato deve essere salvato su file per essere letto in futuro &
+	Success.\\
+\hline
+	TS7.2 &
+	Il volume calcolato deve essere salvato nel file stesso della mesh valutata &
+	Fallito\\
+
+\hline
+	TS8.0 &
+    L'applicativo server deve poter inviare una mesh al client &
+	Success.\\
+
+\hline
+	TS8.1 &
+    L'applicativo server deve poter inviare informazioni sulle mesh salvate localmente al client &
+	Success.\\	
+
+\hline
+	TS8.2 &
+    L'applicativo server deve poter inviare una notifica sull'esito dell'elaborazione di un Point Cloud al client &
+	Success.\\
+	
+\hline
+\caption{Test di Sistema}
+\label{tab:test-sistema}
+\end{longtable}

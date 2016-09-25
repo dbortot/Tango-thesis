@@ -1,0 +1,31 @@
+\newcolumntype{s}{>{\hsize=.37\hsize}X}
+\newcolumntype{f}{>{\hsize=.42\hsize}X}
+\newcolumntype{m}{>{\hsize=.25\hsize}X}
+
+\begin{longtable}{s X m}  
+\endhead
+\hline\hline
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Fonti}\\
+\hline
+RPO-1  & Le operazioni di filtraggio del Point Cloud devono essere svolte efficientemente & Richiesta committente \\
+\hline
+RPO-2  & Le mesh generate devono essere sufficientemente leggere da poter essere inviate via web al tablet  &  UC 3.2\\
+\hline
+RPD-3  & Il rendering delle mesh su tablet dev'essere veloce &  UC 1.3\\
+\hline
+RPD-3.1 & La visualizzazione delle mesh su tablet dev'essere fluida  &  UC 1.3\\
+\hline
+RPD-4  & Il refresh della lista di mesh non deve bloccare l'applicazione  &  UC 1.2\\
+\hline
+RPD-4.1  & Il refresh della lista di mesh dev'essere svolto efficientemente  &  UC 1.2\\
+\hline
+RPD-5  & Il caricamento della lista di mesh locali dev'essere veloce  &  UC 1.1\\
+\hline
+RPD-6  & In caso di mancata connessione col server, l'errore di connessione dev'essere comunicato prima possibile &  UC 1.7\\
+\hline
+RPD-6.1 & In caso di mancata connessione col server, l'applicativo lato client deve aspettare una risposta per il minor tempo possibile  &  UC 1.7\\
+\hline
+
+\caption{Tabella del tracciamento dei requisti prestazionali}
+\label{tab:requisiti-prestazionali}
+\end{longtable}

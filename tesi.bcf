@@ -2068,6 +2068,15 @@
     <bcf:citekey order="15">https://developer.android.com/reference/org/apache/http/package-summary.html</bcf:citekey>
     <bcf:citekey order="16">https://developers.google.com/tango/hardware/tablet</bcf:citekey>
     <bcf:citekey order="17">https://developers.google.com/tango/overview/depth-perception</bcf:citekey>
+    <bcf:citekey order="18">https://httpd.apache.org/</bcf:citekey>
+    <bcf:citekey order="19">https://play.google.com/store/apps/details?id=org.andresoviedo.dddmodel&amp;hl=it</bcf:citekey>
+    <bcf:citekey order="20">http://pointclouds.org/documentation/tutorials/statistical_outlier.php/statistical-outlier-removal</bcf:citekey>
+    <bcf:citekey order="21">http://pointclouds.org/documentation/tutorials/passthrough.php/passthrough</bcf:citekey>
+    <bcf:citekey order="22">http://pointclouds.org/documentation/tutorials/planar_segmentation.php</bcf:citekey>
+    <bcf:citekey order="23">http://pointclouds.org/documentation/tutorials/voxel_grid.php</bcf:citekey>
+    <bcf:citekey order="24">http://www.pointclouds.org/documentation/tutorials/cluster_extraction.php</bcf:citekey>
+    <bcf:citekey order="25">http://www.pointclouds.org/documentation/tutorials/greedy_projection.php</bcf:citekey>
+    <bcf:citekey order="26">http://research.microsoft.com/en-us/um/people/chazhang/publications/icip01_ChaZhang.pdf</bcf:citekey>
     <bcf:citekey order="0">*</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>
