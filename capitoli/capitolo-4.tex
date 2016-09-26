@@ -14,11 +14,12 @@
 
 Per lo studio dei casi di utilizzo del prodotto sono stati creati dei diagrammi.
 I diagrammi dei casi d'uso (in inglese \emph{Use Case Diagram}) sono diagrammi di tipo \gls{uml} dedicati alla descrizione delle funzioni o servizi offerti da un sistema, così come sono percepiti e utilizzati dagli attori che interagiscono col sistema stesso.
-
+Vediamo di seguito i casi d'uso che descrivono le funzionalità da realizzare nell'applicativo lato client, come da figura \ref{fig:mesh-list}.
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=1.0\columnwidth]{usecase/mesh_list} 
     \caption{Use Case - UC1: Operazioni sulla lista di mesh salvate}
+    \label{fig:mesh-list}
 \end{figure}
 
 \begin{usecase}{1}{Operazioni sulla lista di mesh salvate}
@@ -120,12 +121,14 @@ disco su cui può effettuare diverse azioni}
 
 
 \section{Casi d'uso - lato server}
+Verranno di seguito descritti i casi d'utilizzo dell'applicativo lato server delle sue interazioni con il client, di cui possiamo avere una visione generale in figura \ref{fig:scenario_principale}.
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=1.0\columnwidth]{usecase/scenario_principale} 
     \caption{Use Case - UC0: Scenario Principale}
+    \label{fig:scenario_principale}
 \end{figure}
-
+\newpage
 \begin{usecase}{0}{Scenario Principale}
 \usecaseactors{Client}
 \\ \usecasepre{Il client invia una specifica richiesta al server}
@@ -135,10 +138,12 @@ disco su cui può effettuare diverse azioni}
 \end{usecase}
 
 \subsection{UC2 Elaborazione di un Point Cloud}
+La figura \ref{fig:elaborazione} descrive i casi d'uso per l'elaborazione di un Point Cloud.
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=1.0\columnwidth]{usecase/elaborazione} 
     \caption{Use Case - UC2: Elaborazione di un Point Cloud}
+    \label{fig:elaborazione}
 \end{figure}
 
 \begin{usecase}{2}{Elaborazione di un Point Cloud}
@@ -203,13 +208,16 @@ disco su cui può effettuare diverse azioni}
 \\\\ \textbf{Descrizione}: Viene calcolato il volume della mesh generata a partire dal Point Cloud.
 \\\\ \textbf{Postcondizioni}: Il volume dell'oggetto è stato calcolato.
 
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{UC3 Caricamento di una mesh}
+In figura \ref{fig:caricamento} sono riportati i casi d'uso per il caricamento di una mesh.
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=0.9\columnwidth]{usecase/caricamento} 
     \caption{Use Case - UC3: Caricamento di una mesh}
+    \label{fig:caricamento}
 \end{figure}
 
 \begin{usecase}{3}{Caricamento di una mesh}
@@ -237,12 +245,14 @@ disco su cui può effettuare diverse azioni}
 \\\\ \textbf{Postcondizioni}: Il client riceve la mesh richiesta.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
+
 \subsection{UC4 Caricamento informazioni delle mesh salvate}
+In figura \ref{fig:loadinfo} sono riportati i casi d'uso per il caricamento delle informazioni relative alle mesh salvate su server.
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=0.9\columnwidth]{usecase/informazioni} 
     \caption{Use Case - UC4: Caricamento informazioni delle mesh salvate}
+    \label{fig:loadinfo}
 \end{figure}
 
 \begin{usecase}{4}{Caricamento informazioni delle mesh salvate}
@@ -284,7 +294,9 @@ Il codice dei requisiti è così strutturato R(F/Q/V)(N/D/O) dove:
     \item[D =] desiderabile
     \item[Z =] opzionale
 \end{enumerate}
-Nelle tabelle \ref{tab:requisiti-funzionali}, \ref{tab:requisiti-qualitativi} e \ref{tab:requisiti-vincolo} sono riassunti i requisiti e il loro tracciamento con gli use case delineati in fase di analisi.
+Nelle tabelle \ref{tab:requisiti-funzionali}, \ref{tab:requisiti-qualitativi}, \ref{tab:requisiti-vincolo} e \ref{tab:requisiti-prestazionali} sono riassunti i requisiti e il loro tracciamento con gli use case delineati in fase di analisi.
+
+\newpage
 
 \subsection{Requisiti Funzionali}
 \LTXtable{\textwidth}{tabelle/funzionali.tex}

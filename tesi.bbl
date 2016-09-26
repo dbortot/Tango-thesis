@@ -25,7 +25,7 @@
       \field{labeltitlesource}{title}
       \field{title}{3D Model Viewer Open Source}
       \verb{url}
-      \verb https://play.google.com/store/apps/details?id=org.andresoviedo.dddmodel%5C&hl=it
+      \verb https://play.google.com/store/apps/details?id=org.andresoviedo.dddmodel&hl=it
       \endverb
     \endentry
     \entry{site:3d-viewer}{online}{}
@@ -34,7 +34,7 @@
       \field{labeltitlesource}{title}
       \field{title}{3D viewer}
       \verb{url}
-      \verb https://play.google.com/store/apps/details?id=com.pcvirt.Viewer3D%5C&hl=it
+      \verb https://play.google.com/store/apps/details?id=com.pcvirt.Viewer3D&hl=it
       \endverb
     \endentry
     \entry{site:apache}{online}{}
@@ -52,7 +52,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Downsampling a PointCloud using a VoxelGrid filter}
       \verb{url}
-      \verb http://pointclouds.org/documentation/tutorials/voxel%5C_grid.php/voxelgrid
+      \verb http://pointclouds.org/documentation/tutorials/voxel_grid.php/voxelgrid
       \endverb
     \endentry
     \entry{site:cluster}{online}{}
@@ -61,7 +61,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Euclidean Cluster Extraction}
       \verb{url}
-      \verb http://pointclouds.org/documentation/tutorials/cluster%5C_extraction.php/cluster-extraction
+      \verb http://pointclouds.org/documentation/tutorials/cluster_extraction.php/cluster-extraction
       \endverb
     \endentry
     \entry{site:meshing}{online}{}
@@ -70,7 +70,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Fast triangulation of unordered point clouds}
       \verb{url}
-      \verb http://pointclouds.org/documentation/tutorials/greedy%5C_projection.php/greedy-triangulation
+      \verb http://pointclouds.org/documentation/tutorials/greedy_projection.php/greedy-triangulation
       \endverb
     \endentry
     \entry{site:passthrough}{online}{}
@@ -88,7 +88,16 @@
       \field{labeltitlesource}{title}
       \field{title}{Fitting trimmed B-splines to unordered point clouds}
       \verb{url}
-      \verb http://pointclouds.org/documentation/tutorials/bspline%5C_fitting.php/bspline-fitting
+      \verb http://pointclouds.org/documentation/tutorials/bspline_fitting.php/bspline-fitting
+      \endverb
+    \endentry
+    \entry{site:okhttp}{online}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{7803d2715d5e795e70382b084ab8d00e}
+      \field{labeltitlesource}{title}
+      \field{title}{OkHTTP}
+      \verb{url}
+      \verb http://square.github.io/okhttp/
       \endverb
     \endentry
     \entry{site:segmentation}{online}{}
@@ -97,7 +106,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Plane model segmentation}
       \verb{url}
-      \verb http://pointclouds.org/documentation/tutorials/planar%5C_segmentation.php/planar-segmentation
+      \verb http://pointclouds.org/documentation/tutorials/planar_segmentation.php/planar-segmentation
       \endverb
     \endentry
     \entry{site:PCD-read}{online}{}
@@ -106,7 +115,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Reading Point Cloud data from PCD files}
       \verb{url}
-      \verb http://pointclouds.org/documentation/tutorials/reading%5C_pcd.php/reading-pcd
+      \verb http://pointclouds.org/documentation/tutorials/reading_pcd.php/reading-pcd
       \endverb
     \endentry
     \entry{site:outliers}{online}{}
@@ -115,7 +124,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Removing outliers using a StatisticalOutlierRemoval filter}
       \verb{url}
-      \verb http://pointclouds.org/documentation/tutorials/statistical%5C_outlier.php/statistical-outlier-removal
+      \verb http://pointclouds.org/documentation/tutorials/statistical_outlier.php/statistical-outlier-removal
       \endverb
     \endentry
     \entry{site:PCD}{online}{}
@@ -124,7 +133,7 @@
       \field{labeltitlesource}{title}
       \field{title}{The PCD file format}
       \verb{url}
-      \verb http://pointclouds.org/documentation/tutorials/pcd%5C_file%5C_format.php/pcd-file-format
+      \verb http://pointclouds.org/documentation/tutorials/pcd_file_format.php/pcd-file-format
       \endverb
     \endentry
     \entry{site:PCD-write}{online}{}
@@ -133,22 +142,40 @@
       \field{labeltitlesource}{title}
       \field{title}{Writing Point Cloud data to PCD files}
       \verb{url}
-      \verb http://pointclouds.org/documentation/tutorials/writing%5C_pcd.php/writing-pcd
+      \verb http://pointclouds.org/documentation/tutorials/writing_pcd.php/writing-pcd
+      \endverb
+    \endentry
+    \entry{paper:volume}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6be2ddbf537bae561864776d40c36220}{%
+           family={Zhang},
+           family_i={Z\bibinitperiod},
+           given={Cha},
+           given_i={C\bibinitperiod}}}%
+        {{hash=770b8c88e0b93629ab1d35372bf0e3e4}{%
+           family={Chen},
+           family_i={C\bibinitperiod},
+           given={Tsuhan},
+           given_i={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{e2f57d688856f2fb9bb40d88aa4ef7b4}
+      \strng{fullhash}{e2f57d688856f2fb9bb40d88aa4ef7b4}
+      \field{sortinit}{Z}
+      \field{sortinithash}{fdda4caaa6b5fa63e0c081dcb159543a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{EFFICIENT FEATURE EXTRACTION FOR 2D/3D OBJECTS IN MESH REPRESENTATION}
+      \field{year}{2001}
+      \verb{url}
+      \verb http://research.microsoft.com/en-us/um/people/chazhang/publications/icip01_ChaZhang.pdf
       \endverb
     \endentry
   \endsortlist
-  \missing{http://pointclouds.org/documentation/tutorials/voxel_grid.php}
-  \missing{https://play.google.com/store/apps/details?id=org.andresoviedo.dddmodel&hl=it}
-  \missing{http://pointclouds.org/documentation/tutorials/passthrough.php/passthrough}
-  \missing{http://pointclouds.org/documentation/tutorials/statistical_outlier.php/statistical-outlier-removal}
   \missing{https://httpd.apache.org/}
-  \missing{http://www.pointclouds.org/documentation/tutorials/greedy_projection.php}
-  \missing{https://developers.google.com/tango/hardware/tablet}
-  \missing{http://www.pointclouds.org/documentation/tutorials/cluster_extraction.php}
-  \missing{https://github.com/andresoviedo/android-3D-model-viewer}
-  \missing{http://pointclouds.org/documentation/tutorials/planar_segmentation.php}
-  \missing{http://research.microsoft.com/en-us/um/people/chazhang/publications/icip01_ChaZhang.pdf}
   \missing{https://developers.google.com/tango/overview/depth-perception}
+  \missing{https://developers.google.com/tango/hardware/tablet}
+  \missing{https://github.com/andresoviedo/android-3D-model-viewer}
+  \missing{https://play.google.com/store/apps/details?id=org.andresoviedo.dddmodel&hl=it}
 \endrefsection
 \endinput
 

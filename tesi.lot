@@ -16,7 +16,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {4.2}{\ignorespaces Tabella del tracciamento dei requisti qualitativi\relax }}{25}{table.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.3}{\ignorespaces Tabella del tracciamento dei requisti di vincolo\relax }}{25}{table.4.3}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Tabella del tracciamento dei requisti di vincolo\relax }}{26}{table.4.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {4.4}{\ignorespaces Tabella del tracciamento dei requisti prestazionali\relax }}{26}{table.4.4}
 \defcounter {refsection}{0}\relax 
@@ -31,3 +31,15 @@
 \contentsline {table}{\numberline {7.1}{\ignorespaces Risultati del calcolo del volume di un cestino\relax }}{52}{table.7.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {7.2}{\ignorespaces Risultati del calcolo del volume di una scatola\relax }}{52}{table.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.3}{\ignorespaces Distribuzione ore preventivo e consuntivo\relax }}{56}{table.caption.85}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.4}{\ignorespaces Soddisfacimento dei requisti funzionali\relax }}{58}{table.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.5}{\ignorespaces Soddisfacimento dei requisti qualitativi\relax }}{59}{table.7.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.6}{\ignorespaces Soddisfacimento dei requisti di vincolo\relax }}{59}{table.7.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.7}{\ignorespaces Soddisfacimento dei requisti prestazionali\relax }}{59}{table.7.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.8}{\ignorespaces Soddisfacimento totale dei requisti\relax }}{60}{table.7.8}

@@ -42,17 +42,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Studio di fattibilit\IeC {\`a}}{9}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Filtraggio e mehsing di Point Cloud}{9}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Elaborazione dei Point Cloud}{9}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Metodologie per il calcolo del volume}{10}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Visualizzazione di file in formato OBJ}{10}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Visualizzazione di file in formato OBJ}{10}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Comunicazione client-server}{10}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Comunicazione client-server}{10}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.4}Conclusioni}{10}{subsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Conclusioni}{10}{subsection.3.2.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Analisi preventiva dei rischi}{10}{section.3.3}
+\contentsline {section}{\numberline {3.3}Analisi preventiva dei rischi}{11}{section.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.1}Rischi generali}{11}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
@@ -102,7 +100,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{UC2.2.3 Rimozione pavimento}{19}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{UC2.2.4 Rimozione punti troppo vicini}{19}{section*.31}
+\contentsline {subsubsection}{UC2.2.4 Rimozione punti troppo vicini}{20}{section*.31}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.4}UC2.3 Estrazione dell'oggetto}{20}{subsection.4.2.4}
 \defcounter {refsection}{0}\relax 
@@ -110,11 +108,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.6}UC2.5 Calcolo del volume}{20}{subsection.4.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.7}UC3 Caricamento di una mesh}{20}{subsection.4.2.7}
+\contentsline {subsection}{\numberline {4.2.7}UC3 Caricamento di una mesh}{21}{subsection.4.2.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.8}UC3.1 Richiesta caricamento Mesh}{21}{subsection.4.2.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.9}UC3.2 Caricamento Mesh}{21}{subsection.4.2.9}
+\contentsline {subsection}{\numberline {4.2.9}UC3.2 Caricamento Mesh}{22}{subsection.4.2.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.10}UC4 Caricamento informazioni delle mesh salvate}{22}{subsection.4.2.10}
 \defcounter {refsection}{0}\relax 
@@ -124,11 +122,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Requisiti}{23}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Requisiti Funzionali}{23}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Requisiti Funzionali}{24}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.2}Requisiti Qualitativi}{25}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Requisiti di Vincolo}{25}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.3}Requisiti di Vincolo}{26}{subsection.4.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.4}Requisiti Prestazionali}{26}{subsection.4.3.4}
 \defcounter {refsection}{0}\relax 
@@ -144,57 +142,57 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1.4}Server}{29}{subsection.5.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Progettazione}{30}{section.5.2}
+\contentsline {section}{\numberline {5.2}Progettazione}{29}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Architettura lato client}{30}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}Architettura lato client}{29}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Lista di mesh}{30}{section*.34}
+\contentsline {subsubsection}{Lista di mesh}{29}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Camera Preview}{33}{section*.39}
+\contentsline {subsubsection}{Camera Preview}{32}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{JNI e Point Cloud Registration}{33}{section*.41}
+\contentsline {subsubsection}{JNI e Point Cloud Registration}{32}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Architettura lato server}{34}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Architettura lato server}{33}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Services}{35}{section*.44}
+\contentsline {subsubsection}{Services}{34}{section*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{PointCloudElaboration}{35}{section*.46}
+\contentsline {subsubsection}{PointCloudElaboration}{34}{section*.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Design Pattern utilizzati}{37}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}Design Pattern utilizzati}{36}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Strategy}{37}{section*.50}
+\contentsline {subsubsection}{Strategy}{36}{section*.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Model View Presenter}{38}{section*.52}
+\contentsline {subsubsection}{Model View Presenter}{37}{section*.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Singleton}{38}{section*.54}
+\contentsline {subsubsection}{Singleton}{37}{section*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Sviluppo}{39}{section.5.3}
+\contentsline {section}{\numberline {5.3}Sviluppo}{38}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Lato client}{39}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}Lato client}{38}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Firebase}{39}{section*.56}
+\contentsline {subsubsection}{Firebase}{38}{section*.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Camera preview}{39}{section*.57}
+\contentsline {subsubsection}{Camera preview}{39}{section*.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Visualizzazione di mesh}{39}{section*.58}
+\contentsline {subsubsection}{Visualizzazione di mesh}{39}{section*.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{JNI e Point Cloud Registration}{41}{section*.61}
+\contentsline {subsubsection}{JNI e Point Cloud Registration}{40}{section*.62}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.2}Lato server}{43}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.3}Elaborazione di un Point Cloud}{43}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sparse filtering}{44}{section*.64}
+\contentsline {subsubsection}{Sparse filtering}{43}{section*.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Radius filtering}{44}{section*.66}
+\contentsline {subsubsection}{Radius filtering}{44}{section*.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ground filtering}{44}{section*.68}
+\contentsline {subsubsection}{Ground filtering}{44}{section*.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Voxel filtering}{45}{section*.70}
+\contentsline {subsubsection}{Voxel filtering}{45}{section*.71}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Cluster extraction}{46}{section*.71}
+\contentsline {subsubsection}{Cluster extraction}{45}{section*.72}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Meshing}{46}{section*.73}
+\contentsline {subsubsection}{Meshing}{46}{section*.74}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.4}Calcolo del volume}{47}{subsection.5.3.4}
 \defcounter {refsection}{0}\relax 
@@ -214,28 +212,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.2.1}Problemi irrisolti}{53}{subsection.7.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Artefatti nel Point Cloud}{53}{section*.75}
+\contentsline {subsubsection}{Artefatti nel Point Cloud}{53}{section*.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Surriscaldamento e consumo della batteria}{54}{section*.77}
+\contentsline {subsubsection}{Surriscaldamento e consumo della batteria}{54}{section*.78}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Drift correction???}{54}{section*.78}
+\contentsline {subsubsection}{Limiti del device}{54}{section*.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.2}Sviluppi futuri}{54}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.2}Sviluppi futuri}{55}{subsection.7.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Point Cloud Registration}{54}{section*.79}
+\contentsline {subsubsection}{Point Cloud Registration}{55}{section*.81}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Comparazione con modello 3D esatto}{54}{section*.80}
+\contentsline {subsubsection}{Comparazione con modello 3D esatto}{55}{section*.82}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Miglioramento server}{54}{section*.81}
+\contentsline {subsubsection}{Integrazione con l'applicazione VIC}{55}{section*.83}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Integrazione con VIC}{54}{section*.82}
+\contentsline {subsubsection}{Meshing con textures}{55}{section*.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Meshing con textures}{54}{section*.83}
+\contentsline {section}{\numberline {7.3}Consuntivo finale}{56}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Consuntivo finale}{54}{section.7.3}
+\contentsline {section}{\numberline {7.4}Raggiungimento degli obiettivi}{57}{section.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Raggiungimento degli obiettivi}{54}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Requisiti}{58}{subsection.7.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.5}Conoscenze acquisite}{54}{section.7.5}
+\contentsline {subsubsection}{Requisiti Funzionali}{58}{section*.87}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografia}{57}{section*.84}
+\contentsline {subsubsection}{Requisiti Qualitativi}{59}{section*.88}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Requisiti di Vincolo}{59}{section*.89}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Requisiti Prestazionali}{59}{section*.90}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Esito finale}{59}{section*.91}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.5}Conoscenze acquisite}{60}{section.7.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{61}{section*.92}

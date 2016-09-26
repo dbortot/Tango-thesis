@@ -20,8 +20,8 @@ Seguendo quest'approccio è stato possibile valutare le potenzialità e i limiti
 Prima di iniziare il progetto è stato effettuato un accurato studio di fattibilità basato sullo studio della libreria PCL e della vasta quantità di esempi d'utilizzo della stessa reperibili online. Si sono cercate poi soluzioni per il calcolo del volume di una mesh.\\
 Per il lato client si sono esplorate soluzioni per la visualizzazione di mesh salvate in formato OBJ e per la comunicazione client-server.
 
-\subsection{Filtraggio e mehsing di Point Cloud}
-\'E parso subito evidente che l'applicativo necessita di un formato standard, trasferibile via Web, per il trattamento di Point Cloud, e delle funzionalità di I/O associate. Inoltre è stato necessario esplorare le funzionalità disponibli per l'elaborazione ed il meshing dei Point Cloud. A tal riguardo è stata studiata estensivamente la documentazione PCL:
+\subsection{Elaborazione dei Point Cloud}
+\'E parso subito evidente che l'applicativo necessita di un formato standard, trasferibile via Web, per il trattamento di Point Cloud, e delle funzionalità di I/O associate. Inoltre è stato necessario esplorare le funzionalità disponibli per il filtraggio ed il meshing dei Point Cloud acquisiti. Per ultimo si è cercato un affidabile metodo matamatico per il calcolo del volume di una mesh. A tal riguardo è stata studiata estensivamente la documentazione PCL, che offre anche numerosi esempi d'utilizzo:
 \begin{itemize}
 \item\textbf{The PCD (Point Cloud Data) file format} \cite{site:PCD}
 \item\textbf{Reading Point Cloud data from PCD files} \cite{site:PCD-read}
@@ -34,26 +34,27 @@ Per il lato client si sono esplorate soluzioni per la visualizzazione di mesh sa
 \item \textbf{Fast triangulation of unordered point clouds}\cite{site:meshing}
 \item \textbf{Fitting trimmed B-splines to unordered point clouds}\cite{site:bsplines}
 \end{itemize}
-
-\subsection{Metodologie per il calcolo del volume}
-Durante la ricerca di un affidabile metodo matematico per il calcolo del volume di una mesh è risultato che il più adatto, validato ormai da anni di utilizzo, è il calcolo del volume con segno di una mesh triangolare come descritto ad esempio in \cite{}
+\noindent
+Per il calcolo del volume invece, punto focale del progetto, si è studiato quanto descritto in \cite{paper:volume}
 
 \subsection{Visualizzazione di file in formato OBJ}
 Per visualizzare le mesh prodotte dal server su tablet è stato necessario ricercare esempi di applicativi che permettessero di trattare oggetti tridimensionali in formato OBJ.\\
-A tal riguardo si sono studiate due applicazioni:
+A tal riguardo si sono studiate due applicazioni Android:
 \begin{itemize}
 \item\textbf{3D viewer}\cite{site:3d-viewer}
 \item\textbf{3D Model Viewer Open Source}\cite{site:3d-viewer-os}
-applicazione open-source android per la visualizzazione di file OBJ realizzata da Andres Oviedo, il cui codice è liberamente reperibile dalla repository\footcite{https://github.com/andresoviedo/android-3D-model-viewer} GitHub
 \end{itemize}
+\noindent
+In particolare la seconda applicazione essendo open-source (realizzata da Andres Oviedo, il codice è liberamente reperibile dalla repository\footcite{https://github.com/andresoviedo/android-3D-model-viewer} GitHub) si è rivelata una valida e disponibile implementazione della funzionalità richiesta.
 
 \subsection{Comunicazione client-server}
-Per implementare la comunicazione client-server la scelta più logica è stata di seguire esplorare la documentazione ufficiale Android, che mette a disposizione il package \textbf{Apache HTTP}\cite{site:apache} che risponde alle necessità richieste.
+Per implementare la comunicazione client-server la scelta più logica è stata di esplorare la documentazione ufficiale Android, che mette a disposizione il package \textbf{Apache HTTP}\cite{site:apache}, che è stato però deprecato dalla versione 6.0 di Android, quindi si è studiato come alternativa l'ottima e leggera libreria open source \textbf{OkHttp}\cite{site:okhttp} che risponde alle necessità richieste.
 
 \subsection{Conclusioni}
-Alla luce della disponibilità e qualità degli esempi sopracitati il progetto è apparso fattibile e quindi è stato possibile dare il via al ciclo di vita del progetto software.
+Alla luce della disponibilità e qualità degli esempi sopracitati il progetto è apparso fattibile. La documentazione e le applicazioni studiate infatti hanno dato prova delle potenzialità della libreria PCL e della possibilità concreta di calcolare il volume esatto di una mesh tridimensionale. \'E quindi stato possibile dare il via al ciclo di vita del progetto software.
 
 
+\newpage
 %**************************************************************
 \section{Analisi preventiva dei rischi}
 
