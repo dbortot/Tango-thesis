@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.22)  26 SEP 2016 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.22)  27 SEP 2016 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1512,11 +1512,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
 ] (./tesi.toc [7
 
-])
+] [8])
 \tf@toc=\write7
 \openout7 = `tesi.toc'.
 
- [8] (./tesi.lof
+ [9] (./tesi.lof
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1526,21 +1526,22 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [9
-
-])
+)
 \tf@lof=\write8
 \openout8 = `tesi.lof'.
 
- (./tesi.lot)
+ (./tesi.lot [10
+
+])
 \tf@lot=\write9
 \openout9 = `tesi.lot'.
 
 
-[10]) (./capitoli/capitolo-1.tex
+[11] [12
+
+]) (./capitoli/capitolo-1.tex
 Capitolo 1.
 [1
-
 
 
 
@@ -1564,7 +1565,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-<immagini/varie/tango-hardware.png, id=346, 954.56625pt x 693.34032pt>
+<immagini/varie/tango-hardware.png, id=360, 954.56625pt x 693.34032pt>
 File: immagini/varie/tango-hardware.png Graphic file (type png)
 
 <use immagini/varie/tango-hardware.png>
@@ -1572,7 +1573,7 @@ Package pdftex.def Info: immagini/varie/tango-hardware.png used on input line 5
 8.
 (pdftex.def)             Requested size: 334.79773pt x 243.16998pt.
  [2 <./immagini/varie/tango-hardware.png>] <immagini/varie/point_cloud_example.
-png, id=358, 1573.88pt x 966.61125pt>
+png, id=376, 1573.88pt x 966.61125pt>
 File: immagini/varie/point_cloud_example.png Graphic file (type png)
 
 <use immagini/varie/point_cloud_example.png>
@@ -1583,7 +1584,7 @@ ine 81.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./immagini/varie/point_cloud_example.png>]
-<immagini/varie/Drift_Correction.png, id=367, 1003.75pt x 501.875pt>
+<immagini/varie/Drift_Correction.png, id=385, 1003.75pt x 501.875pt>
 File: immagini/varie/Drift_Correction.png Graphic file (type png)
 
 <use immagini/varie/Drift_Correction.png>
@@ -1591,7 +1592,7 @@ Package pdftex.def Info: immagini/varie/Drift_Correction.png used on input line
  97.
 (pdftex.def)             Requested size: 334.79773pt x 167.40356pt.
 
-<immagini/varie/no_drift_correction.png, id=370, 897.3525pt x 753.81625pt>
+<immagini/varie/no_drift_correction.png, id=389, 897.3525pt x 753.81625pt>
 File: immagini/varie/no_drift_correction.png Graphic file (type png)
 
 <use immagini/varie/no_drift_correction.png>
@@ -1599,7 +1600,7 @@ Package pdftex.def Info: immagini/varie/no_drift_correction.png used on input l
 ine 112.
 (pdftex.def)             Requested size: 174.84045pt x 146.8728pt.
 
-<immagini/varie/with_drift_correction.png, id=371, 809.0225pt x 666.49pt>
+<immagini/varie/with_drift_correction.png, id=390, 809.0225pt x 666.49pt>
 File: immagini/varie/with_drift_correction.png Graphic file (type png)
 
 <use immagini/varie/with_drift_correction.png>
@@ -1611,7 +1612,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--135
 
  []
 
-<immagini/varie/low_voxeling.png, id=382, 930.47626pt x 766.865pt>
+<immagini/varie/low_voxeling.png, id=404, 930.47626pt x 766.865pt>
 File: immagini/varie/low_voxeling.png Graphic file (type png)
 
 <use immagini/varie/low_voxeling.png>
@@ -1619,7 +1620,7 @@ Package pdftex.def Info: immagini/varie/low_voxeling.png used on input line 145
 .
 (pdftex.def)             Requested size: 174.84045pt x 144.09106pt.
 
-<immagini/varie/high_voxeling.png, id=383, 929.4725pt x 766.865pt>
+<immagini/varie/high_voxeling.png, id=405, 929.4725pt x 766.865pt>
 File: immagini/varie/high_voxeling.png Graphic file (type png)
 
 <use immagini/varie/high_voxeling.png>
@@ -1682,7 +1683,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-<immagini/usecase/mesh_list.png, id=473, 909.3975pt x 556.0775pt>
+<immagini/usecase/mesh_list.png, id=503, 909.3975pt x 556.0775pt>
 File: immagini/usecase/mesh_list.png Graphic file (type png)
 
 <use immagini/usecase/mesh_list.png>
@@ -1913,7 +1914,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--120
 
  []
 
-<immagini/usecase/scenario_principale.png, id=504, 644.4075pt x 299.1175pt>
+<immagini/usecase/scenario_principale.png, id=533, 644.4075pt x 299.1175pt>
 File: immagini/usecase/scenario_principale.png Graphic file (type png)
 
 <use immagini/usecase/scenario_principale.png>
@@ -1935,7 +1936,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--139
 
  []
 
-<immagini/usecase/elaborazione.png, id=511, 780.9175pt x 403.5075pt>
+<immagini/usecase/elaborazione.png, id=540, 780.9175pt x 403.5075pt>
 File: immagini/usecase/elaborazione.png Graphic file (type png)
 
 <use immagini/usecase/elaborazione.png>
@@ -2095,7 +2096,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--210
 
  []
 
-[20] <immagini/usecase/caricamento.png, id=532, 490.83376pt x 275.0275pt>
+[20] <immagini/usecase/caricamento.png, id=562, 490.83376pt x 275.0275pt>
 File: immagini/usecase/caricamento.png Graphic file (type png)
 
 <use immagini/usecase/caricamento.png>
@@ -2137,23 +2138,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--238
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--246
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--246
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--246
-
- []
-
 [21 <./immagini/usecase/caricamento.png>]
-<immagini/usecase/informazioni.png, id=541, 531.9875pt x 275.0275pt>
+Underfull \hbox (badness 10000) in paragraph at lines 242--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--246
+
+ []
+
+<immagini/usecase/informazioni.png, id=570, 531.9875pt x 275.0275pt>
 File: immagini/usecase/informazioni.png Graphic file (type png)
 
 <use immagini/usecase/informazioni.png>
@@ -2345,7 +2345,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
 [27
 
-] [28] <immagini/client/meshList.png, id=611, 612.2875pt x 419.5675pt>
+] [28] <immagini/client/meshList.png, id=640, 612.2875pt x 419.5675pt>
 File: immagini/client/meshList.png Graphic file (type png)
 
 <use immagini/client/meshList.png>
@@ -2355,7 +2355,7 @@ Package pdftex.def Info: immagini/client/meshList.png used on input line 77.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/client/receivers.png, id=613, 403.5075pt x 266.9975pt>
+<immagini/client/receivers.png, id=642, 403.5075pt x 266.9975pt>
 File: immagini/client/receivers.png Graphic file (type png)
 
 <use immagini/client/receivers.png>
@@ -2365,28 +2365,28 @@ Package pdftex.def Info: immagini/client/receivers.png used on input line 91.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29] <immagini/client/tasks.png, id=621, 371.3875pt x 234.8775pt>
+[29] <immagini/client/tasks.png, id=650, 371.3875pt x 234.8775pt>
 File: immagini/client/tasks.png Graphic file (type png)
 
 <use immagini/client/tasks.png>
 Package pdftex.def Info: immagini/client/tasks.png used on input line 103.
 (pdftex.def)             Requested size: 223.20227pt x 141.16412pt.
  [30 <./immagini/client/meshList.png> <./immagini/client/receivers.png>]
-<immagini/client/services.png, id=630, 299.1175pt x 218.8175pt>
+<immagini/client/services.png, id=659, 299.1175pt x 218.8175pt>
 File: immagini/client/services.png Graphic file (type png)
 
 <use immagini/client/services.png>
 Package pdftex.def Info: immagini/client/services.png used on input line 116.
 (pdftex.def)             Requested size: 186.0pt x 136.06944pt.
  [31 <./immagini/client/tasks.png> <./immagini/client/services.png>]
-<immagini/client/camera.png, id=639, 403.5075pt x 331.2375pt>
+<immagini/client/camera.png, id=669, 403.5075pt x 331.2375pt>
 File: immagini/client/camera.png Graphic file (type png)
 
 <use immagini/client/camera.png>
 Package pdftex.def Info: immagini/client/camera.png used on input line 131.
 (pdftex.def)             Requested size: 260.39886pt x 213.76025pt.
 
-<immagini/client/GOICPRec.png, id=641, 724.7075pt x 323.2075pt>
+<immagini/client/GOICPRec.png, id=671, 724.7075pt x 323.2075pt>
 File: immagini/client/GOICPRec.png Graphic file (type png)
 
 <use immagini/client/GOICPRec.png>
@@ -2397,21 +2397,21 @@ Package pdftex.def Info: immagini/client/GOICPRec.png used on input line 140.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [32 <./immagini/client/camera.png>]
-<immagini/server/server.png, id=650, 339.2675pt x 315.1775pt>
+<immagini/server/server.png, id=680, 339.2675pt x 315.1775pt>
 File: immagini/server/server.png Graphic file (type png)
 
 <use immagini/server/server.png>
 Package pdftex.def Info: immagini/server/server.png used on input line 154.
 (pdftex.def)             Requested size: 223.20227pt x 207.35411pt.
  [33 <./immagini/client/GOICPRec.png> <./immagini/server/server.png>]
-<immagini/server/Services.png, id=660, 379.4175pt x 242.9075pt>
+<immagini/server/Services.png, id=689, 379.4175pt x 242.9075pt>
 File: immagini/server/Services.png Graphic file (type png)
 
 <use immagini/server/Services.png>
 Package pdftex.def Info: immagini/server/Services.png used on input line 170.
 (pdftex.def)             Requested size: 223.20227pt x 142.89905pt.
 
-<immagini/server/PCElaboration.png, id=662, 443.6575pt x 315.1775pt>
+<immagini/server/PCElaboration.png, id=691, 443.6575pt x 315.1775pt>
 File: immagini/server/PCElaboration.png Graphic file (type png)
 
 <use immagini/server/PCElaboration.png>
@@ -2422,7 +2422,7 @@ Package pdftex.def Info: immagini/server/PCElaboration.png used on input line 1
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/server/Filters.png, id=664, 371.3875pt x 307.1475pt>
+<immagini/server/Filters.png, id=693, 371.3875pt x 307.1475pt>
 File: immagini/server/Filters.png Graphic file (type png)
 
 <use immagini/server/Filters.png>
@@ -2430,14 +2430,14 @@ Package pdftex.def Info: immagini/server/Filters.png used on input line 200.
 (pdftex.def)             Requested size: 223.20227pt x 184.59923pt.
  [34 <./immagini/server/Services.png>]
 [35 <./immagini/server/PCElaboration.png> <./immagini/server/Filters.png>]
-<immagini/server/IOUtils.png, id=679, 323.2075pt x 266.9975pt>
+<immagini/server/IOUtils.png, id=709, 323.2075pt x 266.9975pt>
 File: immagini/server/IOUtils.png Graphic file (type png)
 
 <use immagini/server/IOUtils.png>
 Package pdftex.def Info: immagini/server/IOUtils.png used on input line 217.
 (pdftex.def)             Requested size: 204.60114pt x 169.02003pt.
 
-<immagini/dp/strategy.png, id=682, 628.3475pt x 206.7725pt>
+<immagini/dp/strategy.png, id=713, 628.3475pt x 206.7725pt>
 File: immagini/dp/strategy.png Graphic file (type png)
 
 <use immagini/dp/strategy.png>
@@ -2451,14 +2451,14 @@ Overfull \hbox (18.60114pt too wide) in paragraph at lines 238--239
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/dp/mvp.png, id=684, 599.23875pt x 222.8325pt>
+<immagini/dp/mvp.png, id=715, 599.23875pt x 222.8325pt>
 File: immagini/dp/mvp.png Graphic file (type png)
 
 <use immagini/dp/mvp.png>
 Package pdftex.def Info: immagini/dp/mvp.png used on input line 247.
 (pdftex.def)             Requested size: 372.0pt x 138.33493pt.
  [36 <./immagini/server/IOUtils.png>]
-<immagini/dp/singleton.png, id=692, 507.8975pt x 153.57375pt>
+<immagini/dp/singleton.png, id=724, 507.8975pt x 153.57375pt>
 File: immagini/dp/singleton.png Graphic file (type png)
 
 <use immagini/dp/singleton.png>
@@ -2476,7 +2476,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37 <./immagini/dp/strategy.png> <./immagini/dp/mvp.png>]
-<immagini/varie/notification.png, id=703, 1221.56375pt x 749.80125pt>
+<immagini/varie/notification.png, id=735, 1221.56375pt x 749.80125pt>
 File: immagini/varie/notification.png Graphic file (type png)
 
 <use immagini/varie/notification.png>
@@ -2489,14 +2489,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 271--280
  []
 
 [38 <./immagini/dp/singleton.png> <./immagini/varie/notification.png (PNG copy)
->] <immagini/varie/meshList.png, id=711, 1927.2pt x 1204.5pt>
+>] <immagini/varie/meshList.png, id=743, 1927.2pt x 1204.5pt>
 File: immagini/varie/meshList.png Graphic file (type png)
 
 <use immagini/varie/meshList.png>
 Package pdftex.def Info: immagini/varie/meshList.png used on input line 291.
 (pdftex.def)             Requested size: 334.79773pt x 209.24681pt.
 
-<immagini/varie/meshViewer.png, id=713, 1927.2pt x 1204.5pt>
+<immagini/varie/meshViewer.png, id=745, 1927.2pt x 1204.5pt>
 File: immagini/varie/meshViewer.png Graphic file (type png)
 
 <use immagini/varie/meshViewer.png>
@@ -2510,7 +2510,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--304
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/varie/registration_example.png, id=715, 2569.6pt x 835.12pt>
+<immagini/varie/registration_example.png, id=747, 2569.6pt x 835.12pt>
 File: immagini/varie/registration_example.png Graphic file (type png)
 
 <use immagini/varie/registration_example.png>
@@ -2528,7 +2528,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 4543) has occurred while \output is active []
 
  [40 <./immagini/varie/meshViewer.png>]
-<immagini/varie/to_align_left.png, id=737, 703.62875pt x 587.19376pt>
+<immagini/varie/to_align_left.png, id=768, 703.62875pt x 587.19376pt>
 File: immagini/varie/to_align_left.png Graphic file (type png)
 
 <use immagini/varie/to_align_left.png>
@@ -2536,7 +2536,7 @@ Package pdftex.def Info: immagini/varie/to_align_left.png used on input line 33
 5.
 (pdftex.def)             Requested size: 186.0pt x 155.22032pt.
 
-<immagini/varie/to_align_right.png, id=738, 702.625pt x 647.41875pt>
+<immagini/varie/to_align_right.png, id=769, 702.625pt x 647.41875pt>
 File: immagini/varie/to_align_right.png Graphic file (type png)
 
 <use immagini/varie/to_align_right.png>
@@ -2544,7 +2544,7 @@ Package pdftex.def Info: immagini/varie/to_align_right.png used on input line 3
 40.
 (pdftex.def)             Requested size: 169.55547pt x 156.23932pt.
 
-<immagini/varie/goicp.png, id=739, 960.58875pt x 818.05624pt>
+<immagini/varie/goicp.png, id=770, 960.58875pt x 818.05624pt>
 File: immagini/varie/goicp.png Graphic file (type png)
 
 <use immagini/varie/goicp.png>
@@ -2558,7 +2558,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--349
 [41 <./immagini/varie/registration_example.png>] [42 <./immagini/varie/to_align
 _left.png (PNG copy)> <./immagini/varie/to_align_right.png (PNG copy)> <./immag
 ini/varie/goicp.png (PNG copy)>]
-<immagini/varie/sparse.png, id=754, 1660.2025pt x 547.04375pt>
+<immagini/varie/sparse.png, id=785, 1660.2025pt x 547.04375pt>
 File: immagini/varie/sparse.png Graphic file (type png)
 
 <use immagini/varie/sparse.png>
@@ -2568,7 +2568,7 @@ Package pdftex.def Info: immagini/varie/sparse.png used on input line 391.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/varie/radius.png, id=757, 1667.22874pt x 776.9025pt>
+<immagini/varie/radius.png, id=788, 1667.22874pt x 776.9025pt>
 File: immagini/varie/radius.png Graphic file (type png)
 
 <use immagini/varie/radius.png>
@@ -2576,21 +2576,21 @@ Package pdftex.def Info: immagini/varie/radius.png used on input line 401.
 (pdftex.def)             Requested size: 372.0pt x 173.3374pt.
  [43] [44 <./immagini/varie/sparse.png (PNG copy)> <./immagini/varie/radius.png
  (PNG copy)>]
-<immagini/varie/ground.png, id=779, 1618.045pt x 653.44125pt>
+<immagini/varie/ground.png, id=811, 1618.045pt x 653.44125pt>
 File: immagini/varie/ground.png Graphic file (type png)
 
 <use immagini/varie/ground.png>
 Package pdftex.def Info: immagini/varie/ground.png used on input line 418.
 (pdftex.def)             Requested size: 372.0pt x 150.2285pt.
 
-<immagini/varie/cluster.png, id=785, 1527.7075pt x 616.3025pt>
+<immagini/varie/cluster.png, id=817, 1527.7075pt x 616.3025pt>
 File: immagini/varie/cluster.png Graphic file (type png)
 
 <use immagini/varie/cluster.png>
 Package pdftex.def Info: immagini/varie/cluster.png used on input line 433.
 (pdftex.def)             Requested size: 372.0pt x 150.06914pt.
  [45 <./immagini/varie/ground.png (PNG copy)>]
-<immagini/varie/mesh.png, id=798, 1675.25874pt x 736.7525pt>
+<immagini/varie/mesh.png, id=829, 1675.25874pt x 736.7525pt>
 File: immagini/varie/mesh.png Graphic file (type png)
 
 <use immagini/varie/mesh.png>
@@ -2648,14 +2648,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--42
 
  []
 
-[52] <immagini/varie/artefatti.png, id=837, 1026.83624pt x 578.16pt>
+[52] <immagini/varie/artefatti.png, id=868, 1026.83624pt x 578.16pt>
 File: immagini/varie/artefatti.png Graphic file (type png)
 
 <use immagini/varie/artefatti.png>
 Package pdftex.def Info: immagini/varie/artefatti.png used on input line 62.
 (pdftex.def)             Requested size: 372.0pt x 209.45192pt.
  [53 <./immagini/varie/artefatti.png (PNG copy)>] <immagini/varie/nero.png, id=
-844, 1668.2325pt x 890.32625pt>
+875, 1668.2325pt x 890.32625pt>
 File: immagini/varie/nero.png Graphic file (type png)
 
 <use immagini/varie/nero.png>
@@ -2671,30 +2671,12 @@ Overfull \hbox (9.92056pt too wide) in paragraph at lines 126--143
  [] 
  []
 
-<immagini/varie/gantt.png, id=863, 927.465pt x 258.9675pt>
-File: immagini/varie/gantt.png Graphic file (type png)
-
-<use immagini/varie/gantt.png>
-Package pdftex.def Info: immagini/varie/gantt.png used on input line 154.
-(pdftex.def)             Requested size: 390.60114pt x 109.0659pt.
-
-Overfull \hbox (18.60114pt too wide) in paragraph at lines 154--155
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[56] [57 <./immagini/varie/gantt.png (PNG copy)>]
-(./tabelle/esitoFunzionali.tex) (./tabelle/esitoFunzionali.tex
+[56] [57] (./tabelle/esitoFunzionali.tex) (./tabelle/esitoFunzionali.tex
 Underfull \vbox (badness 10000) detected at line 49
  []
 
-) (./tabelle/esitoQualitativi.tex) (./tabelle/esitoQualitativi.tex)
+) [58] (./tabelle/esitoQualitativi.tex) (./tabelle/esitoQualitativi.tex)
 (./tabelle/esitoQualitativi.tex) (./tabelle/esitoQualitativi.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [58]
 Underfull \vbox (badness 10000) detected at line 19
  []
 
@@ -2709,20 +2691,29 @@ Underfull \vbox (badness 10000) detected at line 31
  []
 
 )
-Underfull \vbox (badness 10000) detected at line 244
+Underfull \vbox (badness 10000) detected at line 239
  []
 
 [59]
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--264
+Underfull \hbox (badness 10000) in paragraph at lines 251--259
 
  []
 
-) [60]
+) [60] (./tesi.gls [61
+
+
+
+]) (./tesi.acr [62]) [63
+
+
+] [64
+
+]
 Overfull \hbox (2.43465pt too wide) in paragraph at lines 148--148
 \T1/cmr/m/sc/10 (-20) url\T1/cmr/m/n/10 (-20) : [][]$\T1/cmtt/m/n/10 https : / 
 / play . google . com / store / apps / details ? id = org . andresoviedo .
@@ -2752,19 +2743,12 @@ Overfull \hbox (23.42952pt too wide) in paragraph at lines 148--148
  pointclouds . org / documentation / tutorials / planar _ segmentation .
  []
 
-[61
+[65
 
-
-
-] [62]
-
-Package glossaries Warning: No \printglossary or \printglossaries found.
-(Remove \makeglossaries if you don't want any glossaries.)
-This document will not have a glossary.
-
+] [66]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
-(./tesi.aux)
+ (./tesi.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 148.
 Package logreq Info: Writing requests to 'tesi.run.xml'.
@@ -2772,53 +2756,45 @@ Package logreq Info: Writing requests to 'tesi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24518 strings out of 494326
- 393468 string characters out of 6163608
- 974667 words of memory out of 5000000
- 26638 multiletter control sequences out of 15000+600000
- 37265 words of font info for 158 fonts, out of 8000000 for 9000
+ 24826 strings out of 494326
+ 399260 string characters out of 6163608
+ 980758 words of memory out of 5000000
+ 26921 multiletter control sequences out of 15000+600000
+ 37847 words of font info for 158 fonts, out of 8000000 for 9000
  374 hyphenation exceptions out of 8191
- 61i,11n,122p,1917b,1471s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:uml} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{glo:pc} has been referenced but does not exist, rep
-laced by a fixed one
-
-pdfTeX warning (dest): name{glo:API} has been referenced but does not exist, re
-placed by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-bx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfb
-x2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1000.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
-0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
-000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfsl1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl12
-00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti120
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on tesi.pdf (72 pages, 2735853 bytes).
+ 61i,11n,122p,1917b,2138s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1000.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+cc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
+m0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl
+1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1
+000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sftt1000.pfb>
+Output written on tesi.pdf (78 pages, 2665625 bytes).
 PDF statistics:
- 1392 PDF objects out of 1440 (max. 8388607)
- 1208 compressed objects within 13 object streams
- 330 named destinations out of 1000 (max. 500000)
- 41851 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1513 PDF objects out of 1728 (max. 8388607)
+ 1309 compressed objects within 14 object streams
+ 351 named destinations out of 1000 (max. 500000)
+ 42374 words of extra memory for PDF output out of 42996 (max. 10000000)
 

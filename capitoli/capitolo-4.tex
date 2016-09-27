@@ -14,7 +14,7 @@
 
 Per lo studio dei casi di utilizzo del prodotto sono stati creati dei diagrammi.
 I diagrammi dei casi d'uso (in inglese \emph{Use Case Diagram}) sono diagrammi di tipo \gls{uml} dedicati alla descrizione delle funzioni o servizi offerti da un sistema, così come sono percepiti e utilizzati dagli attori che interagiscono col sistema stesso.
-Vediamo di seguito i casi d'uso che descrivono le funzionalità da realizzare nell'applicativo lato client, come da figura \ref{fig:mesh-list}.
+Vediamo di seguito i casi d'uso che descrivono le funzionalità da realizzare nell'applicativo lato \emph{client}, come da figura \ref{fig:mesh-list}.
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=1.0\columnwidth]{usecase/mesh_list} 
@@ -49,7 +49,7 @@ disco su cui può effettuare diverse azioni}
 \\\\ \textbf{Postcondizioni}: L'utente ha a disposizione una lista aggiornata di \emph{mesh}.
 \\\\ \textbf{Extension Points}:
 \begin{itemize}
-\item \textbf{Il server non è raggiungibile}: c'è stato un errore nel tentativo di connettersi al server. Viene visualizzato un messaggio d'errore (UC 1.7).
+\item \textbf{Il server non è raggiungibile}: c'è stato un errore nel tentativo di connettersi al \emph{server}. Viene visualizzato un messaggio d'errore (UC 1.7).
 \end{itemize}
 
 \subsection{UC1.3: Visualizzazione di una mesh}
@@ -121,7 +121,7 @@ disco su cui può effettuare diverse azioni}
 
 
 \section{Casi d'uso - lato server}
-Verranno di seguito descritti i casi d'utilizzo dell'applicativo lato server delle sue interazioni con il client, di cui possiamo avere una visione generale in figura \ref{fig:scenario_principale}.
+Verranno di seguito descritti i casi d'utilizzo dell'applicativo lato \emph{server} delle sue interazioni con il \emph{client}, di cui possiamo avere una visione generale in figura \ref{fig:scenario_principale}.
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=1.0\columnwidth]{usecase/scenario_principale} 
@@ -131,9 +131,9 @@ Verranno di seguito descritti i casi d'utilizzo dell'applicativo lato server del
 \newpage
 \begin{usecase}{0}{Scenario Principale}
 \usecaseactors{Client}
-\\ \usecasepre{Il client invia una specifica richiesta al server}
-\\ \usecasedesc{Il server elabora la richiesta del client e ne restituisce i risultati}
-\\ \usecasepost{Il server ha elaborato la richiesta ed inviato il responso al client}
+\\ \usecasepre{Il client invia una specifica richiesta al \emph{server}}
+\\ \usecasedesc{Il \emph{server} elabora la richiesta del client e ne restituisce i risultati}
+\\ \usecasepost{Il \emph{server} ha elaborato la richiesta ed inviato il responso al \emph{client}}
 \label{uc:scenario_principale}
 \end{usecase}
 
@@ -148,21 +148,21 @@ La figura \ref{fig:elaborazione} descrive i casi d'uso per l'elaborazione di un 
 
 \begin{usecase}{2}{Elaborazione di un Point Cloud}
 \usecaseactors{Client}
-\\ \usecasepre{Il client richiede l'elaborazione di un Point Cloud al server}
-\\ \usecasedesc{Il server elabora il Point Cloud ricevuto e notifica l'esito al client}
-\\ \usecasepost{Il client riceve l'esito dell'elaborazione dal server}
+\\ \usecasepre{Il \emph{client} richiede l'elaborazione di un Point Cloud al \emph{server}}
+\\ \usecasedesc{Il \emph{server} elabora il Point Cloud ricevuto e notifica l'esito al \emph{client}}
+\\ \usecasepost{Il \emph{client} riceve l'esito dell'elaborazione dal \emph{server}}
 \label{uc:elaborazione}
 \end{usecase}
 
 \subsection{UC2.1 Salvataggio dei dati ricevuti su file PCD}
 \textbf{Attori Principali}: Client.
 \\\\ \textbf{Precondizioni}: Il Client invia tramite protocollo HTTP dati in formato PCD.
-\\\\ \textbf{Descrizione}: I dati ricevuti vengono salvati sul server in un file in formato PCD.
+\\\\ \textbf{Descrizione}: I dati ricevuti vengono salvati sul \emph{server} in un file in formato PCD.
 \\\\ \textbf{Postcondizioni}: I dati sono stati correttamente salvati su file.
 
 \subsection{UC2.2 Filtraggio del Point Cloud}
 \textbf{Attori Principali}: Client.
-\\\\ \textbf{Precondizioni}: Il Client ha richiesto l'elaborazione di un Point Cloud.
+\\\\ \textbf{Precondizioni}: Il \emph{client} ha richiesto l'elaborazione di un Point Cloud.
 \\\\ \textbf{Descrizione}: Il Point Cloud viene caricato da file e filtrato.
 \\\\ \textbf{Postcondizioni}: Il Point Cloud è stato filtrato.
 
@@ -198,13 +198,13 @@ La figura \ref{fig:elaborazione} descrive i casi d'uso per l'elaborazione di un 
 
 \subsection{UC2.4 Generazione mesh}
 \textbf{Attori Principali}: Client.
-\\\\ \textbf{Precondizioni}: Il Client richiede di generare una mesh dell'oggetto ispezionato.
+\\\\ \textbf{Precondizioni}: Il \emph{client} richiede di generare una mesh dell'oggetto ispezionato.
 \\\\ \textbf{Descrizione}: Viene effettuato il meshing del Point Cloud del solo oggetto scansionato.
 \\\\ \textbf{Postcondizioni}: \'E stata generata correttamente una mesh dell'oggetto ispezionato.
 
 \subsection{UC2.5 Calcolo del volume}
 \textbf{Attori Principali}: Client.
-\\\\ \textbf{Precondizioni}: il Client richiede di calcolare il volume dell'oggetto scansionato.
+\\\\ \textbf{Precondizioni}: il \emph{client} richiede di calcolare il volume dell'oggetto scansionato.
 \\\\ \textbf{Descrizione}: Viene calcolato il volume della mesh generata a partire dal Point Cloud.
 \\\\ \textbf{Postcondizioni}: Il volume dell'oggetto è stato calcolato.
 
@@ -222,32 +222,32 @@ In figura \ref{fig:caricamento} sono riportati i casi d'uso per il caricamento d
 
 \begin{usecase}{3}{Caricamento di una mesh}
 \usecaseactors{Client}
-\\ \usecasepre{Il client richiede al server l'invio di una specifica mesh}
-\\ \usecasedesc{Il server elabora la richiesta ricevuta ed invia la mesh desiderata al Client}
-\\ \usecasepost{Il client riceve la mesh richiesta dal server}
+\\ \usecasepre{Il \emph{client} richiede al \emph{server} l'invio di una specifica mesh}
+\\ \usecasedesc{Il \emph{server} elabora la richiesta ricevuta ed invia la mesh desiderata al \emph{client}}
+\\ \usecasepost{Il \emph{client} riceve la mesh richiesta dal \emph{server}}
 \label{uc:caricamento}
 \end{usecase}
 
 \subsection{UC3.1 Richiesta caricamento Mesh}
 \textbf{Attori Principali}: Client.
-\\\\ \textbf{Precondizioni}: Il Client richiede il caricamento di una mesh inviando tramite protocollo HTTP il nome della mesh richiesta.
-\\\\ \textbf{Descrizione}: Il server elabora la richiesta e si appresta ad inviare il file richiesto.
-\\\\ \textbf{Postcondizioni}: Il server ha ricevuto la richiesta e si appresta ad inviare il file richiesto.
+\\\\ \textbf{Precondizioni}: Il \emph{client} richiede il caricamento di una mesh inviando tramite protocollo HTTP il nome della mesh richiesta.
+\\\\ \textbf{Descrizione}: Il \emph{server} elabora la richiesta e si appresta ad inviare il file richiesto.
+\\\\ \textbf{Postcondizioni}: Il \emph{server} ha ricevuto la richiesta e si appresta ad inviare il file richiesto.
 \\\\ \textbf{Extension Points}:
 \begin{itemize}
-\item \textbf{Il server non è raggiungibile}: c'è stato un errore nel tentativo di connettersi al server. Viene visualizzato un messaggio d'errore (UC 1.7).
+\item \textbf{Il server non è raggiungibile}: c'è stato un errore nel tentativo di connettersi al \emph{server}. Viene visualizzato un messaggio d'errore (UC 1.7).
 \end{itemize}
 
 \subsection{UC3.2 Caricamento Mesh}
 \textbf{Attori Principali}: Client.
-\\\\ \textbf{Precondizioni}: Il Client ha inviato il nome della mesh da caricare .
-\\\\ \textbf{Descrizione}: Il server legge il file OBJ della mesh e lo invia al Client.
-\\\\ \textbf{Postcondizioni}: Il client riceve la mesh richiesta.
+\\\\ \textbf{Precondizioni}: Il \emph{client} ha inviato il nome della mesh da caricare .
+\\\\ \textbf{Descrizione}: Il \emph{server} legge il file OBJ della mesh e lo invia al \emph{client}.
+\\\\ \textbf{Postcondizioni}: Il \emph{client} riceve la mesh richiesta.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{UC4 Caricamento informazioni delle mesh salvate}
-In figura \ref{fig:loadinfo} sono riportati i casi d'uso per il caricamento delle informazioni relative alle mesh salvate su server.
+In figura \ref{fig:loadinfo} sono riportati i casi d'uso per il caricamento delle informazioni relative alle mesh salvate su \emph{server}.
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=0.9\columnwidth]{usecase/informazioni} 
@@ -257,27 +257,27 @@ In figura \ref{fig:loadinfo} sono riportati i casi d'uso per il caricamento dell
 
 \begin{usecase}{4}{Caricamento informazioni delle mesh salvate}
 \usecaseactors{Client}
-\\ \usecasepre{Il client richiede una lista di informazioni quali nome, data di creazione e volume delle mesh salvate su server}
-\\ \usecasedesc{Il server elabora la richiesta ricevuta ed invia le informazioni al client}
-\\ \usecasepost{Il client riceve le informazioni richieste dal server}
+\\ \usecasepre{Il \emph{client} richiede una lista di informazioni quali nome, data di creazione e volume delle mesh salvate su \emph{server}}
+\\ \usecasedesc{Il \emph{server} elabora la richiesta ricevuta ed invia le informazioni al \emph{client}}
+\\ \usecasepost{Il \emph{client} riceve le informazioni richieste dal \emph{server}}
 \label{uc:informazioni}
 \end{usecase}
 
 \subsection{UC4.1 Richiesta caricamento informazioni}
 \textbf{Attori Principali}: Client.
-\\\\ \textbf{Precondizioni}: Il Client richiede informazioni sulle mesh salvate nel server inviando una richiesta tramite protocollo HTTP.
-\\\\ \textbf{Descrizione}: Il server elabora la richiesta e si appresta ad inviare le informazioni richieste.
-\\\\ \textbf{Postcondizioni}: Il server ha ricevuto la richiesta e si appresta a recuperare ed inviare le informazioni.
+\\\\ \textbf{Precondizioni}: Il \emph{client} richiede informazioni sulle mesh salvate nel \emph{server} inviando una richiesta tramite protocollo HTTP.
+\\\\ \textbf{Descrizione}: Il \emph{server} elabora la richiesta e si appresta ad inviare le informazioni richieste.
+\\\\ \textbf{Postcondizioni}: Il \emph{server} ha ricevuto la richiesta e si appresta a recuperare ed inviare le informazioni.
 \\\\ \textbf{Extension Points}:
 \begin{itemize}
-\item \textbf{Il server non è raggiungibile}: c'è stato un errore nel tentativo di connettersi al server. Viene visualizzato un messaggio d'errore (UC 1.7).
+\item \textbf{Il server non è raggiungibile}: c'è stato un errore nel tentativo di connettersi al \emph{server}. Viene visualizzato un messaggio d'errore (UC 1.7).
 \end{itemize}
 
 \subsection{UC4.2 Caricamento informazioni}
 \textbf{Attori Principali}: Client.
-\\\\ \textbf{Precondizioni}: Il Client ha richiesto l'invio di informazioni sulle mesh salvate nel server.
-\\\\ \textbf{Descrizione}: Il server recupera le informazioni richieste dalle mesh disponibili e le invia al Client.
-\\\\ \textbf{Postcondizioni}: Il client riceve le informazioni richieste.
+\\\\ \textbf{Precondizioni}: Il \emph{client} ha richiesto l'invio di informazioni sulle mesh salvate nel \emph{server}.
+\\\\ \textbf{Descrizione}: Il \emph{server} recupera le informazioni richieste dalle mesh disponibili e le invia al \emph{client}.
+\\\\ \textbf{Postcondizioni}: Il \emph{client} riceve le informazioni richieste.
 
 
 \section{Requisiti}

@@ -51,20 +51,20 @@ Le notevoli potenzialità della libreria sono state utilizzate intensivamente ne
 \end{itemize}
 
 \subsection{Server}
-L'applicativo lato server è stato sviluppato e testato su un web server \emph{Apache}\footcite{https://httpd.apache.org/}, preferito per la sua facilità di configurazione, modularità ed affidabilità. Il server \emph{Apache} è stato installato sulla macchina del tirocinante.
+L'applicativo lato \emph{server} è stato sviluppato e testato su un web \emph{server} \emph{Apache}\footcite{https://httpd.apache.org/}, preferito per la sua facilità di configurazione, modularità ed affidabilità. Il \emph{server} \emph{Apache} è stato installato sulla macchina del tirocinante.
 
 %**************************************************************
 \section{Progettazione}
 \label{sec:progettazione}
-Sulla base dei requisiti analizzati nel capitolo \emph{Analisi dei requisiti}(cap. \ref{cap:analisi-requisiti}) si è svolta la progettazione dell'applicativo. Prima di tutto si è reso necessario suddividere la progettazione lato client dal lato server; quanto svolto nell'applicativo lato client andava infatti inserito ed integrato in un prototipo già esistente, mentre il lato server doveva essere progettato da zero.
+Sulla base dei requisiti analizzati nel capitolo \emph{Analisi dei requisiti}(cap. \ref{cap:analisi-requisiti}) si è svolta la progettazione dell'applicativo. Prima di tutto si è reso necessario suddividere la progettazione lato \emph{client} dal lato \emph{server}; quanto svolto nell'applicativo lato \emph{client} andava infatti inserito ed integrato in un prototipo già esistente, mentre il lato \emph{server} doveva essere progettato da zero.
 Vediamo ora le scelte progettuali adottate.
 
 \subsection{Architettura lato client}
-Al lato client è stato necessario prendere coscienza dell'architettura e della logica dell'applicazione prototipale già realizzata, per poter sviluppare un nuovo prototipo che inserisca nuove funzionalità integrandole correttamente nel sistema. 
+Al lato \emph{client} è stato necessario prendere coscienza dell'architettura e della logica dell'applicazione prototipale già realizzata, per poter sviluppare un nuovo prototipo che inserisca nuove funzionalità integrandole correttamente nel sistema. 
 Il prototipo sviluppato, denominato \emph{VIC-Tango}, partendo dallo stadio prototipale precedente dell'applicazione (\emph{Samba}), introduce le seguenti migliorie e funzionalità:
 \begin{itemize}
-\item Possibilità di caricare in una lista le \emph{mesh} risultato dell'elaborazione lato server di un \emph{Point Cloud}, e poter visualizzare il singolo render di una mesh.
-\item Un servizio di notifica che riceve messaggi sull'esito dell'elaborazione di un \emph{Point Cloud} da parte del server.
+\item Possibilità di caricare in una lista le \emph{mesh} risultato dell'elaborazione lato \emph{server} di un \emph{Point Cloud}, e poter visualizzare il singolo render di una mesh.
+\item Un servizio di notifica che riceve messaggi sull'esito dell'elaborazione di un \emph{Point Cloud} da parte del \emph{server}.
 \item Miglioramento della Camera Preview dell'applicazione.
 \item Introdotti i framework JNI e GOICP per testare funzionalità di Point Cloud Registration.
 \end{itemize}
@@ -85,7 +85,7 @@ Il package contiene le seguenti classi:
 \end{itemize}
 Ed i seguenti sub-package:
 \begin{itemize}
-\item\texttt{receivers}: Contiene le classi necessarie a ricevere dati dal server, sotto forma di oggetti JSON. Il package, come da figura \ref{fig:receivers}, contiene le seguenti classi:
+\item\texttt{receivers}: Contiene le classi necessarie a ricevere dati dal \emph{server}, sotto forma di oggetti JSON. Il package, come da figura \ref{fig:receivers}, contiene le seguenti classi:
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=0.7\columnwidth]{client/receivers.png} 
@@ -94,10 +94,10 @@ Ed i seguenti sub-package:
 \end{figure}
 \begin{itemize}
 	\item\texttt{AbsJSONRestReceiver}: Classe astratta che rappresenta un interfaccia REST per la richiesta e ricezione di dati in formato JSON.
-	\item\texttt{MeshDataReceiver}: Implementazione di \texttt{AbsJSONRestReceiver} che richiede e riceve file OBJ dal server come oggetti JSON.
-	\item\texttt{MeshInfoReceiver}: Implementazione di \texttt{AbsJSONRestReceiver} che richiede e riceve informazioni sulle mesh salvate sul server come array di oggetti JSON.
+	\item\texttt{MeshDataReceiver}: Implementazione di \texttt{AbsJSONRestReceiver} che richiede e riceve file OBJ dal \emph{server} come oggetti JSON.
+	\item\texttt{MeshInfoReceiver}: Implementazione di \texttt{AbsJSONRestReceiver} che richiede e riceve informazioni sulle mesh salvate sul \emph{server} come array di oggetti JSON.
 	\end{itemize}
-\item\texttt{tasks}: Contiene classi che eseguono asincronamente compiti temporalmente dispendiosi, quali il caricamento e salvataggio delle mesh e il caricamento da server. Il package, come da figura \ref{fig:tasks}, contiene le seguenti classi:
+\item\texttt{tasks}: Contiene classi che eseguono asincronamente compiti temporalmente dispendiosi, quali il caricamento e salvataggio delle mesh e il caricamento da \emph{server}. Il package, come da figura \ref{fig:tasks}, contiene le seguenti classi:
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=0.6\columnwidth]{client/tasks.png} 
@@ -106,8 +106,8 @@ Ed i seguenti sub-package:
 \end{figure}
 	\begin{itemize}
 	\item\texttt{LoadLocaMeshesTask}: Classe per il caricamento asincrono delle mesh salvate localmente sul \emph{device}.
-	\item\texttt{LoadMeshesInfoTask}: Classe per il caricamento asincrono delle informazioni sulle mesh salvate nel server. 
-	\item\texttt{LoadNewMeshTask}: Classe per il caricamento asincrono di una mesh dal server.
+	\item\texttt{LoadMeshesInfoTask}: Classe per il caricamento asincrono delle informazioni sulle mesh salvate nel \emph{server}. 
+	\item\texttt{LoadNewMeshTask}: Classe per il caricamento asincrono di una mesh dal \emph{server}.
 	\item\texttt{SaveMeshTask}: Classe per il salvataggio asincrono di una mesh ricevuta sulla memoria locale del \emph{device}. La mesh viene salvata in un file OBJ.
 	\end{itemize}
 \item\texttt{services}: Contiene classi che implementano servizi che necessitano di essere per lungo tempo in background. Il package, come da figura \ref{fig:services}, contiene le seguenti classi:
@@ -118,8 +118,8 @@ Ed i seguenti sub-package:
    \label{fig:services}
 \end{figure}
 	\begin{itemize}
-	\item\texttt{NewMeshesLoader}: Servizio che effettua il refresh della lista di mesh locali caricando dal server le nuove mesh disponibili.
-	\item\texttt{MeshFirebaseMessagingService}: Servizio che, in background, aspetta di ricevere messaggi dal server attraverso il web-service Firebase, ed alla ricezione di un messaggio genera una notifica di sistema \emph{Android} per informare l'utente.
+	\item\texttt{NewMeshesLoader}: Servizio che effettua il refresh della lista di mesh locali caricando dal \emph{server} le nuove mesh disponibili.
+	\item\texttt{MeshFirebaseMessagingService}: Servizio che, in background, aspetta di ricevere messaggi dal \emph{server} attraverso il web-service Firebase, ed alla ricezione di un messaggio genera una notifica di sistema \emph{Android} per informare l'utente.
 	\end{itemize}
 \item\texttt{model3D}: Contiene classi per il rendering e la visualizzazione di mesh (file OBJ). Il package corrisponde all'applicazione open source \emph{3D Model Viewer Open Source\footcite{https://play.google.com/store/apps/details?id=org.andresoviedo.dddmodel&hl=it}} che in quanto non implementata dal tirocinante, non verrà qui documentata.
 \end{itemize}
@@ -147,8 +147,8 @@ Inoltre per integrare la libreria GOICP, scritta nativamente in C++, è stato ne
 
 
 \subsection{Architettura lato server}
-Il lato server dell'applicazione è stato progettato da zero, basandosi quindi sui requisiti rilevati in fase d'analisi e sulle necessità del committente.
-L'architettura server espone una serie di servizi al client, quali la ricezione di file PCD, o l'invio di mesh ed info sulle mesh salvate, oltre ovviamente all'elaborazione dei \emph{Point Cloud ricevuti}.
+Il lato \emph{server} dell'applicazione è stato progettato da zero, basandosi quindi sui requisiti rilevati in fase d'analisi e sulle necessità del committente.
+L'architettura \emph{server} espone una serie di servizi al \emph{client}, quali la ricezione di file PCD, o l'invio di mesh ed info sulle mesh salvate, oltre ovviamente all'elaborazione dei \emph{Point Cloud ricevuti}.
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=0.6\columnwidth]{server/server.png} 
@@ -157,14 +157,14 @@ L'architettura server espone una serie di servizi al client, quali la ricezione 
 \end{figure}
 Come evidenziato in figura \ref{fig:server} il lato server è così suddiviso:
 \begin{itemize}
-\item\texttt{Services}: Package che espone le funzionalità del server al client.
+\item\texttt{Services}: Package che espone le funzionalità del \emph{server} al \emph{client}.
 \item\texttt{PointCloudElaboration}: Package che contiene tutte le funzionalità necessarie all'elaborazione di un \emph{Point Cloud}.
-\item\texttt{Logging}: Singleton che espone funzionalità di logging per i servizi del server e per il processo di elaborazione dei \emph{Point Cloud}.
+\item\texttt{Logging}: Singleton che espone funzionalità di logging per i servizi del \emph{server} e per il processo di elaborazione dei \emph{Point Cloud}.
 \end{itemize}
 Vediamo in maggior dettaglio le componenti dell'architettura.
 
 \subsubsection{Services}
-Il package services racchiude le funzionalità del server, rappresentate in figura \ref{fig:Services} dalle seguenti classi:
+Il package services racchiude le funzionalità del \emph{server}, rappresentate in figura \ref{fig:Services} dalle seguenti classi:
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=0.6\columnwidth]{server/Services.png} 
@@ -172,9 +172,9 @@ Il package services racchiude le funzionalità del server, rappresentate in figu
    \label{fig:Services}
 \end{figure}
 \begin{itemize}
-\item\texttt{PCDReceiver}: Classe responsabile di ricevere dal client i \emph{Point Cloud} acquisiti e di salvarli su un file PCD locale. Una volta salvato il \emph{Point Cloud} su file PCD ne viene avviata l'elaborazione.
-\item\texttt{MeshDataSender}: Classe responsabile di inviare una specifica mesh via protocollo HTTP al Client.
-\item\texttt{MeshInfoSender}: Classe responsabile di inviare una serie di informazioni quali nome, data di creazione e volume delle mesh salvate, via protocollo HTTP, al client.
+\item\texttt{PCDReceiver}: Classe responsabile di ricevere dal \emph{client} i \emph{Point Cloud} acquisiti e di salvarli su un file PCD locale. Una volta salvato il \emph{Point Cloud} su file PCD ne viene avviata l'elaborazione.
+\item\texttt{MeshDataSender}: Classe responsabile di inviare una specifica mesh via protocollo HTTP al \emph{client}.
+\item\texttt{MeshInfoSender}: Classe responsabile di inviare una serie di informazioni quali nome, data di creazione e volume delle mesh salvate, via protocollo HTTP, al \emph{client}.
 \item\texttt{MeshNotificationSender}: Classe responsabile di inviare un messaggio riguardante l'esito dell'elaborazione di un Point Cloud al web-service Firebase. Firebase provvederà poi autonomamente a recapitare il messaggio al \emph{device Tango}.
 \end{itemize}
 
@@ -228,11 +228,11 @@ E dai seguenti sub-package:
 
 %**************************************************************
 \subsection{Design Pattern utilizzati}
-Nella progettazione dell'architettura, al fine di aumentarne la robustezza e favorirne l'estensione, sono stati usati i seguenti Design Pattern.
+Nella progettazione dell'architettura, al fine di aumentarne la robustezza e favorirne l'estensione, sono stati usati i seguenti \gls{Design Pattern}.
 
 \subsubsection{Strategy}
 Il Design Pattern Strategy è stato usato per separare la dichiarazione di alcuni algoritmi
-dalla loro implementazione. L'utilizzo di questo pattern risulta perticolarmente utile nel caso in cui si voglia lasciare un parte del sistema aperta all'aggiunta di migliorie e funzionalità non inizialmente preventivate. Per questo è stato utilizzato nel lato server per definire le strategie di filtraggio e di I/O da file (fig. \ref{fig:strategy}), mentre nel lato client è stata sfruttato uno \emph{Strategy} già implementato per aggiungere trasparentemente una nuova tecnica di ricostruzione del \emph{Point Cloud} (\texttt{GOICPPCloudReconstruction}, vedi fig. \ref{fig:GOICPRec}).
+dalla loro implementazione. L'utilizzo di questo pattern risulta perticolarmente utile nel caso in cui si voglia lasciare un parte del sistema aperta all'aggiunta di migliorie e funzionalità non inizialmente preventivate. Per questo è stato utilizzato nel lato \emph{server} per definire le strategie di filtraggio e di I/O da file (fig. \ref{fig:strategy}), mentre nel lato \emph{client} è stata sfruttato uno \emph{Strategy} già implementato per aggiungere trasparentemente una nuova tecnica di ricostruzione del \emph{Point Cloud} (\texttt{GOICPPCloudReconstruction}, vedi fig. \ref{fig:GOICPRec}).
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=1.05\columnwidth]{dp/strategy.png} 
@@ -241,7 +241,7 @@ dalla loro implementazione. L'utilizzo di questo pattern risulta perticolarmente
 \end{figure}
 
 \subsubsection{Model View Presenter}
-È stato scelto il Design Pattern Model View Presenter per separare la logica dell’applicazione lato client dalla sua rappresentazione e per seguire le Android Best Practices. Il pattern è stato utilizzato nell'implementazione della "lista di mesh" dell'applicativo, come da figura \ref{fig:mvp}.
+È stato scelto il Design Pattern Model View Presenter per separare la logica dell’applicazione lato \emph{client} dalla sua rappresentazione e per seguire le Android Best Practices. Il pattern è stato utilizzato nell'implementazione della "lista di mesh" dell'applicativo, come da figura \ref{fig:mvp}.
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=1.0\columnwidth]{dp/mvp.png} 
@@ -268,7 +268,7 @@ Il Design Pattern è stato utilizzato per controllare gli accessi alle classi ch
 \emph{VIC-Tango} è una versione rifinita e migliorata del prototipo di partenza (\emph{Samba}), del quale sono stati risolti svariati bug, immancabili allo stadio prototipale. Introduce inoltre alcune nuove funzionalità che migliorano la User experience e lasciano la porta aperta a sviluppi futuri.
 
 \subsubsection{Firebase}
-\emph{Firebase} è un \emph{framework} associato all'omonimo \emph{web service} offerto da \emph{Google} per lo scambio di messaggi tra applicazioni \emph{Android} e un \emph{server}. In particolare è stato utlizzato il servizio \emph{Firebase} di cloud messaging per la gestione e invio affidabile di messaggi a più dispositivi differenti.\\ Il suo utilizzo in VIC-Tango ha permesso di implementare un servizio di notifica da parte del server, che può così inviare messaggi asincroni al device Tango, il quale li riceverà come notifica di sistema Android, informandolo ad esempio che il Point Cloud inviato è stato elaborato e una nuova mesh è stata generata. L'utente può così continuare l'ispezione e acquisire nuovi Point Cloud e, alla ricezione della notifica, caricare e visualizzare automaticamente le mesh quando disponibili.
+\emph{Firebase} è un \emph{framework} associato all'omonimo \emph{web service} offerto da \emph{Google} per lo scambio di messaggi tra applicazioni \emph{Android} e un \emph{server}. In particolare è stato utlizzato il servizio \emph{Firebase} di cloud messaging per la gestione e invio affidabile di messaggi a più dispositivi differenti.\\ Il suo utilizzo in VIC-Tango ha permesso di implementare un servizio di notifica da parte del \emph{server}, che può così inviare messaggi asincroni al device Tango, il quale li riceverà come notifica di sistema Android, informandolo ad esempio che il Point Cloud inviato è stato elaborato e una nuova mesh è stata generata. L'utente può così continuare l'ispezione e acquisire nuovi Point Cloud e, alla ricezione della notifica, caricare e visualizzare automaticamente le mesh quando disponibili.
 In figura \ref{fig:notification} vediamo un esempio di notifica ricevuta da Firebase durante il normale utilizzo dell'applicativo.
 \begin{figure}[!h] 
     \centering 
@@ -283,9 +283,9 @@ Fin dal prototipo precedente era stata introdotta una piccola preview di quanto 
 La preview è stata quindi reimplementata utilizzando le funzionalità esposte dalle Tango API, soluzione inizialmente scartata perchè quest'ultime erano mal documentate, ottenendo un miglioramento delle prestazioni e la correzione dei bug rilevati.
 
 \subsubsection{Visualizzazione di mesh}
-Nel prototipo è stata introdotta la possibilità di caricare e visualizzare le \emph{mesh} risultato dell'elaborazione lato server di un \emph{Point Cloud}.
+Nel prototipo è stata introdotta la possibilità di caricare e visualizzare le \emph{mesh} risultato dell'elaborazione lato \emph{server} di un \emph{Point Cloud}.
 Una \emph{mesh} poligonale è una collezione di vertici, spigoli e facce che definiscono la forma di un oggetto poliedrico; in \emph{Samba} è ottenuta a partire dalla nuvola di punti elaborata.
-Tale \emph{mesh} viene salvata dal \emph{server} in formato \emph{OBJ}, comunemente usato nelle applicazioni 3D. Dall'applicazione viene quindi richiesto di caricare e salvare nella memoria locale del tablet le mesh disponibili sul server, delle quali viene visualizzata su tablet una lista, come in figura \ref{fig:meshListView}.
+Tale \emph{mesh} viene salvata dal \emph{server} in formato \emph{OBJ}, comunemente usato nelle applicazioni 3D. Dall'applicazione viene quindi richiesto di caricare e salvare nella memoria locale del \emph{tablet} le mesh disponibili sul \emph{server}, delle quali viene visualizzata su \emph{tablet} una lista, come in figura \ref{fig:meshListView}.
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=0.9\columnwidth]{varie/meshList.png} 
@@ -307,7 +307,7 @@ Selezionando poi una singola mesh dalla lista è possibile visualizzarne il rend
 La Java Native Interface o JNI è un framework del linguaggio Java che consente al codice Java di richiamare codice cosiddetto "nativo", ovvero specifico di un determinato sistema operativo scritto in altri linguaggi di programmazione, in particolare C/C++.\\
 L'integrazione della JNI con lo sviluppo Android, in particolare il suo utilizzo nell'IDE Android Studio, è un compito tutt'altro che semplice, dato il supporto ancora scarso all'integrazione del framework con l'IDE e il build-tool Gradle.\\
 Dopo svariati tentativi iniziati già i primi giorni di stage è stato infine possibile usufruire della JNI utilizzando versioni sperimentali di Android Studio e Gradle. \\
-Attraverso la JNI si è provato ad importare la libreria PCL, così da poterne utilizzare le potenti funzionalità direttamente dal tablet. Purtroppo l'integrazione con il build-tool Gradle richiede un makefile apposito, compito improponibile per una libreria notevolmente complessa come PCL, le cui potenzialità sono quindi rimaste nel lato server.\\
+Attraverso la JNI si è provato ad importare la libreria \emph{PCL}, così da poterne utilizzare le potenti funzionalità direttamente dal \emph{tablet}. Purtroppo l'integrazione con il build-tool Gradle richiede un makefile apposito, compito improponibile per una libreria notevolmente complessa come \emph{PCL}, le cui potenzialità sono quindi rimaste nel lato \emph{server}.\\
 Si è riuscito invece ad importare, date le ridotte dimensioni, una libreria per la \emph{Registration} di Point Cloud. Col termine \emph{Registration} si indica il processo che trasforma in coordinate assolute e allinea due set di Point Cloud in un unico set che minimizza le distanze tra punti corrispondenti (ad es. fig. \ref{fig:reg_example}).
 \begin{figure}[!h] 
     \centering 
@@ -323,7 +323,7 @@ $$
 $$
 Si è testato GOICP sulle coppie di Point Cloud acquisite con VIC-Tango, per ovviare al problemi già presentati del \emph{drifting} (fig. \ref{fig:no_drift_correction}) e del \emph{ghosting} (fig. \ref{fig:with_drift_correction}); si sono ottenuti però risultati insoddisfacenti. Sono sorti infatti i seguenti problemi:
 \begin{itemize}
-\item Il processo è eccessivamente dispendioso da effettuare su tablet, con tempi di elaborazione tra i 10 e i 60 secondi.
+\item Il processo è eccessivamente dispendioso da effettuare su \emph{tablet}, con tempi di elaborazione tra i 10 e i 60 secondi.
 \item L'algoritmo ICP, basandosi sul MSE come valore di bontà, converge spesso lentamente e  a soluzioni errate, per colpa della grande quantità di punti planari sul pavimento, che rendono l'errore quadratico medio un valore non attendibile su cui basare il successo di una \emph{Registration} 
 \end{itemize}
 Come si vede in figura \ref{fig:goicp} l'algoritmo, pur ottenendo un basso valore di MSE, non effettua la \emph{Registration} desiderata, dato che vengono allineati perlopiù i punti planari.
@@ -361,13 +361,13 @@ Tali correzioni trattano problemi non triviali, che l'esiguo tempo di tirocinio 
 \newpage
 
 \subsection{Lato server}
-Il lato server dell'applicazione si occupa di ricevere dai \emph{Tango device} i Point Cloud acquisiti, elaborarli utilizzando la libreria PCL per estrarre i punti rappresentanti il solo oggetto scansionato, produrre una mesh dell'oggetto così ottenuto e calcolarne il volume. Invia poi quando necessario i risultati elaborati ai dispositivi che li richiedono.\\
-Quando un Point Cloud viene ricevuto dal server tramite una richiesta HTTP POST, inserito in un oggetto JSON, viene salvato in un file PCD. Il formato PCD (Point Cloud Data) usato nella libreria PCL è molto semplice: è formato da un header contenente alcune informazioni utili come il numero totale di punti e il tipo e numero di valori associati ad ogni punto; segue poi l'effettivo Point Cloud codificato riga per riga, dove ogni riga contiene una successione di valori che rappresenta un punto.\\
-Il file salvato viene poi elaborato sfruttando la libreria PCL.
+Il lato \emph{server} dell'applicazione si occupa di ricevere dai \emph{Tango device} i Point Cloud acquisiti, elaborarli utilizzando la libreria \emph{PCL} per estrarre i punti rappresentanti il solo oggetto scansionato, produrre una mesh dell'oggetto così ottenuto e calcolarne il volume. Invia poi quando necessario i risultati elaborati ai dispositivi che li richiedono.\\
+Quando un Point Cloud viene ricevuto dal \emph{server} tramite una richiesta HTTP POST, inserito in un oggetto JSON, viene salvato in un file PCD. Il formato PCD (Point Cloud Data) usato nella libreria \emph{PCL} è molto semplice: è formato da un header contenente alcune informazioni utili come il numero totale di punti e il tipo e numero di valori associati ad ogni punto; segue poi l'effettivo Point Cloud codificato riga per riga, dove ogni riga contiene una successione di valori che rappresenta un punto.\\
+Il file salvato viene poi elaborato sfruttando la libreria \emph{PCL}.
 
 \subsection{Elaborazione di un Point Cloud}
 
-La nuvola di punti salvata in un file PCD viene elaborata da un applicativo scritto in C++ che sfrutta le numerose funzionalità della PCL.
+La nuvola di punti salvata in un file PCD viene elaborata da un applicativo scritto in C++ che sfrutta le numerose funzionalità della \emph{PCL}.
 L'elaborazione di un Point Cloud è composta di più passi sequenziali:
 \begin{enumerate}
 \item Viene caricato il nuovo Point Cloud da file PCD salvato localmente
@@ -376,7 +376,7 @@ L'elaborazione di un Point Cloud è composta di più passi sequenziali:
 \item Vengono rimossi i punti che corrispondono al piano del pavimento attraverso la libreria Ground Filtering
 \item Viene effettuato il \emph{downsample} del \emph{dataset} attraverso la libreria Voxel Filtering
 \item Viene estratto il cluster maggiore dai punti rimanenti attraverso la libreria Cluster Extraction
-\item Viene effettuato il meshing del cluster estratto, e la mesh viene salvata in due file OBJ (per la visualizzazione lato client) e VTK (per il calcolo del volume)
+\item Viene effettuato il meshing del cluster estratto, e la mesh viene salvata in due file OBJ (per la visualizzazione lato \emph{client}) e VTK (per il calcolo del volume)
 \item Viene calcolato e salvato il volume della mesh prodotta
 \end{enumerate}
 Per ogni passo di filtraggio la nuvola di punti viene salvata su un distinto file PCD, per poter analizzare visivamente la bontà dell'elaborazione.
@@ -394,7 +394,7 @@ In figura \ref{fig:sparse} vediamo i risultati di tale filtro, con una rimozione
 \end{figure}
 \subsubsection{Radius filtering}
 Questo passo di filtraggio si occupa di eliminare i punti troppo distanti dal centro, che solitamente appartengono alle pareti circostanti o comunque ad oggetti diversi da quello scansionato, che sarà sempre verso il centro della nuvola.\\
-Partendo da questo presupposto, il filtro calcola il punto centrale del Point Cloud, media del valore di tutti i punti, e procede con l'eliminare i punti che superano una certa distanza (\emph{radius}), attraverso l'algoritmo PCL spiegato in \cite{site:passthrough}, fino a che non è stata eliminata una definita percentuale del point set iniziale.\\
+Partendo da questo presupposto, il filtro calcola il punto centrale del Point Cloud, media del valore di tutti i punti, e procede con l'eliminare i punti che superano una certa distanza (\emph{radius}), attraverso l'algoritmo \emph{PCL} spiegato in \cite{site:passthrough}, fino a che non è stata eliminata una definita percentuale del point set iniziale.\\
 In figura \ref{fig:radius} vediamo i risultati di tale filtro, con una rimozione di circa 24.000 punti.
 \begin{figure}[!h] 
     \centering 
@@ -404,7 +404,7 @@ In figura \ref{fig:radius} vediamo i risultati di tale filtro, con una rimozione
 \end{figure}
 \subsubsection{Ground filtering}
 Questo passo di filtraggio si occupa di eliminare i punti planari appartenenti al pavimento, problema che si è rilevato essere uno dei più difficili da trattare. 
-In primo luogo non sempre c'è un unico componente planare che rappresenta il pavimento, ma solitamente ve n'è più d'uno, a causa delle imprecisioni nell'acquisizione dei Point Cloud lato client. Per l'implementazione del filtro si è fatto uso degli algoritmi di \emph{segmentation} di PCL (ad es. come spiegato in \cite{site:segmentation}), che consentono di estrarre i punti della nuvola che giacciono sullo stesso piano. Senza ulteriori aggiustamenti però l'algoritmo elimina anche piani utili, come il lato superiore di una scatola o di un tavolo.
+In primo luogo non sempre c'è un unico componente planare che rappresenta il pavimento, ma solitamente ve n'è più d'uno, a causa delle imprecisioni nell'acquisizione dei Point Cloud lato \emph{client}. Per l'implementazione del filtro si è fatto uso degli algoritmi di \emph{segmentation} di \emph{PCL} (ad es. come spiegato in \cite{site:segmentation}), che consentono di estrarre i punti della nuvola che giacciono sullo stesso piano. Senza ulteriori aggiustamenti però l'algoritmo elimina anche piani utili, come il lato superiore di una scatola o di un tavolo.
 Si è reso quindi necessario applicare i seguenti passi:
 \begin{enumerate}
 \item Calcolare l'altezza del Point Cloud e dividere la parte superiore da quella inferiore, che deve contenere il pavimento
@@ -421,11 +421,11 @@ In figura \ref{fig:ground} vediamo i risultati di tale filtro, applicato ad un P
 \end{figure}
 
 \subsubsection{Voxel filtering}
-Questo passo di filtraggio si occupa di eliminare i punti doppi e ridurre le dimensioni del Point Cloud per il futuro meshing. Il filtro utilizza la stessa tecnica già implementata nel lato client, cioè suddividere lo spazio in tanti \emph{voxel} cubici e  calcolare il punto medio di ogni voxel come approssimazione dei punti che ricadono al suo interno. L'implemetazione prende spunto dall'esempio di PCL riportato in \cite{site:voxel}.
+Questo passo di filtraggio si occupa di eliminare i punti doppi e ridurre le dimensioni del Point Cloud per il futuro meshing. Il filtro utilizza la stessa tecnica già implementata nel lato \emph{client}, cioè suddividere lo spazio in tanti \emph{voxel} cubici e  calcolare il punto medio di ogni voxel come approssimazione dei punti che ricadono al suo interno. L'implemetazione prende spunto dall'esempio di \emph{PCL} riportato in \cite{site:voxel}.
 Per i risultati del \emph{voxel filtering} si rimanda alle figure \ref{fig:low_voxeling} e \ref{fig:high_voxeling}.
 \subsubsection{Cluster extraction}
 L'ultimo passaggio prima del meshing è il \emph{Cluster extraction}, cioè il completo isolamento della nuvola di punti rappresentante oggetto in ispezione.
-L'algoritmo PCL documentato in \cite{site:cluster} su cui si base quest'ultimo step di filtraggio suddivide lo spazio del Point Cloud in più parti ed analizzandone statisticamente la densità per ogni parte, riesce a determinare quali sono  gli aggregati di punti nella nuvola, distinguibili gli uni dagli altri.
+L'algoritmo \emph{PCL} documentato in \cite{site:cluster} su cui si base quest'ultimo step di filtraggio suddivide lo spazio del Point Cloud in più parti ed analizzandone statisticamente la densità per ogni parte, riesce a determinare quali sono  gli aggregati di punti nella nuvola, distinguibili gli uni dagli altri.
 L'algoritmo suddivide quindi la nuvola in più cluster, e ne estrae quello di maggiori dimensioni. Questo filtraggio finale indispensabile al passo successivo di meshing, perchè elimina dal Point Cloud tutti gli elementi estranei all'oggetto.\\
 In figura \ref{fig:cluster} vediamo i risultati di tale filtro, applicato ad un Point Cloud già sottoposto ai filtri precedenti, con una rimozione di circa 4.000 punti. Sono evidenziati in figura alcuni piccoli gruppi di punti che è necessario eliminare, che rappresentano degli artefatti inesistenti nel mondo reale, ma che sono immancabilmente presenti nelle scansioni di un oggetto. L'origine di tali anomalie non è ancora chiara, probabilmente sono causate da riflessi del pavimento.
 \begin{figure}[!h] 
@@ -437,7 +437,7 @@ In figura \ref{fig:cluster} vediamo i risultati di tale filtro, applicato ad un 
 
 \subsubsection{Meshing}
 Una volta ottenuti i punti della nuvola rappresentanti il solo oggetto scansionato, si può procedere col generarne una mesh tridimensionale.
-Il processo sfrutta un algoritmo greedy di PCL, di cui è riportato un esempio in \cite{site:meshing}, che, connettendo ogni punto ai propri vicini, genera un mesh composta da migliaia di triangoli che approssima la superficie reale dell'oggetto.
+Il processo sfrutta un algoritmo greedy di \emph{PCL}, di cui è riportato un esempio in \cite{site:meshing}, che, connettendo ogni punto ai propri vicini, genera un mesh composta da migliaia di triangoli che approssima la superficie reale dell'oggetto.
 In figura \ref{fig:mesh} vediamo i risultati del processo di meshing applicato ad un Point Cloud già sottoposto ai filtri precedenti.
 \begin{figure}[!h] 
     \centering 

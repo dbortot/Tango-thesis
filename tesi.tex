@@ -93,8 +93,8 @@
 \usepackage[toc, acronym]{glossaries}   % glossario
                                         % per includerlo nel documento bisogna:
                                         % 1. compilare una prima volta tesi.tex;
-                                        % 2. eseguire: makeindex -s tesi.ist -t tesi.glg -o tesi.gls tesi.glo
-                                        % 3. eseguire: makeindex -s tesi.ist -t tesi.alg -o tesi.acr tesi.acn
+                             % 2. eseguire: makeindex -s tesi.ist -t tesi.glg -o tesi.gls tesi.glo
+                             % 3. eseguire: makeindex -s tesi.ist -t tesi.alg -o tesi.acr tesi.acn
                                         % 4. compilare due volte tesi.tex.
 
 \usepackage[backend=biber,style=numeric-comp,hyperref,backref]{biblatex}
@@ -141,7 +141,7 @@
 % Materiale finale
 %**************************************************************
 \backmatter
-%\printglossaries
+\printglossaries
 %added later
 \printbibliography
 %\input{inizio-fine/bibliografia}

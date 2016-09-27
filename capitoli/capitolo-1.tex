@@ -40,15 +40,15 @@ Da qui nasce l'idea di fornire agli ispettori uno strumento informatico in grado
 	\item L'esito del confronto dell'oggetto con un modello ideale, per evidenziare eventuali danni o deformazioni.
 \end{itemize}
 Con il prototipo realizzato durante lo \emph{stage} sono rese disponibili solamente le funzionalità di ricostruzione dell'oggetto e calcolo (approssimato) del volume.\\
-Le operazioni troppo computazionalmente costose da effettuare su tablet, quali il filtraggio e \emph{meshing} dei punti acquisiti, sono state delegate ad un \emph{backend server} che effettui le elaborazioni necessarie ed invii i risultati al richiedente, mentre all'applicativo per tablet è stato affidato il compito di aquisire e visualizzare un oggetto sotto forma di 'Nuvola di Punti' e poterne esaminare la \emph{mesh} ottenuta.
+Le operazioni troppo computazionalmente costose da effettuare su \emph{tablet}, quali il filtraggio e \emph{meshing} dei punti acquisiti, sono state delegate ad un \emph{backend server} che effettui le elaborazioni necessarie ed invii i risultati al richiedente, mentre all'applicativo per \emph{tablet} è stato affidato il compito di aquisire e visualizzare un oggetto sotto forma di 'Nuvola di Punti' e poterne esaminare la \emph{\gls{mesh}} ottenuta.
 
 %**************************************************************
 \section{Cos'è Project Tango}
 
-Project Tango è un \emph{tablet} sperimentale prodotto da \emph{Google} in grado di scandire tridimensionalmente l'ambiente circostante e di tracciare la propria posizione rispetto ad esso. Ciò è possibile attraverso il ricco hardware di cui è dotato (si veda la figura \ref{fig:tango_hardware}), tra cui:
+\gls{Project Tango} è un \emph{tablet} sperimentale prodotto da \emph{Google} in grado di scandire tridimensionalmente l'ambiente circostante e di tracciare la propria posizione rispetto ad esso. Ciò è possibile attraverso il ricco hardware di cui è dotato (si veda la figura \ref{fig:tango_hardware}), tra cui:
 \begin{itemize}
 \item una fotocamera RBG-IR\\
-\item una fotocamera \emph{Fisheye}\\
+\item una \emph{\gls{Fisheye}}\\
 \item un sensore di profondità IR\\
 \item accelerometro e giroscopio\\
 \end{itemize}
@@ -61,12 +61,12 @@ Project Tango è un \emph{tablet} sperimentale prodotto da \emph{Google} in grad
 \end{figure}
 
 \noindent
-Project Tango è quindi specificamente pensato per sviluppare applicazioni che necessitano di comprendere ed estrapolare informazioni dal mondo reale (ad es. realtà aumentata).
+\emph{Project Tango} è quindi specificamente pensato per sviluppare applicazioni che necessitano di comprendere ed estrapolare informazioni dal mondo reale (ad es. realtà aumentata).
 Le funzionalità del \emph{tablet} sono accessibili attraverso le \emph{Tango API}, le \emph{\gls{API}} ufficiali per lo sviluppo di applicazioni \emph{Tango}.
 
 %**************************************************************
 \section{Lavoro svolto}
-Al tirocinante è stato richiesto di focalizzarsi sullo sviluppo del lato server dell'applicazione, in modo che fosse possibile ricevere ed elaborare 'Nuvole di Punti', ed ottenere i risultati elaborati, lavorando nel mentre in stretta collaborazione con un altro stagista, Tommaso Padovan (relatore il Prof. Gilberto Filè) che si occupava dell'applicazione lato client. Nell'ultimo periodo di stage la parte server era già a buon punto, quindi il focus del tirocinio si è spostato sul miglioramento dell'applicativo lato client.
+Al tirocinante è stato richiesto di focalizzarsi sullo sviluppo del lato \emph{server} dell'applicazione, in modo che fosse possibile ricevere ed elaborare 'Nuvole di Punti', ed ottenere i risultati elaborati, lavorando nel mentre in stretta collaborazione con un altro stagista, Tommaso Padovan (relatore il Prof. Gilberto Filè) che si occupava dell'applicazione lato \emph{client}. Nell'ultimo periodo di stage la parte \emph{server} era già a buon punto, quindi il focus del tirocinio si è spostato sul miglioramento dell'applicativo lato \emph{client}.
 
 %**************************************************************
 \section{Il Prodotto - lato client}
@@ -75,7 +75,7 @@ L'applicazione su \emph{tablet} prodotta realizza, seppur non ancora in maniera 
 La sua realizzazione ha incontrato molte problematiche talvolta critiche e difficili da prevedere. Per questo, durante lo sviluppo, sono stati implementati più prototipi, al fine di esplorare le potenzialità e soprattutto i limiti del \emph{tablet} e delle \emph{Tango API}. \\
 Lo scopo principale dell'applicazione lato \emph{tablet} è quello di rilevare una corretta 'Nuvola di Punti' dell'oggetto che si vuole esaminare.\\
 Una 'Nuvola di Punti' è una descrizione matematica di un oggetto tridimensionale ottenuta tramite un insieme, il più possibile fitto, di punti che lo compongono, definiti dalle loro coordinate (\textbf{x},\textbf{y},\textbf{z}) rispetto ad un fissato sistema di riferimento. \\
-Tale rappresentazione, riferita spesso d'ora in poi con il più elegante termine inglese \emph{\gls{pc}}, è facilmente comprensibile all'utente se visualizzata come in figura \ref{fig:point_cloud_example}.
+Tale rappresentazione, riferita spesso d'ora in poi con il più elegante termine inglese \emph{\gls{Point Cloud}}, è facilmente comprensibile all'utente se visualizzata come in figura \ref{fig:point_cloud_example}.
 \begin{figure}[!h] 
     \centering 
     \includegraphics[width=1.0\columnwidth]{varie/point_cloud_example.png} 
@@ -87,7 +87,7 @@ Tale rappresentazione, riferita spesso d'ora in poi con il più elegante termine
 In questa sezione viene presentato il prototipo nel suo stato all'inizio dello stage, per capirne le funzionalità e limiti e introdurre il lettore alle problematiche che un tale progetto sperimentale ha comportato.
 Sulla base dei risultati di \emph{Samba} ho iniziato il mio lavoro sulla parte di elaborazione lato \emph{server} dei \emph{Point Cloud} acquisiti; questo stadio prototipale è stato inoltre un occasione di collaborazione con l'altro stagista e il punto di inizio per lo sviluppo del prototipo successivo.
 \noindent
-\emph{Samba} affronta e risolve alcuni problemi dei prototipi precedenti, come il \emph{"Drifting"} e alcuni problemi prestazionali dovuti alla mole elevata di dati acquisiti.
+\emph{Samba} affronta e risolve alcuni problemi dei prototipi precedenti, come il \emph{"\gls{drifting}"} e alcuni problemi prestazionali dovuti alla mole elevata di dati acquisiti.
 
 \subsubsection{Drift correction}
 Il prototipo introduce funzionalità che tentano di arginare il problema del \emph{"drifting"}, presente in stadi prototipali precedenti. Il \emph{drifting} è un problema comune nelle applicazioni di realtà aumentata, che come \emph{Project Tango} usano la tecnica del \emph{Motion Tracking}, cioè aggiornano costantemente la propria posizione relativamente alle coordinate acquisite nella posizione precedente, mantenendo così una storia dei movimenti del \emph{device} rispetto all'ambiente circostante.\\
@@ -100,7 +100,7 @@ Ad ogni aggiornamento della posizione è normale ed inevitabile che la misurazio
 \end{figure}
 \newline
 Per ovviare in parte a questo problema \emph{Samba} utilizza una tecnica chiamata \emph{Drift Correction} ch si appoggia sulle funzionalità di \emph{Area Learning} dei \emph{device Tango}.\\
-L' \emph{Area Learning} consiste nella capacita del dispositivo di estrarre dallo spazio fisico che sta analizzando una serie di punti significativi (o \emph{key features}), facilmente riconoscibili, e di salvare tali informazioni per confrontarle con le successive acquisizioni. In questo modo il dispositivo è capace di riconoscere un'area precedentemente visitata, e può quindi applicare le necessarie correzioni alla popria stima della traiettoria, di qui il nome \emph{Drift Correction}.\\
+L' \emph{Area Learning} consiste nella capacita del dispositivo di estrarre dallo spazio fisico che sta analizzando una serie di punti significativi (o \emph{key \glspl{feature}}), facilmente riconoscibili, e di salvare tali informazioni per confrontarle con le successive acquisizioni. In questo modo il dispositivo è capace di riconoscere un'area precedentemente visitata, e può quindi applicare le necessarie correzioni alla popria stima della traiettoria, di qui il nome \emph{Drift Correction}.\\
 Con l'implementazione di questa funzionalità è necessario, prima di iniziare la ricostruzione di un \emph{Point Cloud}, riprendere l'oggetto e i suoi dintorni per un po' di tempo e da diverse angolazioni, in modo da permettere al \emph{tablet Tango} di costruire una mappa, detta \emph{Area description}, dell'area circostante, e di stabilizzare la traiettoria stimata con le informazioni acquisite.\\
 I risultati si vedono confrontando queste due ricostruzioni di una scatola, vista dall'alto (fig. \ref{fig:no_drift_correction} e fig. \ref{fig:with_drift_correction}), rispettivamente senza e con \emph{Drift correction}.
 \begin{figure}[htp] 
@@ -119,7 +119,7 @@ I risultati si vedono confrontando queste due ricostruzioni di una scatola, vist
     \caption{Benefici della \emph{Drift Correction}}
 \end{figure}
 \newline
-Come si nota in figura \ref{fig:with_drift_correction} il risultato non è ancora ottimale, infatti un lato della scatola appare sdoppiato e spostato di qualche centimetro; si tratta di un problema di \emph{ghosting} di cui verrà trattato più avanti.
+Come si nota in figura \ref{fig:with_drift_correction} il risultato non è ancora ottimale, infatti un lato della scatola appare sdoppiato e spostato di qualche centimetro; si tratta di un problema di \emph{\gls{ghosting}} di cui verrà trattato più avanti.
 
 \subsubsection{Prestazioni}
 Il prototipo precedente presentava due problemi prestazionali principali:
@@ -135,7 +135,7 @@ In questo modo si sono ridotti i tempi di elaborazione dell'80\%;
 
 \noindent
 Il secondo problema era causato dal sovrapporsi di molti punti quasi identici, ad esempio i punti rappresentanti il pavimento. Partendo dall'osservazione che una certa quantità di punti molto vicini può essere trasformata in un unico punto, valore medio di tutti gli altri, senza una significativa perdita d'informazione, \emph{Samba} risolve il problema attraverso una tecnica di \emph{voxeling}.\\
-Lo spazio viene suddiviso in tanti piccoli parallelepipedi (tipicamente cubi) di uguali dimensioni; tutti i punti che ricadono all'interno di un singolo parallelepipedo, o \emph{voxel}, vengono considerati come un unico punto. Così facendo si riducono sensibilmente le dimensioni del \emph{Point Cloud} senza alterarne negativamente la precisione.
+Lo spazio viene suddiviso in tanti piccoli parallelepipedi (tipicamente cubi) di uguali dimensioni; tutti i punti che ricadono all'interno di un singolo parallelepipedo, o \emph{\gls{voxel}}, vengono considerati come un unico punto. Così facendo si riducono sensibilmente le dimensioni del \emph{Point Cloud} senza alterarne negativamente la precisione.
 Di seguito la differenza visivamente evidente tra lo stesso Point Cloud filtrato prima con voxel cubici di lato 1cm (fig. \ref{fig:low_voxeling}) e poi di lato 3cm (fig. \ref{fig:high_voxeling}), con una differenza di circa 60.000 punti rimossi in più nella seconda elaborazione.
 \begin{figure}[htp] 
     \centering
@@ -157,6 +157,6 @@ Di seguito la differenza visivamente evidente tra lo stesso Point Cloud filtrato
 Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
 \begin{itemize}
 	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento;
-	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \emph{parola}\glsfirstoccur;
+	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \emph{\textcolor{NavyBlue}{parola}};
 	\item i termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere \emph{corsivo}.
 \end{itemize}

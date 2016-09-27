@@ -3,11 +3,46 @@
 \glsgroupheading{A}\relax \glsresetentrylist %
 \glossentry{API}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{2}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{61}}}%
+\glossentry{artefatto}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{12}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{61}}}\glsgroupskip
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossentry{Design Pattern}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{36}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{61}}}%
+\glossentry{drifting}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{4}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{61}}}\glsgroupskip
+\glsgroupheading{F}\relax \glsresetentrylist %
+\glossentry{feature}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{4}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{61}}}%
+\glossentry{Fisheye}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{61}}}\glsgroupskip
+\glsgroupheading{G}\relax \glsresetentrylist %
+\glossentry{ghosting}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{5}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{61}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossentry{mesh}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{61}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
-\glossentry{pc}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{3}}}\glsgroupskip
+\glossentry{PCL}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{61}}}%
+\glossentry{Point Cloud}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{3}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{62}}}%
+\glossentry{Project Tango}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{2}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{62}}}\glsgroupskip
 \glsgroupheading{U}\relax \glsresetentrylist %
 \glossentry{umlg}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{63}}}%
+		\setentrycounter[]{page}\glsnumberformat{63}}}\glsgroupskip
+\glsgroupheading{V}\relax \glsresetentrylist %
+\glossentry{voxel}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{6}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{62}}}%
 \end{theglossary}\glossarypostamble

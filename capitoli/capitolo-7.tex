@@ -6,7 +6,7 @@
 %**************************************************************
 \chapter{Conclusioni}
 \label{cap:conclusioni}
-Lo scopo principale dello stage era valutare se i prototipi precedentemente realizzati, in collaborazione con un processo d'elaborazione lato server che sfruttasse le potenzialità della libreria PCL, potessero essere migliorati fino ad ottenere un applicativo, inseribile nel contesto produttivo aziendale, da utilizzare del campo ispettivo. 
+Lo scopo principale dello stage era valutare se i prototipi precedentemente realizzati, in collaborazione con un processo d'elaborazione lato \emph{server} che sfruttasse le potenzialità della libreria \emph{PCL}, potessero essere migliorati fino ad ottenere un applicativo, inseribile nel contesto produttivo aziendale, da utilizzare del campo ispettivo. 
 I risultati ottenuti sono stati piuttosto soddisfacenti, e quanto realizzato, anche se definito ancora allo stadio prototipale, una volta applicate le necessarie migliorie e raffinamenti, potrà diventare un'applicazione completa di grande utilità nel contesto sopracitato.
 
 %**************************************************************
@@ -97,11 +97,11 @@ Non potendo ovviamente agire sulle capacità hardware del dispositivo, l'unica s
 Come già citato nelle sezioni \ref{sec:registration} e \ref{sec:volume}, la \emph{Registration} tramite algoritmo ICP di Point Cloud è una funzionalità indispensabile a migliorare la precisione del calcolo del volume, e quindi allo sviluppo futuro dell'applicazione. \\
 Vi sono due strade percorribili per attuare tale miglioria:
 \begin{itemize}
-\item \textbf{ICP su tablet}: opzione preferita, la cui attuazione con GOICP non ha dato i risultati sperati, ma che vale la pena esplorare ulteriormente, testando altri algoritmi ICP, adattando GOICP o implementando un algoritmo ICP ad hoc in Java. Resta da valutare attentamente però l'effettiva capacità del tablet di eseguire in tempi accettabili le computazioni richieste
-\item \textbf{ICP lato server}: la libreria PCL offre anche un algoritmo ICP, che è stato testato con successo, ma che non è stato possibile importare su tablet a causa della complessità dello stesso. Per effettuare ICP su server è quindi necessario che il client invii non più il Point Cloud ricostruito, ma le singole scansioni una ad una. Tale approccio non è praticabile nel contesto d'uso nel quale dovrà inserirsi l'applicativo, che non prevede una connessione internet stabile, mancanza che renderebbe inaccettabilmente lungo l'intero processo di acquisizione ed elaborazione.
+\item \textbf{ICP su \emph{tablet}}: opzione preferita, la cui attuazione con GOICP non ha dato i risultati sperati, ma che vale la pena esplorare ulteriormente, testando altri algoritmi ICP, adattando GOICP o implementando un algoritmo ICP ad hoc in Java. Resta da valutare attentamente però l'effettiva capacità del \emph{tablet} di eseguire in tempi accettabili le computazioni richieste
+\item \textbf{ICP lato server}: la libreria \emph{PCL} offre anche un algoritmo ICP, che è stato testato con successo, ma che non è stato possibile importare su \emph{tablet} a causa della complessità dello stesso. Per effettuare ICP su \emph{server} è quindi necessario che il \emph{client} invii non più il Point Cloud ricostruito, ma le singole scansioni una ad una. Tale approccio non è praticabile nel contesto d'uso nel quale dovrà inserirsi l'applicativo, che non prevede una connessione internet stabile, mancanza che renderebbe inaccettabilmente lungo l'intero processo di acquisizione ed elaborazione.
 \end{itemize}
 \noindent
-L'implementazione di ICP su tablet sembra quindi essere l'alternativa migliore, e senza dubbio è una funzionalità che migliorerebbe significativamente le potenzialità dell'applicativo.
+L'implementazione di ICP su \emph{tablet} sembra quindi essere l'alternativa migliore, e senza dubbio è una funzionalità che migliorerebbe significativamente le potenzialità dell'applicativo.
 
 \subsubsection{Comparazione con modello 3D esatto}
 Una funzionalità di indubbia utilità nel campo ispettivo sarebbe la possibilità di confrontare le mesh generate con modelli tridimensionali esatti degli oggetti scansionati, in modo da valutarne la conformità ed evidenziarne eventualì deformità e difetti.\\
@@ -119,7 +119,7 @@ Questo sviluppo, oltre a migliorare grandemente l'aspetto grafico del sistema, l
 
 %**************************************************************
 \section{Consuntivo finale}
-Il periodo di stage ha avuto inizio il 12 Luglio 2016 ed è terminato l'8 Settembre 2016 invece che il 6 Settembre come inizialmente preventivato. La slittamento della data di fine è dovuto ad impegni universitari improrogabili  dello studente. Il tirocinio ha avuto una durata totale di 320 ore.
+Il periodo di stage ha avuto inizio il 12 Luglio 2016 ed è terminato l'8 Settembre 2016, per una durata totale di 320 ore.
 Seguono in tabella \ref{tab:preventivo-consuntivo} le ore preventivate per le attività dello satge, confrontate con le ore realmente impiegate.
 \begin{table}[h]
 	\begin{center}
@@ -146,15 +146,8 @@ Seguono in tabella \ref{tab:preventivo-consuntivo} le ore preventivate per le at
 \end{table}
 \newline
 Lo ore totali sono state rispettate senza subire variazioni.\\
-La ripartizione interna invece ha subito variazioni consistenti nelle prime fasi del progetto, quali lo studio preliminare e l'analisi dei requisiti, le cui ore sono state sottostimate. L'esplorazione intensiva della documentazione PCL si è rivelata invece più dispendiosa di quanto calcolato, ed ah portato ad un maggior numero di ore rivolto all'estensione dello studio di fattibilità e dei requisiti utente.\\
+La ripartizione interna invece ha subito variazioni consistenti nelle prime fasi del progetto, quali lo studio preliminare e l'analisi dei requisiti, le cui ore sono state sottostimate. L'esplorazione intensiva della documentazione \emph{PCL} si è rivelata invece più dispendiosa di quanto calcolato, ed ah portato ad un maggior numero di ore rivolto all'estensione dello studio di fattibilità e dei requisiti utente.\\
  L'accurato studio iniziale ha però permesso di svolgere con profitto e in tempi minori l'attività di "Calcolo del poligono e del volume", le cui ore preventivate sono state largamente sovrastimate. Le risorse risparmiate in quest'ultima fase sono state però ripartite parzialmente nelle fasi successive, ed hanno permesso di effettuare valutazioni più numerose ed accurate durante la fase di testing.
-In figura \ref{fig:gantt} viene riportato il diagramma di \emph{Gantt} che confronta la pianificazione preventivata con quella effettiva.
-\begin{figure}[!h] 
-    \centering 
-    \includegraphics[width=1.05\columnwidth]{varie/gantt.png} 
-    \caption{Grafico di Gantt del consuntivo}
-   \label{fig:gantt}
-\end{figure}
 
 
 \newpage
@@ -179,7 +172,7 @@ Gli obbiettivi riportati inizialmente nel piano di lavoro erano i seguenti:
 	
 	\item \textbf{Opzionali}
 	\begin{itemize}
-		\item \underline{\textit{op01}}: ottimizzazione della comunicazione con il server nel caso risultasse necessaria.
+		\item \underline{\textit{op01}}: ottimizzazione della comunicazione con il \emph{server} nel caso risultasse necessaria.
 	\end{itemize} 
 \end{itemize}
 \noindent 
@@ -190,14 +183,16 @@ Per quanto riguarda gli obbiettivi desiderabili invece:
 	\item \underline{\textit{de02}}: Non raggiunto
 \end{itemize}
 \noindent
-L'obbiettivo opzionale \underline{\textit{op1}} è stato raggiunto con l'implementazione di meccanismi di fallback lato client in caso di mancata connessione.
+L'obbiettivo opzionale \underline{\textit{op1}} è stato raggiunto con l'implementazione di meccanismi di fallback lato \emph{client} in caso di mancata connessione.
 
 \subsection{Requisiti}
 Dagli obiettivi posti nel piano di lavoro e dai casi d'uso prodotti sono stati ricavati i requisiti esposti nel capitolo \ref{cap:analisi-requisiti}. Seguono le tabelle (\ref{tab:esito-requisiti-funzionali}, \ref{tab:esito-requisiti-qualitativi}, \ref{tab:esito-requisiti-vincolo}, \ref{tab:esito-requisiti-prestazionali}) di soddisfacimento di questi ultimi divisi per categorie.
 
+\newpage
 \subsubsection{Requisiti Funzionali}
 \LTXtable{\textwidth}{tabelle/esitoFunzionali.tex}
 
+\newpage
 \subsubsection{Requisiti Qualitativi}
 \LTXtable{\textwidth}{tabelle/esitoQualitativi.tex}
 
@@ -254,9 +249,9 @@ Opzionali			&		2		&			0			&		0\%			\\
 Dal punto di vista formativo l'attività di \emph{stage} è stata estremamente positiva. Ha arricchito il mio bagaglio personale di competenze professionali non banali.\\
 
 \noindent
-La richiesta di applicazioni in ambito \emph{mobile} è in continuo aumento nelgi ultimi anni. Per questo l'apprendimento della progettazione e sviluppo delle applicazioni mobili \emph{Android} è certamente una conscenza preziosa ed immancabile per un inserimento nel mondo dell \emph{IT}.\\
+La richiesta di applicazioni in ambito \emph{mobile} è in continuo aumento negli ultimi anni. Per questo l'apprendimento della progettazione e sviluppo delle applicazioni mobili \emph{Android} è certamente una conscenza preziosa ed immancabile per un inserimento nel mondo dell \emph{IT}.\\
 \noindent
-L'approccio ad una tecnologia sperimentale ed ancora di nicchia come \emph{Project Tango} è un notevole vantaggio in ambito occupazionale in quanto gli sviluppatori scarsi. Inoltre il rilascio del primo \emph{smartphone} commerciale dotato dei sensori \emph{Tango} è stato annunciato da un noto marchio per l'autunno 2016; se dovesse prendere campo anche in ambito \emph{customer} ci sarebbe certamente una grande richiesta di sviluppatori con esperienza vista la scarsità di applicazioni capaci di sfruttare le potenzialità che questo tipo di \emph{device} ha da offrire.\\
+L'approccio ad una tecnologia sperimentale ed ancora di nicchia come \emph{Project Tango} è un notevole vantaggio in ambito occupazionale in quanto gli sviluppatori nell'ambito sono ancora scarsi. Inoltre il rilascio del primo \emph{smartphone} commerciale dotato dei sensori \emph{Tango} è stato annunciato da un noto marchio per l'autunno 2016; se dovesse prendere campo anche in ambito \emph{customer} ci sarebbe certamente una grande richiesta di sviluppatori con esperienza vista la scarsità di applicazioni capaci di sfruttare le potenzialità che questo tipo di \emph{device} ha da offrire.\\
 \noindent
 In ambito aziendale si è usato \emph{Java} come linguaggio di programmazione ed \emph{Android Studio} come \emph{IDE}. La curva di apprendimento di questi strumenti è stata piuttosto rapida grazie all'esperienza già maturata in ambito accademico con \emph{Java} ed \emph{IntelliJ}, su cui è basato \emph{Android Studio}. Più complessa si è rivelata l'assimilazione e la comprensione del \emph{Framework Jni}, sia a causa della sua intrinseca complessità sia al fatto che \emph{Android Studio} lo supporta solo in \emph{release} sperimentale. Il suo utilizzo nello stage è stato possibile solo nell'ultima settimana, grazie al miglior supporto del framework introdotto nelle ultime versioni sperimentali di \emph{Android Studio}. In ogni caso molte applicazioni \emph{mobile}, specialmente in ambito grafico, ne fanno uso, quindi ai fini del curriculum si è rivelata comunque un'esperienza fruttuosa.\\
 \noindent
